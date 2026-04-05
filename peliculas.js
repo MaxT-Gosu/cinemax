@@ -52,4 +52,17 @@ const baseDeDatos = [
         coincidencia: "79% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P5", 
+        titulo: "Maze Runner: Correr o morir", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ode14q7WtDugFDp78fo9lCsmay9.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/l5ILIrAcBzja7nkKduTcKUoAAvP.jpg", 
+        video: "https://www.burstcloud.co/embed/1e908ed1f88d74b9621f09a4f195c226c35ce6a02448ba22faa311d5efcc686b/Mazerunner%201.mp4", 
+        descripcion: "Thomas se despierta en un ascensor sin recuerdos, solo su nombre. Al salir, encuentra un mundo extraño con jóvenes amnésicos, donde comienza una aventura que revela complejas realidades.", 
+        fecha: "2014", 
+        tags: "cción, Misterio,ficción y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "72% para ti",
+        calidad: "HD"
+    },
 ];
