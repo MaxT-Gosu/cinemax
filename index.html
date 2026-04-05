@@ -59,11 +59,9 @@
         .card-item:active { transform: scale(0.95); }
         .card-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
 
-        /* FORMATO 1: Horizontales (Usa el Background) */
         .row-h .card-item { width: 180px; } 
         .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.03); }
 
-        /* FORMATO 2: Verticales (Usa el Poster) */
         .row-v .card-item { width: 110px; } 
         .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.03); }
         
@@ -132,8 +130,22 @@ window.onload = function() {
     inicializarApp();
 };
 
+// Función para mezclar un array basado en una semilla (la fecha de hoy)
+function mezclarPorDia(array) {
+    const hoy = new Date().toISOString().slice(0, 10); // "2026-04-04"
+    let semilla = hoy.split('-').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+    
+    let copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = semilla % (i + 1);
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+        semilla = (semilla * 9301 + 49297) % 233280; // Generador simple
+    }
+    return copia;
+}
+
 function inicializarApp() {
-    // 1. HERO (Última película)
+    // 1. HERO (Última película subida)
     const pHero = window.dbPelis[window.dbPelis.length - 1]; 
     if(pHero) {
         document.getElementById("hero-img").src = pHero.bg || pHero.poster;
@@ -141,21 +153,24 @@ function inicializarApp() {
         document.getElementById("hero-button").onclick = () => abrirDetalles(pHero, 'peli');
     }
 
-    // 2. RECIENTES (Usa imagen Horizontal/BG)
+    // 2. RECIENTES (Solo los últimos 5)
     const gridRecientes = document.getElementById("grid-recientes");
-    window.dbPelis.slice().reverse().forEach(p => {
+    // .slice(-5) toma los últimos 5, .reverse() los pone del más nuevo al más viejo
+    window.dbPelis.slice(-5).reverse().forEach(p => {
         gridRecientes.appendChild(crearCard(p, 'peli', true)); 
     });
 
-    // 3. PELÍCULAS (Usa Póster Vertical)
+    // 3. PELÍCULAS RECOMENDADAS (Aleatorias por día)
     const gridPeliVistas = document.getElementById("grid-peli-vistas");
-    window.dbPelis.forEach(p => {
+    const pelisMezcladas = mezclarPorDia(window.dbPelis);
+    pelisMezcladas.slice(0, 10).forEach(p => {
         gridPeliVistas.appendChild(crearCard(p, 'peli', false)); 
     });
 
-    // 4. SERIES (Usa Póster Vertical)
+    // 4. SERIES RECOMENDADAS (Aleatorias por día)
     const gridSeriesVistas = document.getElementById("grid-series-vistas");
-    window.dbSeries.forEach(s => {
+    const seriesMezcladas = mezclarPorDia(window.dbSeries);
+    seriesMezcladas.slice(0, 10).forEach(s => {
         gridSeriesVistas.appendChild(crearCard(s, 'serie', false));
     });
 
@@ -167,7 +182,6 @@ function crearCard(item, tipo, esHorizontal) {
     card.className = "card-item";
     card.onclick = () => abrirDetalles(item, tipo);
 
-    // Si esHorizontal es true, usa el bg. Si es false, usa el poster.
     const imagenUrl = esHorizontal ? (item.bg || item.poster) : item.poster;
 
     let htmlWrapper = `<div class="img-wrapper skeleton">`;
