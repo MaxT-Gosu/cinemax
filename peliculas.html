@@ -77,6 +77,20 @@
 <script src="peliculas.js"></script>
 
 <script>
+// --- FUNCIÓN PARA MEZCLAR POR FECHA (SEMILLA) ---
+function mezclarPorDia(array) {
+    const hoy = new Date().toISOString().slice(0, 10); // "YYYY-MM-DD"
+    let semilla = hoy.split('-').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+    
+    let copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = semilla % (i + 1);
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+        semilla = (semilla * 9301 + 49297) % 233280;
+    }
+    return copia;
+}
+
 // --- CARGAR IMÁGENES DINÁMICAMENTE ---
 function cargarImagenes() {
     const grid = document.getElementById("anime-grid");
@@ -86,7 +100,10 @@ function cargarImagenes() {
         return;
     }
 
-    grid.innerHTML = baseDeDatos.map(p => {
+    // Mezclamos la base de datos antes de mostrarla
+    const datosMezclados = mezclarPorDia(baseDeDatos);
+
+    grid.innerHTML = datosMezclados.map(p => {
         let tagHtml = p.etiqueta ? `<div class="etiqueta-top">${p.etiqueta}</div>` : '';
         return `
         <div class="anime-card skeleton" onclick="abrirDetalles('${p.id}')">
@@ -97,12 +114,10 @@ function cargarImagenes() {
     }).join("");
 }
 
-// --- FUNCIÓN PARA ENVIAR A DETALLES (SIMPLIFICADA) ---
+// --- FUNCIÓN PARA ENVIAR A DETALLES ---
 function abrirDetalles(id) {
-    // Solo necesitamos guardar el ID y el tipo de contenido
     localStorage.setItem('peli_id', id);
     localStorage.setItem('content_type', 'peli'); 
-    
     window.location.href = "detalles.html";
 }
 
