@@ -169,4 +169,30 @@ const baseDeDatos = [
         coincidencia: "66% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P14", 
+        titulo: "Duna ", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gDzOcq0pfeCeqMBwKIJlSmQpjkZ.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/h3HsfV8Kn9Sz2QWUYYdP5ya23hx.jpg", 
+        video: "https://www.burstcloud.co/embed/2989e8a490b4c2735d692de5c3d125f9a0a3c90c381d256a5a220e674221de01/Dune1.mp4", 
+        descripcion: "Paul Atreides, un joven brillante y talentoso nacido en un gran destino más allá de su entendimiento, debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y de su pueblo.", 
+        fecha: "2021", 
+        tags: "Ciencia ficción y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "78% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P15", 
+        titulo: "Duna: Parte dos", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6o5cJjA4srfvU52UKWaqPUuPPgl.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/wauiyiVXpdvTvt2CzdSWbYlbaE3.jpg", 
+        video: "https://www.burstcloud.co/embed/a8bf356a133f0790cd576eb8c8c7daa109966b9dd597af3b9709dcf812756808/dune2.mp4", 
+        descripcion: "Paul Atreides se une a Chani y los Fremen en busca de venganza contra quienes destruyeron a su familia, enfrentando una decisión entre amor y destino universal.", 
+        fecha: "2024 ", 
+        tags: "Ciencia ficción y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "81% para ti",
+        calidad: "HD"
+    },
 ];
