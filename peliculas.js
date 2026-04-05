@@ -195,4 +195,43 @@ const baseDeDatos = [
         coincidencia: "81% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P16", 
+        titulo: "¿Qué Pasó Ayer?", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kZaaJQEi7n3mrBct1H3l2g45Ijb.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/iuRVt8tFiXDPGgzavhuSa3QHRxD.jpg", 
+        video: "https://www.burstcloud.co/embed/b45a563c34b55e77bb156149dceceaf1f3e3ec360a2ad8cd74388e83e3cb3fb7/quepasoayer1.mp4", 
+        descripcion: "El novio y tres amigos celebran una despedida de soltero en Las Vegas. Al despertar con resaca, descubren que el novio ha desaparecido, y hay un tigre y un bebé.", 
+        fecha: "2009", 
+        tags: "Comedia y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "73% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P17", 
+        titulo: "¿Qué Pasó Ayer? Parte II", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dzaVnS19yDTkkGZRlf89sND75i7.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/kdKHiiUvGpcOjxPfyblxTuGHw8o.jpg", 
+        video: "https://www.burstcloud.co/embed/0f1a58989c199817466106492373059e3bc164a83419af0aa4aeb872a8f88f89/quepasoayer2.mp4", 
+        descripcion: "Alan, Stu y Phil despiertan en un hotel en Tailandia sin recordar nada, y deben encontrar a Teddy, el hermano de Lauren, antes de la boda de Stu.", 
+        fecha: "2011", 
+        tags: "Comedia y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "69% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P18", 
+        titulo: "¿Qué Pasó Ayer? Parte III", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1goOfrB3ZRnoJenHHIDqiskMi9q.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ll7iTzMsGsPK7tfPCoiD315sHmN.jpg", 
+        video: "https://www.burstcloud.co/embed/15983ba8928f6cbcdc72e1be297d4d9284397ac52dbdb7037dbb9085935b59ac/quepasoayer3.mp4", 
+        descripcion: "Alan, tras la muerte de su padre, es llevado al centro por Phil, Stu y Doug, sin boda ni fiesta, solo caos con Chow.", 
+        fecha: "2013", 
+        tags: "Comedia y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "71% para ti",
+        calidad: "HD"
+    },
 ];
