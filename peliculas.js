@@ -143,4 +143,30 @@ const baseDeDatos = [
         coincidencia: "75% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P12", 
+        titulo: "Gladiador", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/p08mUnCktZ2opGihZTAn7OqzOoi.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/aZtwH3RQ0L8jbInxr7OSc9tlGMJ.jpg", 
+        video: "https://www.burstcloud.co/embed/fb1e061ea09e62129c3b2b2af870731307df6803ec900c09ffeacb7d1038e6ac/gladiador1.mp4", 
+        descripcion: "En el año 180, Marco Aurelio transfiere el poder a Máximo, pero su hijo Cómodo intenta asesinarlo.", 
+        fecha: "2021", 
+        tags: "Acción, Drama y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "82% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P13", 
+        titulo: "Gladiador II", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fbcs5AxrdXwyj1b8bGGMgC9kXrM.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/qoZHK7EVaO70jaucJYEvI1tGqRh.jpg", 
+        video: "https://www.burstcloud.co/embed/1ad069bc269eff33fcadf37e90cf75c53de4b1cc2bb90a4cc1a2c29c51d46a28/gladiador2.mp4", 
+        descripcion: "Lucius, tras la muerte de Maximus y la caída de su hogar, debe luchar en el Coliseo para restaurar la gloria de Roma.", 
+        fecha: "2024", 
+        tags: "Acción, Drama y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "66% para ti",
+        calidad: "HD"
+    },
 ];
