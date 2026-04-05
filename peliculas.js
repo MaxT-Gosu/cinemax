@@ -9,7 +9,7 @@ const baseDeDatos = [
         descripcion: "Dos agentes altamente entrenados se unen a la distancia...", 
         fecha: "2025", 
         tags: "Romance, Ciencia ficción",
-        etiqueta: "EXCLUSIVA",
+        etiqueta: "",
         coincidencia: "98% para ti",
         calidad: "HD"
     },
@@ -22,7 +22,7 @@ const baseDeDatos = [
         descripcion: "La muerte de un multimillonario desencadena una cadena de acontecimientos para Iris y sus amigos durante un viaje de fin de semana a su propiedad junto al lago.", 
         fecha: "2025", 
         tags: "Terror, Ciencia ficción y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "80% para ti",
         calidad: "HD"
     },
@@ -35,7 +35,7 @@ const baseDeDatos = [
         descripcion: "Una mirada personal a los orígenes del líder militar francés y su rápido y despiadado ascenso a emperador.", 
         fecha: "2023", 
         tags: "Historia, Bélica y Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "63% para ti",
         calidad: "HD"
     },
@@ -48,7 +48,7 @@ const baseDeDatos = [
         descripcion: "Drama histórico que narra la vida de William Wallace, un héroe escocés del siglo XIII que lidera una rebelión contra el dominio inglés", 
         fecha: "1995 ", 
         tags: "Acción, Drama, Historia y Bélica",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "79% para ti",
         calidad: "HD"
     },
@@ -61,7 +61,7 @@ const baseDeDatos = [
         descripcion: "Thomas se despierta en un ascensor sin recuerdos, solo su nombre. Al salir, encuentra un mundo extraño con jóvenes amnésicos, donde comienza una aventura que revela complejas realidades.", 
         fecha: "2014", 
         tags: "Acción, Misterio,ficción y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "72% para ti",
         calidad: "HD"
     },
@@ -74,7 +74,7 @@ const baseDeDatos = [
         descripcion: "Thomas y sus compañeros deben cruzar un agreste desierto para encontrar pistas que les ayuden a combatir a la malévola organización CRUEL.", 
         fecha: "2015", 
         tags: "Acción, Misterio,ficción y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "67% para ti",
         calidad: "HD"
     },
@@ -87,7 +87,7 @@ const baseDeDatos = [
         descripcion: "El joven héroe Thomas no puede confiar en la organización CRUEL, entonces con sus amigos se embarca en una misión para encontrar una cura para la enfermedad mortal conocida como La Llamarada.", 
         fecha: "2018 ", 
         tags: "Acción, Misterio,ficción y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "74% para ti",
         calidad: "HD"
     },
@@ -100,7 +100,7 @@ const baseDeDatos = [
         descripcion: "Un lote de heroína de 100 millones es robado; los agentes Burnett y Lowery deben proteger a la testigo clave.", 
         fecha: "1995", 
         tags: "Acción, Comedia, Crimen y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "68% para ti",
         calidad: "HD"
     },
@@ -113,7 +113,7 @@ const baseDeDatos = [
         descripcion: "Los detectives de narcóticos Mike Lowrey y Marcus Burnett han sido asignados a un nuevo caso en Miami, donde un astuto narcotraficante ha iniciado una sangrienta guerra.", 
         fecha: "2003", 
         tags: "Acción, Comedia, Crimen y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "67% para ti",
         calidad: "HD"
     },
@@ -126,7 +126,7 @@ const baseDeDatos = [
         descripcion: "La tercera parte de Dos policías rebeldes reúne a Will Smith y Martin Lawrence enfrentando un nuevo criminal.", 
         fecha: "2020", 
         tags: "Acción, Comedia, Crimen y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "72% para ti",
         calidad: "HD"
     },
@@ -139,7 +139,7 @@ const baseDeDatos = [
         descripcion: "Tras escuchar falsas acusaciones sobre su excapitán y mentor Mike y Marcus deciden investigar el asunto incluso volverse los más buscados de ser necesarios.", 
         fecha: "2024", 
         tags: "Acción, Comedia, Crimen y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "75% para ti",
         calidad: "HD"
     },
@@ -152,7 +152,7 @@ const baseDeDatos = [
         descripcion: "En el año 180, Marco Aurelio transfiere el poder a Máximo, pero su hijo Cómodo intenta asesinarlo.", 
         fecha: "2021", 
         tags: "Acción, Drama y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "82% para ti",
         calidad: "HD"
     },
@@ -165,7 +165,7 @@ const baseDeDatos = [
         descripcion: "Lucius, tras la muerte de Maximus y la caída de su hogar, debe luchar en el Coliseo para restaurar la gloria de Roma.", 
         fecha: "2024", 
         tags: "Acción, Drama y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "66% para ti",
         calidad: "HD"
     },
@@ -178,7 +178,7 @@ const baseDeDatos = [
         descripcion: "Paul Atreides, un joven brillante y talentoso nacido en un gran destino más allá de su entendimiento, debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y de su pueblo.", 
         fecha: "2021", 
         tags: "Ciencia ficción y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "78% para ti",
         calidad: "HD"
     },
@@ -189,9 +189,9 @@ const baseDeDatos = [
         bg: "https://image.tmdb.org/t/p/original/wauiyiVXpdvTvt2CzdSWbYlbaE3.jpg", 
         video: "https://www.burstcloud.co/embed/a8bf356a133f0790cd576eb8c8c7daa109966b9dd597af3b9709dcf812756808/dune2.mp4", 
         descripcion: "Paul Atreides se une a Chani y los Fremen en busca de venganza contra quienes destruyeron a su familia, enfrentando una decisión entre amor y destino universal.", 
-        fecha: "2024 ", 
+        fecha: "2024", 
         tags: "Ciencia ficción y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "81% para ti",
         calidad: "HD"
     },
@@ -204,7 +204,7 @@ const baseDeDatos = [
         descripcion: "El novio y tres amigos celebran una despedida de soltero en Las Vegas. Al despertar con resaca, descubren que el novio ha desaparecido, y hay un tigre y un bebé.", 
         fecha: "2009", 
         tags: "Comedia y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "73% para ti",
         calidad: "HD"
     },
@@ -232,6 +232,45 @@ const baseDeDatos = [
         tags: "Comedia y Aventura",
         etiqueta: "ESTRENO",
         coincidencia: "71% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P19", 
+        titulo: "Deadpool", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3E53WEZJqP6aM84D8CckXx4pIHw.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/k2VX0gFu2BEJhvduQTq2ioYp8z7.jpg", 
+        video: "https://www.burstcloud.co/embed/73a7309cc9edd69f7b740355bbd81c7aabb9545e8145aa6461031677e3ceb884/Deappool1.mp4", 
+        descripcion: "Deadpool narra el origen de Wade Wilson, un ex-operativo que, tras un experimento cruel, obtiene poderes de curación y se convierte en mercenario, buscando venganza con humor retorcido.", 
+        fecha: "2016", 
+        tags: "Acción, Aventura y Comedia",
+        etiqueta: "ESTRENO",
+        coincidencia: "73% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P20", 
+        titulo: "Deadpool 2", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fgPTa4IS07Pygz0Q1WJnRgOP7r7.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ngoXNWBeJABz6i1SyNDj0d3GD6P.jpg", 
+        video: "https://www.burstcloud.co/embed/7c4616920f3c49ae1fb7aecd8576ca97da21b899556ee21234beb30651973cce/deadpool2.mp4", 
+        descripcion: "El mercenario mutante malhablado Wade Wilson (alias Deadpool), reúne a un equipo de mutantes para proteger a un joven con habilidades sobrenaturales del brutal cyborg Cable, que viaja a través del tiempo.", 
+        fecha: "2018", 
+        tags: "Acción, Aventura y Comedia",
+        etiqueta: "ESTRENO",
+        coincidencia: "75% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P21", 
+        titulo: "Deadpool & Wolverine", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6aY3OzCIdxoBMYdiH5s17rWFFFA.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/rLLA3CehQydC9RsSwIaA54gXNPp.jpg", 
+        video: "https://www.burstcloud.co/embed/2ddcb5bd4f1b280c50ece46f466d0bb5fef2d0dae2082c74c0a1f9b21ff7c9d2/deadpoolvswolverine.mp4", 
+        descripcion: "Wade Wilson, apático en la vida civil, regresa como Deadpool para enfrentar una amenaza, junto al reacio Wolverine.", 
+        fecha: "2024", 
+        tags: "Acción, Aventura y Comedia",
+        etiqueta: "ESTRENO",
+        coincidencia: "76% para ti",
         calidad: "HD"
     },
 ];
