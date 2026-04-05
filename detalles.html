@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Película - Cinemax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root { 
+            /* PALETA NETFLIX */
+            --bg-color: #141414; 
+            --bg-color-alt: #1a1a1a; 
+            --accent-color: #E50914; 
+            --text-color: #ffffff;
+            --text-color-sec: #b3b3b3; 
+            --skeleton-bg: #222222; 
+        }
+        body { margin: 0; background: var(--bg-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--text-color); padding-bottom: 100px; overflow-x: hidden; -webkit-tap-highlight-color: transparent;}
+        
+        /* HERO Y EFECTOS DE IMAGEN */
+        .hero { position: relative; width: 100%; height: 55vh; background: #000; overflow: hidden; }
+        
+        #hero-bg { 
+            width: 100%; 
+            height: 100%; 
+            background-size: cover; 
+            background-position: center 20%; 
+            opacity: 0; 
+            transition: opacity 0.8s ease-in-out; 
+        }
+
+        .hero::after { 
+            content: ''; 
+            position: absolute; 
+            inset: 0; 
+            background: linear-gradient(to top, var(--bg-color) 0%, rgba(20,20,20,0.8) 20%, transparent 60%); 
+        }
+
+        /* --- SKELETON LOADER --- */
+        .skeleton {
+            background: var(--bg-color-alt);
+            background-image: linear-gradient(90deg, var(--bg-color-alt) 0px, var(--skeleton-bg) 40px, var(--bg-color-alt) 80px);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite linear;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+        }
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* CONTENIDO DE LA PELÍCULA */
+        .header-content { padding: 0 20px; margin-top: -80px; position: relative; z-index: 10; text-align: left; }
+        
+        h1 { font-size: 32px; margin: 0 0 10px 0; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.8); font-family: 'Arial Narrow', sans-serif; font-weight: 900; letter-spacing: -0.5px;}
+        
+        /* Fila de metadatos */
+        .meta-row { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: bold; margin-bottom: 20px; color: var(--text-color-sec); }
+        .match-text { color: #46d369; } 
+        .age-badge { background: #333; padding: 2px 5px; border-radius: 3px; font-size: 11px; color: #fff; }
+        .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; letter-spacing: 1px; }
+
+        /* Botones de Acción */
+        .action-buttons { display: flex; margin-bottom: 20px; }
+        .btn-play { flex: 1; background: #fff; color: #000; border: none; padding: 12px; border-radius: 4px; font-weight: bold; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.2s; }
+        .btn-play:active { background: #ccc; }
+
+        /* Información de Texto */
+        .info-box { padding: 0 20px; font-size: 14px; line-height: 1.5; color: #fff; }
+        .info-box p { margin: 0 0 10px 0; }
+        .text-gray { color: var(--text-color-sec); }
+        .text-link { color: #fff; text-decoration: none; }
+
+        /* SECCIÓN RECOMENDADOS */
+        .recommended-section { margin: 30px 0; padding-left: 20px; }
+        .recommended-section h2 { font-size: 16px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
+        .scroll-row { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 8px; scrollbar-width: none; padding-right: 20px; }
+        .scroll-row::-webkit-scrollbar { display: none; }
+        .card-item { flex-shrink: 0; cursor: pointer; transition: transform 0.2s; width: 110px; }
+        .card-item:active { transform: scale(0.95); }
+        .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); position: relative; border: 1px solid rgba(255,255,255,0.05);}
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
+
+        /* BUSCADOR MODAL */
+        #modal-busqueda { display: none; position: fixed; inset: 0; background: rgba(20,20,20,0.98); z-index: 3000; padding: 20px; backdrop-filter: blur(15px); overflow-y: auto; }
+        .search-box-modal { background: rgba(255,255,255,0.1); border-radius: 4px; display: flex; align-items: center; padding: 12px 15px; margin-top: 50px; margin-bottom: 20px;}
+        .search-box-modal input { background: transparent; border: none; color: #fff; width: 100%; outline: none; font-size: 16px; }
+        .search-box-modal input::placeholder { color: var(--text-color-sec); }
+        .close-search { position: absolute; top: 20px; right: 20px; font-size: 30px; color: var(--text-color-sec); cursor: pointer; border: none; background: none; }
+        
+        #resultados-busqueda { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+        .res-item { background: var(--bg-color-alt); border-radius: 4px; overflow: hidden; cursor: pointer; aspect-ratio: 2/3; position: relative; border: 1px solid rgba(255,255,255,0.05); }
+        .res-item img { width: 100%; height: 100%; object-fit: cover; }
+        .res-title { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 10px; text-align: center; font-weight: bold; padding: 4px 0; }
+
+        /* MENÚ INFERIOR */
+        .menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.03); z-index: 100; }
+        .menu-item { color: var(--text-color-sec); text-decoration: none; font-size: 10px; text-align: center; display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;}
+        .menu-item i { font-size: 19px; margin-bottom: 5px; opacity: 0.8; }
+        .menu-item.active { color: var(--accent-color); }
+        .menu-item.active i { opacity: 1; }
+
+        /* REPRODUCTOR */
+        #player-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 5000; }
+        video { width: 100%; height: 100%; outline: none; }
+        .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5001; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div id="modal-busqueda">
+    <button class="close-search" onclick="cerrarBuscador()">&times;</button>
+    <div class="search-box-modal">
+        <i class="fas fa-search" style="margin-right: 15px; color: var(--text-color-sec);"></i>
+        <input type="text" id="input-buscador" placeholder="Buscar películas...">
+    </div>
+    <div id="resultados-busqueda"></div>
+</div>
+
+<div class="hero">
+    <div id="hero-skeleton" class="skeleton"></div>
+    <div id="hero-bg"></div>
+</div>
+
+<div class="header-content">
+    <h1 id="p-title">Cargando...</h1>
+    
+    <div class="meta-row">
+        <span class="match-text">98% para ti</span>
+        <span id="p-fecha">2024</span>
+        <span class="age-badge">16+</span>
+        <span class="hd-badge">HD</span>
+    </div>
+
+    <div class="action-buttons">
+        <button class="btn-play" onclick="playVideo()"><i class="fas fa-play"></i> Reproducir</button>
+    </div>
+</div>
+
+<div class="info-box">
+    <p style="margin-bottom: 15px;">Disfruta de este increíble título exclusivo de Cinemax. Una historia que te atrapará desde el primer minuto con actuaciones de primer nivel.</p>
+    
+    <p><span class="text-gray">Reparto:</span> <span class="text-link" id="p-actriz">Cargando...</span></p>
+    <p><span class="text-gray">Director / Estudio:</span> <span class="text-link" id="p-studio">Cargando...</span></p>
+    <p><span class="text-gray">Géneros:</span> <span class="text-link" id="p-tags">Cargando...</span></p>
+</div>
+
+<div class="recommended-section">
+    <h2>También puedes ver:</h2>
+    <div class="scroll-row" id="grid-recomendados">
+        </div>
+</div>
+
+<nav class="menu">
+    <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="peliculas.html" class="menu-item"><i class="fas fa-film"></i><span>Películas</span></a>
+    <a href="series.html" class="menu-item"><i class="fas fa-tv"></i><span>Series</span></a>
+    <button class="menu-item" onclick="abrirBuscador()"><i class="fas fa-search"></i><span>Buscar</span></button>
+</nav>
+
+<div id="player-overlay">
+    <button class="close-player" onclick="closePlayer()">&times;</button>
+    <video id="v" controls></video>
+</div>
+
+<script src="peliculas.js"></script>
+
+<script>
+    const data = {
+        id: localStorage.getItem('peli_id'),
+        title: localStorage.getItem('peli_titulo'),
+        img: localStorage.getItem('peli_imagen'),
+        bg: localStorage.getItem('peli_background'),
+        video: localStorage.getItem('peli_video'),
+        studio: localStorage.getItem('peli_estudio'),
+        fecha: localStorage.getItem('peli_fecha'),
+        actriz: localStorage.getItem('peli_actriz'),
+        tags: localStorage.getItem('peli_tags')
+    };
+
+    // --- CARGA SUAVE DE IMAGEN ---
+    const finalBg = (data.bg && data.bg !== "" && data.bg !== "null" && data.bg !== "#") ? data.bg : data.img;
+    const heroBgElement = document.getElementById('hero-bg');
+    const skeletonElement = document.getElementById('hero-skeleton');
+
+    if(finalBg) {
+        const imgLoader = new Image();
+        imgLoader.src = finalBg;
+        imgLoader.onload = () => {
+            skeletonElement.style.display = 'none';
+            heroBgElement.style.backgroundImage = "url('" + finalBg + "')";
+            heroBgElement.style.opacity = '1'; 
+        };
+        imgLoader.onerror = () => { skeletonElement.style.display = 'none'; }
+    } else {
+        skeletonElement.style.display = 'none';
+    }
+    
+    // Inyectar texto
+    document.getElementById('p-title').innerText = data.title || "Título Desconocido";
+    document.getElementById('p-studio').innerText = data.studio || "Estudio Desconocido";
+    document.getElementById('p-fecha').innerText = data.fecha || "N/A";
+    document.getElementById('p-actriz').innerText = data.actriz || "No disponible";
+    document.getElementById('p-tags').innerText = data.tags || "Cine";
+
+    // --- GENERAR RECOMENDADOS (SOLO DE peliculas.js) ---
+    function cargarRecomendados() {
+        if (typeof baseDeDatos === 'undefined') return; // Seguridad si el JS no carga
+        
+        // Filtramos para quitar la película actual
+        let recomendaciones = baseDeDatos.filter(item => item.id !== data.id);
+        
+        // Mezclar al azar y tomar 5
+        recomendaciones = recomendaciones.sort(() => 0.5 - Math.random()).slice(0, 5);
+
+        const grid = document.getElementById('grid-recomendados');
+        recomendaciones.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card-item";
+            card.onclick = () => {
+                localStorage.setItem('peli_id', item.id);
+                localStorage.setItem('peli_titulo', item.titulo);
+                localStorage.setItem('peli_imagen', item.poster);
+                localStorage.setItem('peli_background', item.bg || item.poster);
+                localStorage.setItem('peli_video', item.video);
+                localStorage.setItem('peli_estudio', item.estudio);
+                localStorage.setItem('peli_fecha', item.fecha || "");
+                localStorage.setItem('peli_actriz', item.actriz || "");
+                localStorage.setItem('peli_tags', item.tags || "");
+                location.reload(); 
+            };
+            
+            card.innerHTML = `
+                <div class="img-wrapper skeleton">
+                    <img src="${item.poster}" alt="${item.titulo}" onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton')" loading="lazy">
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    cargarRecomendados();
+
+    /* --- REPRODUCTOR --- */
+    function playVideo() {
+        const v = document.getElementById('v');
+        if(!data.video || data.video === "null" || data.video === "#") {
+            alert("El enlace del video aún no está disponible.");
+            return;
+        }
+        v.src = data.video;
+        document.getElementById('player-overlay').style.display = 'block';
+        v.play();
+    }
+
+    function closePlayer() {
+        const v = document.getElementById('v');
+        v.pause(); 
+        v.src = "";
+        document.getElementById('player-overlay').style.display = 'none';
+    }
+
+    /* --- BUSCADOR GLOBAL (SOLO PELÍCULAS) --- */
+    function abrirBuscador() {
+        document.getElementById('modal-busqueda').style.display = 'block';
+        document.getElementById('input-buscador').focus();
+    }
+    
+    function cerrarBuscador() {
+        document.getElementById('modal-busqueda').style.display = 'none';
+        document.getElementById('resultados-busqueda').innerHTML = "";
+        document.getElementById('input-buscador').value = "";
+    }
+
+    document.getElementById('input-buscador').addEventListener('input', (e) => {
+        const texto = e.target.value.toLowerCase().trim();
+        const resultadosDiv = document.getElementById('resultados-busqueda');
+        resultadosDiv.innerHTML = "";
+        
+        if (texto.length < 2) return;
+        if (typeof baseDeDatos === 'undefined') return;
+        
+        const filtrados = baseDeDatos.filter(item => item.titulo.toLowerCase().includes(texto));
+        
+        filtrados.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'res-item';
+            div.onclick = () => {
+                localStorage.setItem('peli_id', item.id);
+                localStorage.setItem('peli_titulo', item.titulo);
+                localStorage.setItem('peli_imagen', item.poster);
+                localStorage.setItem('peli_background', item.bg || item.poster);
+                localStorage.setItem('peli_video', item.video);
+                localStorage.setItem('peli_estudio', item.estudio);
+                localStorage.setItem('peli_fecha', item.fecha || "");
+                localStorage.setItem('peli_actriz', item.actriz || "");
+                localStorage.setItem('peli_tags', item.tags || "");
+                location.reload();
+            };
+            div.innerHTML = `<img src="${item.poster}"><div class="res-title">${item.titulo}</div>`;
+            resultadosDiv.appendChild(div);
+        });
+    });
+</script>
+
+</body>
+</html>

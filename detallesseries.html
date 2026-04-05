@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Serie - Cinemax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root { 
+            --bg-color: #141414; 
+            --bg-color-alt: #1a1a1a; 
+            --accent-color: #E50914; 
+            --text-color: #ffffff;
+            --text-color-sec: #b3b3b3; 
+            --skeleton-bg: #222222; 
+        }
+        body { margin: 0; background: var(--bg-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--text-color); padding-bottom: 100px; overflow-x: hidden; -webkit-tap-highlight-color: transparent;}
+        
+        /* HERO Y EFECTOS DE IMAGEN */
+        .hero { position: relative; width: 100%; height: 50vh; background: #000; overflow: hidden; }
+        #hero-bg { width: 100%; height: 100%; background-size: cover; background-position: center 20%; opacity: 0; transition: opacity 0.8s; }
+        .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-color) 0%, rgba(20,20,20,0.8) 20%, transparent 60%); }
+
+        /* CONTENIDO DE LA SERIE */
+        .header-content { padding: 0 20px; margin-top: -60px; position: relative; z-index: 10; text-align: left; }
+        h1 { font-size: 32px; margin: 0 0 10px 0; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.8); font-family: 'Arial Narrow', sans-serif; font-weight: 900;}
+        .meta-row { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: bold; margin-bottom: 15px; color: var(--text-color-sec); }
+        .match-text { color: #46d369; } 
+        .age-badge { background: #333; padding: 2px 5px; border-radius: 3px; font-size: 11px; color: #fff; }
+        .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; }
+
+        /* Información de Texto */
+        .info-box { padding: 0 20px; font-size: 14px; line-height: 1.5; color: #fff; margin-bottom: 25px; }
+        .info-box p { margin: 0 0 8px 0; }
+        .text-gray { color: var(--text-color-sec); }
+
+        /* SECCIÓN DE TEMPORADAS Y EPISODIOS */
+        .episodes-section { padding: 0 20px; }
+        
+        /* Selector de Temporada */
+        .season-selector { 
+            background: #222; color: #fff; border: 1px solid #333; padding: 12px 15px; 
+            font-size: 16px; font-weight: bold; border-radius: 4px; width: 100%; 
+            margin-bottom: 15px; outline: none; cursor: pointer;
+            appearance: none; /* Quita la flecha por defecto en móviles */
+        }
+        .selector-wrapper { position: relative; width: 100%; max-width: 200px; margin-bottom: 15px; }
+        .selector-wrapper::after { content: '\f0d7'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 15px; top: 12px; color: #fff; pointer-events: none; }
+
+        /* Lista de Episodios */
+        .episode-list { display: flex; flex-direction: column; gap: 15px; }
+        .episode-card { display: flex; align-items: center; background: var(--bg-color-alt); border-radius: 4px; padding: 10px; cursor: pointer; border: 1px solid rgba(255,255,255,0.05); transition: 0.2s;}
+        .episode-card:active { background: #333; }
+        .ep-number { font-size: 20px; font-weight: 900; color: var(--text-color-sec); width: 40px; text-align: center; }
+        .ep-info { flex: 1; padding-left: 10px; }
+        .ep-title { font-size: 15px; font-weight: bold; color: #fff; margin-bottom: 3px;}
+        .ep-play-icon { font-size: 20px; color: #fff; padding: 0 10px; opacity: 0.8;}
+
+        /* RECOMENDADOS */
+        .recommended-section { margin: 30px 0; padding-left: 20px; }
+        .recommended-section h2 { font-size: 16px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
+        .scroll-row { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 8px; scrollbar-width: none; padding-right: 20px; }
+        .scroll-row::-webkit-scrollbar { display: none; }
+        .card-item { flex-shrink: 0; cursor: pointer; width: 110px; }
+        .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.05);}
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* MENÚ INFERIOR */
+        .menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.98); display: flex; justify-content: space-around; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.03); z-index: 100; }
+        .menu-item { color: var(--text-color-sec); text-decoration: none; font-size: 10px; display: flex; flex-direction: column; align-items: center; width: 25%; font-weight: 500;}
+        .menu-item i { font-size: 19px; margin-bottom: 5px; }
+
+        /* REPRODUCTOR */
+        #player-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 5000; }
+        video { width: 100%; height: 100%; outline: none; }
+        .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5001; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="hero"><div id="hero-bg"></div></div>
+
+<div class="header-content">
+    <h1 id="p-title">Cargando...</h1>
+    <div class="meta-row">
+        <span class="match-text">98% para ti</span>
+        <span id="p-fecha">---</span>
+        <span class="age-badge">16+</span>
+        <span class="hd-badge">HD</span>
+    </div>
+</div>
+
+<div class="info-box">
+    <p><span class="text-gray">Reparto:</span> <span id="p-actriz">---</span></p>
+    <p><span class="text-gray">Estudio:</span> <span id="p-studio">---</span></p>
+    <p><span class="text-gray">Géneros:</span> <span id="p-tags">---</span></p>
+</div>
+
+<div class="episodes-section">
+    <div class="selector-wrapper">
+        <select id="season-select" class="season-selector" onchange="cambiarTemporada()">
+            </select>
+    </div>
+    
+    <div id="episode-list-container" class="episode-list">
+        </div>
+</div>
+
+<div class="recommended-section">
+    <h2>Más Series:</h2>
+    <div class="scroll-row" id="grid-recomendados"></div>
+</div>
+
+<nav class="menu">
+    <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="peliculas.html" class="menu-item"><i class="fas fa-film"></i><span>Películas</span></a>
+    <a href="series.html" class="menu-item active"><i class="fas fa-tv"></i><span>Series</span></a>
+    <a href="#" class="menu-item"><i class="fas fa-search"></i><span>Buscar</span></a>
+</nav>
+
+<div id="player-overlay">
+    <button class="close-player" onclick="closePlayer()">&times;</button>
+    <video id="v" controls></video>
+</div>
+
+<script src="series.js"></script>
+
+<script>
+    let serieActual = null;
+
+    // INICIALIZACIÓN
+    window.onload = function() {
+        const idBuscado = localStorage.getItem('peli_id');
+        
+        // Buscar la serie completa en series.js
+        if (typeof baseDeSeries !== 'undefined') {
+            serieActual = baseDeSeries.find(s => s.id === idBuscado);
+        }
+
+        if (serieActual) {
+            cargarInterfaz();
+            cargarRecomendados();
+        } else {
+            document.getElementById('p-title').innerText = "Serie no encontrada";
+        }
+    };
+
+    function cargarInterfaz() {
+        // Cargar Banner
+        const finalBg = serieActual.bg || serieActual.poster;
+        if(finalBg) {
+            const heroBgElement = document.getElementById('hero-bg');
+            heroBgElement.style.backgroundImage = "url('" + finalBg + "')";
+            heroBgElement.style.opacity = '1'; 
+        }
+
+        // Cargar Textos
+        document.getElementById('p-title').innerText = serieActual.titulo;
+        document.getElementById('p-fecha').innerText = serieActual.fecha;
+        document.getElementById('p-actriz').innerText = serieActual.actriz;
+        document.getElementById('p-studio').innerText = serieActual.estudio;
+        document.getElementById('p-tags').innerText = serieActual.tags;
+
+        // Cargar Temporadas en el Select
+        const select = document.getElementById('season-select');
+        select.innerHTML = ''; // Limpiar select
+        
+        if (serieActual.temporadas && serieActual.temporadas.length > 0) {
+            serieActual.temporadas.forEach((temp, index) => {
+                let option = document.createElement('option');
+                option.value = index; // Guardamos el índice del array
+                option.text = "Temporada " + temp.numero;
+                select.appendChild(option);
+            });
+            // Mostrar los episodios de la primera temporada por defecto
+            renderizarEpisodios(0);
+        } else {
+            select.style.display = 'none';
+            document.getElementById('episode-list-container').innerHTML = "<p>No hay episodios disponibles.</p>";
+        }
+    }
+
+    // Cambiar de temporada desde el selector
+    function cambiarTemporada() {
+        const select = document.getElementById('season-select');
+        renderizarEpisodios(select.value);
+    }
+
+    // Dibujar los episodios en pantalla
+    function renderizarEpisodios(indiceTemporada) {
+        const contenedor = document.getElementById('episode-list-container');
+        contenedor.innerHTML = ''; 
+
+        const temporada = serieActual.temporadas[indiceTemporada];
+        
+        temporada.episodios.forEach(ep => {
+            const card = document.createElement('div');
+            card.className = 'episode-card';
+            // Pasamos la URL del video directamente a la función de reproducir
+            card.onclick = () => playVideo(ep.video);
+            
+            card.innerHTML = `
+                <div class="ep-number">${ep.ep}</div>
+                <div class="ep-info">
+                    <div class="ep-title">${ep.titulo}</div>
+                </div>
+                <i class="fas fa-play-circle ep-play-icon"></i>
+            `;
+            contenedor.appendChild(card);
+        });
+    }
+
+    // REPRODUCTOR
+    function playVideo(videoUrl) {
+        const v = document.getElementById('v');
+        if(!videoUrl || videoUrl === "" || videoUrl === "#") {
+            alert("El enlace de este episodio aún no está disponible.");
+            return;
+        }
+        v.src = videoUrl;
+        document.getElementById('player-overlay').style.display = 'block';
+        v.play();
+    }
+
+    function closePlayer() {
+        const v = document.getElementById('v');
+        v.pause(); 
+        v.src = "";
+        document.getElementById('player-overlay').style.display = 'none';
+    }
+
+    // RECOMENDADOS (Solo Series)
+    function cargarRecomendados() {
+        if (typeof baseDeSeries === 'undefined') return;
+        
+        let recomendaciones = baseDeSeries.filter(item => item.id !== serieActual.id);
+        recomendaciones = recomendaciones.sort(() => 0.5 - Math.random()).slice(0, 5);
+
+        const grid = document.getElementById('grid-recomendados');
+        recomendaciones.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card-item";
+            card.onclick = () => {
+                localStorage.setItem('peli_id', item.id);
+                localStorage.setItem('content_type', 'serie');
+                location.reload(); 
+            };
+            card.innerHTML = `<div class="img-wrapper"><img src="${item.poster}" loading="lazy"></div>`;
+            grid.appendChild(card);
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Películas - Cinemax</title>
+
+    <style>
+        :root { 
+            --bg-color: #141414; 
+            --bg-color-alt: #1a1a1a; 
+            --accent-color: #E50914; 
+            --card-bg: #1a1a1a; 
+            --skeleton-bg: #222; 
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: var(--bg-color); color: #fff; padding-top: 20px; padding-bottom: 100px; -webkit-tap-highlight-color: transparent;}
+
+        /* ---------- ANIMACIÓN CARGA ---------- */
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .skeleton { background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+
+        .container { padding: 0 15px; }
+
+        /* HEADER SENCILLO */
+        .page-header { margin-bottom: 20px; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+        /* BUSCADOR MODAL PRO */
+        #modal-busqueda { display: none; position: fixed; inset: 0; background: rgba(20,20,20,0.98); z-index: 3000; padding: 20px; backdrop-filter: blur(15px); overflow-y: auto; }
+        .search-box-modal { background: #1a1a1a; border-radius: 4px; display: flex; align-items: center; padding: 15px; border: 1px solid rgba(255,255,255,0.1); margin: 40px 0 20px 0; }
+        .search-box-modal input { background: transparent; border: none; color: #fff; width: 100%; outline: none; font-size: 16px; }
+        .close-search { position: absolute; top: 15px; right: 20px; font-size: 30px; color: #888; cursor: pointer; border: none; background: none; }
+        
+        #resultados-busqueda { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+        .res-item { background: #111; border-radius: 4px; overflow: hidden; cursor: pointer; aspect-ratio: 2/3; position: relative; border: 1px solid #222; }
+        .res-item img { width: 100%; height: 100%; object-fit: cover; }
+        .res-title { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 10px; text-align: center; font-weight: bold; padding: 4px 0; }
+
+        /* ---------- GRID ---------- */
+        /* Exactamente tu grid original adaptado a posters */
+        .anime-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .anime-card { position: relative; background: var(--card-bg); border-radius: 4px; overflow: hidden; aspect-ratio: 2 / 3; box-shadow: 0 4px 10px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.03); transition: transform 0.2s ease; cursor: pointer; }
+        .anime-card:active { transform: scale(0.95); }
+        .anime-card img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0; transition: opacity 0.5s ease; }
+        
+        /* Etiqueta opcional arriba (tipo netflix/prime) si la peli tiene */
+        .etiqueta-top { position: absolute; top: 5px; right: 5px; background: #000; color: #fff; font-size: 8px; font-weight: 900; padding: 3px 5px; border-radius: 2px; text-transform: uppercase; z-index: 2; border-bottom: 2px solid var(--accent-color); }
+
+        /* ---------- MENU INFERIOR ---------- */
+        .bottom-menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(15, 15, 15, 0.98); backdrop-filter: blur(15px); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .menu-item { text-decoration: none; color: #888; font-size: 10px; font-weight: 500; display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer; width: 25%; }
+        .menu-item i { font-size: 19px; margin-bottom: 5px; }
+        .menu-item.active { color: var(--accent-color); }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div id="modal-busqueda">
+    <button class="close-search" onclick="cerrarBuscador()">&times;</button>
+    <div class="search-box-modal">
+        <i class="fas fa-search" style="margin-right: 15px; color: #888;"></i>
+        <input type="text" id="input-buscador" placeholder="Buscar películas...">
+    </div>
+    <div id="resultados-busqueda"></div>
+</div>
+
+<div class="container">
+    <h2 class="page-header">Catálogo de Películas</h2>
+    <div class="anime-grid" id="anime-grid"></div>
+</div>
+
+<nav class="bottom-menu">
+    <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="peliculas.html" class="menu-item active"><i class="fas fa-film"></i><span>Películas</span></a>
+    <a href="series.html" class="menu-item"><i class="fas fa-tv"></i><span>Series</span></a>
+    <button class="menu-item" onclick="abrirBuscador()"><i class="fas fa-search"></i><span>Buscar</span></button>
+</nav>
+
+<script src="peliculas.js"></script>
+
+<script>
+// --- CARGAR IMÁGENES DINÁMICAMENTE DESDE peliculas.js ---
+function cargarImagenes() {
+    const grid = document.getElementById("anime-grid");
+    
+    // Verificamos que baseDeDatos exista
+    if (typeof baseDeDatos === 'undefined') {
+        grid.innerHTML = "<p style='grid-column: span 3; text-align: center; color: #888;'>Cargando datos...</p>";
+        return;
+    }
+
+    grid.innerHTML = baseDeDatos.map(p => {
+        // Solo agrega la etiqueta si la película la tiene definida
+        let tagHtml = p.etiqueta ? `<div class="etiqueta-top">${p.etiqueta}</div>` : '';
+        
+        return `
+        <div class="anime-card skeleton" onclick="abrirDetalles('${p.id}')">
+            ${tagHtml}
+            <img src="${p.poster}" onload="imgLoaded(this)" loading="lazy">
+        </div>
+        `;
+    }).join("");
+}
+
+// --- FUNCIÓN PARA ENVIAR A DETALLES ---
+function abrirDetalles(id) {
+    let p = baseDeDatos.find(item => item.id === id);
+
+    if(p) {
+        localStorage.setItem('peli_id', p.id);
+        localStorage.setItem('peli_titulo', p.titulo);
+        localStorage.setItem('peli_imagen', p.poster);
+        localStorage.setItem('peli_background', p.bg || "");
+        localStorage.setItem('peli_video', p.video);
+        localStorage.setItem('peli_estudio', p.estudio || "Cinemax");
+        localStorage.setItem('peli_fecha', p.fecha || "N/A");
+        localStorage.setItem('peli_actriz', p.actriz || "N/A");
+        localStorage.setItem('peli_tags', p.tags || "");
+        
+        // Define que es una película para el index/navegación futura
+        localStorage.setItem('content_type', 'peli'); 
+        
+        // Redirige a la página de detalles de películas
+        window.location.href = "detalles.html";
+    }
+}
+
+// --- BUSCADOR ---
+function abrirBuscador() {
+    document.getElementById('modal-busqueda').style.display = 'block';
+    document.getElementById('input-buscador').focus();
+}
+
+function cerrarBuscador() {
+    document.getElementById('modal-busqueda').style.display = 'none';
+    document.getElementById('resultados-busqueda').innerHTML = "";
+    document.getElementById('input-buscador').value = "";
+}
+
+document.getElementById('input-buscador').addEventListener('input', (e) => {
+    const texto = e.target.value.toLowerCase().trim();
+    const resultadosDiv = document.getElementById('resultados-busqueda');
+    resultadosDiv.innerHTML = "";
+
+    if (texto.length < 2 || typeof baseDeDatos === 'undefined') return;
+
+    // Busca por título en lugar de por ID
+    const filtrados = baseDeDatos.filter(p => p.titulo.toLowerCase().includes(texto));
+
+    filtrados.forEach(p => {
+        const item = document.createElement('div');
+        item.className = 'res-item';
+        item.onclick = () => abrirDetalles(p.id);
+        item.innerHTML = `<img src="${p.poster}"><div class="res-title">${p.titulo}</div>`;
+        resultadosDiv.appendChild(item);
+    });
+});
+
+// Quita el skeleton cuando la imagen carga
+function imgLoaded(img) {
+    img.style.opacity = "1";
+    img.parentElement.classList.remove("skeleton");
+}
+
+document.addEventListener("DOMContentLoaded", cargarImagenes);
+</script>
+</body>
+</html>
