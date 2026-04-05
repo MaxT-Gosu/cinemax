@@ -60,9 +60,35 @@ const baseDeDatos = [
         video: "https://www.burstcloud.co/embed/1e908ed1f88d74b9621f09a4f195c226c35ce6a02448ba22faa311d5efcc686b/Mazerunner%201.mp4", 
         descripcion: "Thomas se despierta en un ascensor sin recuerdos, solo su nombre. Al salir, encuentra un mundo extraño con jóvenes amnésicos, donde comienza una aventura que revela complejas realidades.", 
         fecha: "2014", 
-        tags: "cción, Misterio,ficción y Suspense",
+        tags: "Acción, Misterio,ficción y Suspense",
         etiqueta: "ESTRENO",
         coincidencia: "72% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P6", 
+        titulo: "Maze Runner: Prueba de fuego", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/womQQ2ltHhYeP35kitlwzAhtUt9.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ae05UlOV00BPWba2QZnRBGkuW1J.jpg", 
+        video: "https://www.burstcloud.co/embed/c0342a4e86aef317371ffdf43a33bee34751f6737090595383135c522f7e5748/Mazerunner%202.mp4", 
+        descripcion: "Thomas y sus compañeros deben cruzar un agreste desierto para encontrar pistas que les ayuden a combatir a la malévola organización CRUEL.", 
+        fecha: "2015", 
+        tags: "Acción, Misterio,ficción y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "67% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P7", 
+        titulo: "Maze Runner: La cura mortal", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kuZOnvzplxPVh71t827F19zY5Ab.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/42wGIEoRH8DxsKO5rbtqe5WYMeX.jpg", 
+        video: "https://www.burstcloud.co/embed/c0342a4e86aef317371ffdf43a33bee34751f6737090595383135c522f7e5748/Mazerunner%202.mp4", 
+        descripcion: "El joven héroe Thomas no puede confiar en la organización CRUEL, entonces con sus amigos se embarca en una misión para encontrar una cura para la enfermedad mortal conocida como La Llamarada.", 
+        fecha: "2018 ", 
+        tags: "Acción, Misterio,ficción y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "74% para ti",
         calidad: "HD"
     },
 ];
