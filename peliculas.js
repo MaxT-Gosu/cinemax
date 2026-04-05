@@ -91,4 +91,56 @@ const baseDeDatos = [
         coincidencia: "74% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P8", 
+        titulo: "Bad boys", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ZYpSdXaTMFYCGbmVmXOFbdJmSv.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/wQW7d19J87u1Ktt8AGqFXd5H8E.jpg", 
+        video: "https://www.burstcloud.co/embed/1a1e06650cacc8cc6eca3cc1f8d658189d94a381da00623a7774769289c1d607/badboys1.mp4", 
+        descripcion: "Un lote de heroína de 100 millones es robado; los agentes Burnett y Lowery deben proteger a la testigo clave.", 
+        fecha: "1995", 
+        tags: "Acción, Comedia, Crimen y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "68% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P9", 
+        titulo: "Bad Boys II: vuelven más rebeldes", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/r6qSm5p1lRaEbNOioNzhF5A4RaN.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/gxSVZCUlDd8upT1G2wdrUdz2hxG.jpg", 
+        video: "https://www.burstcloud.co/embed/672ce7c52d22822eca2e8b75e6cdf2a78c50bf794a3108bcdec0a4d460f68e97/badboys2.mp4", 
+        descripcion: "Los detectives de narcóticos Mike Lowrey y Marcus Burnett han sido asignados a un nuevo caso en Miami, donde un astuto narcotraficante ha iniciado una sangrienta guerra.", 
+        fecha: "2003", 
+        tags: "Acción, Comedia, Crimen y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "67% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P10", 
+        titulo: "Bad Boys para Siempre", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5XR7Pbo8qdwdpOIsFtWJOEiOJD6.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/3EXcgNW3SyGveCSDLC38oESQ8K1.jpg", 
+        video: "https://www.burstcloud.co/embed/7c816961154786ebe942f415b7a7155f126d7d88dfba8352433adada08709d35/badboys3.mp4", 
+        descripcion: "La tercera parte de Dos policías rebeldes reúne a Will Smith y Martin Lawrence enfrentando un nuevo criminal.", 
+        fecha: "2020", 
+        tags: "Acción, Comedia, Crimen y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "72% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P11", 
+        titulo: "Bad Boys: Hasta la muerte", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/gRApXuxWmO2forYTuTmcz5RaNUV.jpg", 
+        video: "https://www.burstcloud.co/embed/72360801a9e846a4c1f773c7514d5f34694ed767d19b12897690e62949fe4f0b/badboys4.mp4", 
+        descripcion: "Tras escuchar falsas acusaciones sobre su excapitán y mentor Mike y Marcus deciden investigar el asunto incluso volverse los más buscados de ser necesarios.", 
+        fecha: "2024", 
+        tags: "Acción, Comedia, Crimen y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "75% para ti",
+        calidad: "HD"
+    },
 ];
