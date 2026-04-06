@@ -311,7 +311,7 @@ const baseDeDatos = [
         etiqueta: "ESTRENO",
         coincidencia: "89% para ti",
         calidad: "HD"
-    }
+    },
 	{ 
         id: "P25", 
         titulo: "Batman: El caballero de la noche asciende", 
@@ -324,5 +324,5 @@ const baseDeDatos = [
         etiqueta: "ESTRENO",
         coincidencia: "78% para ti",
         calidad: "HD"
-    }
+    },
 ];
