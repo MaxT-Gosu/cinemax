@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script src="https://pl29068762.profitablecpmratenetwork.com/4f/f8/45/4ff845d693e73abd6a8c4f87d8a82013.js"></script>
+    <script src="https://pl29068762.profitablecpmratenetwork.com/4f/f8/45/4ff845d693e73abd6a8c4f87d8a82013.js" defer></script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,24 @@
             --text-color-sec: #b3b3b3; 
             --skeleton-bg: #222222; 
         }
+
+        /* --- ESTILOS SKELETON --- */
+        .skeleton {
+            background: #222;
+            background: linear-gradient(110deg, #222 8%, #333 18%, #222 33%);
+            border-radius: 4px;
+            background-size: 200% 100%;
+            animation: 1.5s shine linear infinite;
+            color: transparent !important;
+            border: none !important;
+        }
+        @keyframes shine {
+            to { background-position-x: -200%; }
+        }
+        .sk-title { height: 35px; width: 60%; margin-bottom: 15px; }
+        .sk-text { height: 15px; width: 90%; margin-bottom: 10px; display: block; }
+        /* ------------------------ */
+
         body { margin: 0; background: var(--bg-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--text-color); padding-bottom: 100px; overflow-x: hidden; -webkit-tap-highlight-color: transparent;}
         
         .hero { position: relative; width: 100%; height: 50vh; background: #000; overflow: hidden; }
@@ -30,7 +48,7 @@
         .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; text-transform: uppercase; }
 
         .info-box { padding: 0 20px; font-size: 14px; line-height: 1.5; color: #fff; margin-bottom: 25px; }
-        .p-descripcion { font-size: 15px; color: #e5e5e5; margin-bottom: 20px; display: block; line-height: 1.6; }
+        .p-descripcion { font-size: 15px; color: #e5e5e5; margin-bottom: 20px; display: block; line-height: 1.6; min-height: 45px;}
         .text-gray { color: var(--text-color-sec); font-weight: bold; }
 
         .episodes-section { padding: 0 20px; }
@@ -63,7 +81,6 @@
         .menu-item i { font-size: 19px; margin-bottom: 5px; }
         .menu-item.active { color: var(--accent-color); }
 
-        /* REPRODUCTOR MEJORADO (IFRAME) */
         #player-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 5000; }
         #v-frame { width: 100%; height: 100%; border: none; }
         .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5001; cursor: pointer; }
@@ -74,25 +91,31 @@
 <div class="hero"><div id="hero-bg"></div></div>
 
 <div class="header-content">
-    <h1 id="p-title">Cargando...</h1>
+    <h1 id="p-title" class="skeleton sk-title">Cargando...</h1>
     <div class="meta-row">
         <span id="p-match" class="match-text"></span>
-        <span id="p-fecha">---</span>
+        <span id="p-fecha" class="skeleton" style="width: 40px;">0000</span>
         <span class="age-badge">16+</span>
-        <span id="p-calidad" class="hd-badge"></span>
+        <span id="p-calidad" class="hd-badge skeleton">HD</span>
     </div>
 </div>
 
 <div class="info-box">
-    <span id="p-descripcion" class="p-descripcion">Cargando sinopsis...</span>
-    <p><span class="text-gray">Géneros:</span> <span id="p-tags">---</span></p>
+    <div id="p-descripcion" class="p-descripcion">
+        <span class="skeleton sk-text"></span>
+        <span class="skeleton sk-text" style="width: 70%;"></span>
+    </div>
+    <p><span class="text-gray">Géneros:</span> <span id="p-tags" class="skeleton">Cargando etiquetas...</span></p>
 </div>
 
 <div class="episodes-section">
     <div class="selector-wrapper">
         <select id="season-select" class="season-selector" onchange="cambiarTemporada()"></select>
     </div>
-    <div id="episode-list-container" class="episode-list"></div>
+    <div id="episode-list-container" class="episode-list">
+        <div class="episode-card skeleton" style="height: 60px;"></div>
+        <div class="episode-card skeleton" style="height: 60px;"></div>
+    </div>
 </div>
 
 <div class="recommended-section">
@@ -118,7 +141,8 @@
     let serieActual = null;
     const idBuscado = localStorage.getItem('peli_id');
 
-    window.onload = function() {
+    // Usar DOMContentLoaded es más rápido que window.onload
+    document.addEventListener("DOMContentLoaded", () => {
         if (typeof baseDeSeries !== 'undefined') {
             serieActual = baseDeSeries.find(s => s.id === idBuscado);
         }
@@ -128,10 +152,12 @@
             cargarRecomendados();
         } else {
             document.getElementById('p-title').innerText = "Serie no encontrada";
+            document.getElementById('p-title').classList.remove('skeleton');
         }
-    };
+    });
 
     function cargarInterfaz() {
+        // 1. Fondo Hero
         const finalBg = serieActual.bg || serieActual.poster;
         if(finalBg) {
             const heroBgElement = document.getElementById('hero-bg');
@@ -139,13 +165,30 @@
             heroBgElement.style.opacity = '1'; 
         }
 
-        document.getElementById('p-title').innerText = serieActual.titulo;
-        document.getElementById('p-fecha').innerText = serieActual.fecha || "2025";
-        document.getElementById('p-tags').innerText = serieActual.tags || "Serie";
-        document.getElementById('p-descripcion').innerText = serieActual.descripcion || "Sin descripción disponible.";
-        document.getElementById('p-match').innerText = serieActual.coincidencia || "98% para ti";
-        document.getElementById('p-calidad').innerText = serieActual.calidad || "HD";
+        // 2. Datos de texto y Limpiar Skeletons
+        const titleEl = document.getElementById('p-title');
+        titleEl.innerText = serieActual.titulo;
+        titleEl.classList.remove('skeleton', 'sk-title');
 
+        const fechaEl = document.getElementById('p-fecha');
+        fechaEl.innerText = serieActual.fecha || "2025";
+        fechaEl.classList.remove('skeleton');
+
+        const calidadEl = document.getElementById('p-calidad');
+        calidadEl.innerText = serieActual.calidad || "HD";
+        calidadEl.classList.remove('skeleton');
+
+        const tagsEl = document.getElementById('p-tags');
+        tagsEl.innerText = serieActual.tags || "Serie";
+        tagsEl.classList.remove('skeleton');
+
+        const descEl = document.getElementById('p-descripcion');
+        descEl.innerHTML = serieActual.descripcion || "Sin descripción disponible.";
+        // No necesitamos remover skeleton aquí porque innerHTML reemplaza los spans de skeleton
+
+        document.getElementById('p-match').innerText = serieActual.coincidencia || "98% para ti";
+
+        // 3. Temporadas
         const select = document.getElementById('season-select');
         select.innerHTML = '';
         
@@ -163,11 +206,6 @@
         }
     }
 
-    function cambiarTemporada() {
-        const select = document.getElementById('season-select');
-        renderizarEpisodios(select.value);
-    }
-
     function renderizarEpisodios(indiceTemporada) {
         const contenedor = document.getElementById('episode-list-container');
         contenedor.innerHTML = ''; 
@@ -178,7 +216,6 @@
         temporada.episodios.forEach(ep => {
             const card = document.createElement('div');
             card.className = 'episode-card';
-            // Aquí se activa el video y la publicidad por interacción
             card.onclick = () => playVideo(ep.video);
             card.innerHTML = `
                 <div class="ep-number">${ep.ep}</div>
@@ -197,14 +234,13 @@
             alert("Episodio no disponible aún.");
             return;
         }
-        // Cargamos el URL en el iframe (YouTube, Fembed, etc)
         frame.src = videoUrl;
         document.getElementById('player-overlay').style.display = 'block';
     }
 
     function closePlayer() {
         const frame = document.getElementById('v-frame');
-        frame.src = ""; // Detiene el video al cerrar
+        frame.src = ""; 
         document.getElementById('player-overlay').style.display = 'none';
     }
 
@@ -232,7 +268,7 @@
     }
 </script>
 
-<script src="https://pl29068763.profitablecpmratenetwork.com/8a/d9/09/8ad90910ee1a6b666e2312fd0e6a5abe.js"></script>
+<script src="https://pl29068763.profitablecpmratenetwork.com/8a/d9/09/8ad90910ee1a6b666e2312fd0e6a5abe.js" defer></script>
 
 </body>
 </html>
