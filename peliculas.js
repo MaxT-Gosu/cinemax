@@ -217,7 +217,7 @@ const baseDeDatos = [
         descripcion: "Alan, Stu y Phil despiertan en un hotel en Tailandia sin recordar nada, y deben encontrar a Teddy, el hermano de Lauren, antes de la boda de Stu.", 
         fecha: "2011", 
         tags: "Comedia y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "69% para ti",
         calidad: "HD"
     },
@@ -230,7 +230,7 @@ const baseDeDatos = [
         descripcion: "Alan, tras la muerte de su padre, es llevado al centro por Phil, Stu y Doug, sin boda ni fiesta, solo caos con Chow.", 
         fecha: "2013", 
         tags: "Comedia y Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "71% para ti",
         calidad: "HD"
     },
@@ -243,7 +243,7 @@ const baseDeDatos = [
         descripcion: "Deadpool narra el origen de Wade Wilson, un ex-operativo que, tras un experimento cruel, obtiene poderes de curación y se convierte en mercenario, buscando venganza con humor retorcido.", 
         fecha: "2016", 
         tags: "Acción, Aventura y Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "73% para ti",
         calidad: "HD"
     },
@@ -256,7 +256,7 @@ const baseDeDatos = [
         descripcion: "El mercenario mutante malhablado Wade Wilson (alias Deadpool), reúne a un equipo de mutantes para proteger a un joven con habilidades sobrenaturales del brutal cyborg Cable, que viaja a través del tiempo.", 
         fecha: "2018", 
         tags: "Acción, Aventura y Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "75% para ti",
         calidad: "HD"
     },
@@ -269,7 +269,7 @@ const baseDeDatos = [
         descripcion: "Wade Wilson, apático en la vida civil, regresa como Deadpool para enfrentar una amenaza, junto al reacio Wolverine.", 
         fecha: "2024", 
         tags: "Acción, Aventura y Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "76% para ti",
         calidad: "HD"
     },
@@ -282,7 +282,7 @@ const baseDeDatos = [
         descripcion: "Tras una tragedia, la familia Deetz regresa a Winter River, donde Lydia y su hija Astrid provocan un caos sobrenatural.", 
         fecha: "2024", 
         tags: "Comedia, Fantasía y Terror",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "69% para ti",
         calidad: "HD"
     },
@@ -295,7 +295,7 @@ const baseDeDatos = [
         descripcion: "Después de entrenar con su mentor, Batman comienza su lucha para liberar a Ciudad Gótica de la corrupción.", 
         fecha: "2005", 
         tags: "Drama, Crimen y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "85% para ti",
         calidad: "HD"
     },
@@ -308,7 +308,7 @@ const baseDeDatos = [
         descripcion: "Batman enfrenta una dura prueba psicológica y física ante el caos causado por el Joker en Gotham.", 
         fecha: "2008", 
         tags: "Drama, Crimen y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "89% para ti",
         calidad: "HD"
     },
@@ -321,7 +321,7 @@ const baseDeDatos = [
         descripcion: "Ocho años después del reinado de anarquía del Joker, Batman, con la ayuda de la enigmática Gatúbela, se ve obligado a salir de su exilio para salvar a Ciudad Gótica del brutal terrorista guerrillero Bane.", 
         fecha: "2012", 
         tags: "Drama, Crimen y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "78% para ti",
         calidad: "HD"
     },
@@ -334,7 +334,7 @@ const baseDeDatos = [
         descripcion: "Eddie Brock, tras un escándalo, se convierte en el anfitrión del violento simbionte alienígena Venom.", 
         fecha: "2018", 
         tags: "Ciencia ficción y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "62% para ti",
         calidad: "HD"
     },
@@ -347,7 +347,7 @@ const baseDeDatos = [
         descripcion: "Eddie Brock y su simbionte Venom todavía están intentando descubrir cómo vivir juntos cuando un preso que está en el corredor de la muerte se infecta con un simbionte propio.", 
         fecha: "2021", 
         tags: "Ciencia ficción y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "71% para ti",
         calidad: "HD"
     },
@@ -360,7 +360,7 @@ const baseDeDatos = [
         descripcion: "Eddie Brock, tras un escándalo, se convierte en el anfitrión del violento simbionte alienígena Venom.", 
         fecha: "2024", 
         tags: "Ciencia ficción y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "77% para ti",
         calidad: "HD"
     },
@@ -373,7 +373,7 @@ const baseDeDatos = [
         descripcion: "Po, el panda perezoso, se entrena con ayuda de Shifu y los Cinco Furiosos para ser héroe.", 
         fecha: "2008", 
         tags: "Animación, Familia, Comedia y Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "73% para ti",
         calidad: "HD"
     },
@@ -386,7 +386,7 @@ const baseDeDatos = [
         descripcion: "Po, como Guerrero del Dragón, protege el Valle de la Paz junto a sus amigos. Un villano amenaza su vida y debe descubrir su origen para vencer.", 
         fecha: "2011", 
         tags: "Animación, Familia y Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "71% para ti",
         calidad: "HD"
     },
@@ -399,7 +399,7 @@ const baseDeDatos = [
         descripcion: "Mientras visita una aldea secreta de pandas con su padre, Po se ve obligado a improvisar un peculiar ejército para detener a un espíritu malvado que amenaza a toda China", 
         fecha: "2016", 
         tags: "Acción, Aventura, Comedia y Familia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "69% para ti",
         calidad: "HD"
     },
@@ -412,8 +412,112 @@ const baseDeDatos = [
         descripcion: "Po entrena un nuevo guerrero kung fu mientras enfrenta al villano Camaleón que revive enemigos pasados.", 
         fecha: "2024", 
         tags: "Comedia, Aventura y Fantasía",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "70% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P33", 
+        titulo: "Click: Perdiendo el Control", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fJADdrBkRB6QOhnSIPWCdmnLdLK.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/iX7Gc2eidasIIZLnX4tLMSKUVUS.jpg", 
+        video: "https://www.burstcloud.co/embed/ad55f016c1a812d0ac85faf1ed7027cb6eb509ee97aceaea66fc6d88a6eacc41/click.mp4", 
+        descripcion: "Michael compra un mando a distancia, controla su vida y se vuelve adicto a su poder.", 
+        fecha: "2006", 
+        tags: "Comedia, Drama y Fantasía",
+        etiqueta: "ESTRENO",
+        coincidencia: "69% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P34", 
+        titulo: "Diario de una pasión", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kdJNpBcLJH0nDis8cjQHGjaAbRl.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/zdXnJqBaGFVtLoPNuMeKfEYUViZ.jpg", 
+        video: "https://www.burstcloud.co/embed/1d083354d1380657501cfe17bc3b7248b5ee91cb774f60525cdd378e6622f911/diario%20de%20una%20pasion.mp4", 
+        descripcion: "Un anciano lee a una mujer sobre la historia de amor de Noah y Allie, quienes vivieron un verano inolvidable antes de ser separados.", 
+        fecha: "2021", 
+        tags: "Romance y Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "79% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P35", 
+        titulo: "Salvando al Soldado Ryan", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aMij3XE0wSoLHWqP7qK0fPOReTb.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/a3dmI6TtJ00zgOIPVgaJrouVFg8.jpg", 
+        video: "https://www.burstcloud.co/embed/a652c7911d0a504eacf95e7d290eb4f60500fd5f81a67cf211e11fdb973079b1/salvando%20al%20soldado%20ryan.mp4", 
+        descripcion: "En 1944, tras el desembarco en Normandía, un grupo de soldados americanos busca salvar al soldado James Ryan, cuyos hermanos han muerto en combate.", 
+        fecha: "2021", 
+        tags: "Bélica, Drama y Historia",
+        etiqueta: "ESTRENO",
+        coincidencia: "82% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P36", 
+        titulo: "Milagros Inesperados", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7ezlnHDn6clFku58TmFmpKUQUqf.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/vxJ08SvwomfKbpboCWynC3uqUg4.jpg", 
+        video: "https://www.burstcloud.co/embed/28b316bf397711beafed9331d06eb40a6e74b067138aa7711fe4595af3c3d6e1/milagros%20inesperados.mp4", 
+        descripcion: "Las vidas de los guardias del corredor de la muerte se ven afectadas por uno de sus cargos: un hombre negro acusado de asesinato y violación de niños, pero que tiene un misterioso don.", 
+        fecha: "1999", 
+        tags: "Fantasía, Drama y Crimen",
+        etiqueta: "ESTRENO",
+        coincidencia: "89% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P37", 
+        titulo: "Amenaza en el aire", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8T6nkYb4W8BIeafmFffyfsRciTL.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/pUitHTfEWwSSX1oKZl46aBfdfXY.jpg", 
+        video: "https://www.burstcloud.co/embed/28b316bf397711beafed9331d06eb40a6e74b067138aa7711fe4595af3c3d6e1/milagros%20inesperados.mp4", 
+        descripcion: "Un piloto lleva a un alguacil y a un fugitivo a juicio en Alaska, donde la tensión y la desconfianza crecen.", 
+        fecha: "2025", 
+        tags: "Acción y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "65% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P38", 
+        titulo: "Mad Max: Furia en el camino ", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xJfbWr0mi9B2uKhnayBMFYgYDcJ.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/rGrSKPXJvD5j9YENIlvkj4kMU6h.jpg", 
+        video: "https://www.burstcloud.co/embed/b1f2e02c6ed137c56f931b1f1b96660925853504e2f0b10e9ef93d302b587646/madmax.mp4", 
+        descripcion: "Mad Max, huyendo de su pasado, se une a Furiosa y un grupo de rebeldes que escapan de Immortan Joe en una intensa persecución por el desierto en un War Rig.", 
+        fecha: "2015", 
+        tags: "Acción, Aventura y Ciencia ficción",
+        etiqueta: "ESTRENO",
+        coincidencia: "78% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P39", 
+        titulo: "Furiosa: De la saga Mad Max", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tGHUlykWn9V2IIQ4ZaATIAq9VLB.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/dAeThs4mFr9QTtyMEibRGkERscj.jpg", 
+        video: "https://www.burstcloud.co/embed/444d9276deef4e058d8c2539724a1ac8645a29a26ae534497ae97fd7e01b1051/furiosa.mp4", 
+        descripcion: "Furiosa es secuestrada por moteros, enfrenta desafíos en un mundo en ruinas y lucha por regresar a casa.", 
+        fecha: "2024", 
+        tags: "Acción, Ciencia ficción y Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "75% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P40", 
+        titulo: "Cadena de Favores", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8MFVGTbYnOqAmwq6tLz8NUE5bZC.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/5GAbRBhBjQPsTXlagD3lTPBH3vz.jpg", 
+        video: "https://www.burstcloud.co/embed/23b4af3f91d2c396970ef8ed7ad4cb1fe66a1da0cf86aedcc1b91893eb86a087/cadenadefavores.mp4", 
+        descripcion: "Un niño crea un sistema de favores desinteresados, causando furor en la comunidad. Comedia entretenida.", 
+        fecha: "2001", 
+        tags: "Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "74% para ti",
         calidad: "HD"
     },
 ];
