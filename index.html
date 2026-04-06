@@ -37,6 +37,7 @@
         .search-box-modal input::placeholder { color: var(--text-color-sec); }
         .close-search { position: absolute; top: 20px; right: 20px; font-size: 24px; color: var(--text-color-sec); cursor: pointer; border: none; background: none; }
         
+        /* Ajuste rejilla de búsqueda para que no se vea tan apretado */
         #resultados-busqueda { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px; }
         .res-item { background: var(--bg-color-alt); border-radius: 4px; overflow: hidden; aspect-ratio: 2/3; position: relative; border: 1px solid rgba(255,255,255,0.05); }
         .res-item img { width: 100%; height: 100%; object-fit: cover; }
@@ -52,22 +53,22 @@
         .section { margin: 25px 0; padding-left: 15px; }
         .section h2 { font-size: 17px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
 
-        .scroll-row { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 8px; scrollbar-width: none; padding-right: 15px; }
+        .scroll-row { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 12px; scrollbar-width: none; padding-right: 20px; }
         .scroll-row::-webkit-scrollbar { display: none; }
 
         .card-item { flex-shrink: 0; cursor: pointer; transition: transform 0.2s; position: relative; }
         .card-item:active { transform: scale(0.95); }
         .card-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
 
-        /* FORMATO 1: Horizontales (+10% tamaño) */
-        .row-h .card-item { width: 200px; } 
-        .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.03); }
+        /* FORMATO 1: Horizontales (Aumentado de 200px a 240px) */
+        .row-h .card-item { width: 240px; } 
+        .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
 
-        /* FORMATO 2: Verticales (+10% tamaño) */
-        .row-v .card-item { width: 122px; } 
-        .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.03); }
+        /* FORMATO 2: Verticales (Aumentado de 122px a 145px) */
+        .row-v .card-item { width: 145px; } 
+        .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
         
-        .etiqueta-card { position: absolute; top: 4px; right: 4px; background: var(--accent-color); color: #fff; font-size: 8px; font-weight: 900; padding: 2px 5px; border-radius: 2px; text-transform: uppercase; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .etiqueta-card { position: absolute; top: 6px; right: 6px; background: var(--accent-color); color: #fff; font-size: 8px; font-weight: 900; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.5); }
 
         .bottom-menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.98); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; border-top: 1px solid rgba(255, 255, 255, 0.03); }
         .menu-item { display: flex; flex-direction: column; align-items: center; color: var(--text-color-sec); text-decoration: none; font-size: 10px; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;}
@@ -154,19 +155,19 @@ function inicializarApp() {
     }
 
     const gridRecientes = document.getElementById("grid-recientes");
-    window.dbPelis.slice(-5).reverse().forEach(p => {
+    window.dbPelis.slice(-8).reverse().forEach(p => {
         gridRecientes.appendChild(crearCard(p, 'peli', true)); 
     });
 
     const gridPeliVistas = document.getElementById("grid-peli-vistas");
     const pelisMezcladas = mezclarPorDia(window.dbPelis);
-    pelisMezcladas.slice(0, 10).forEach(p => {
+    pelisMezcladas.slice(0, 12).forEach(p => {
         gridPeliVistas.appendChild(crearCard(p, 'peli', false)); 
     });
 
     const gridSeriesVistas = document.getElementById("grid-series-vistas");
     const seriesMezcladas = mezclarPorDia(window.dbSeries);
-    seriesMezcladas.slice(0, 10).forEach(s => {
+    seriesMezcladas.slice(0, 12).forEach(s => {
         gridSeriesVistas.appendChild(crearCard(s, 'serie', false));
     });
 
