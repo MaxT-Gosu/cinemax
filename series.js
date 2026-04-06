@@ -293,7 +293,7 @@ const baseDeSeries = [
         calidad: "HD",
         temporadas: [
             {
-                numero: 2,
+                numero: 1,
                 episodios: [
                     { ep: 1, titulo: "Los lazos que muelen", video: "https://www.burstcloud.co/embed/0d0c57a8917ff5295f1e412355e641c2d9166e45b21453b38d477abd67670384/t2e1.mp4" },
                     { ep: 2, titulo: "Un Hombre Vale Tanto Como Su Pájaro", video: "https://www.burstcloud.co/embed/6f5bfc4d2b1395ab3a55624bc9c000a55f710d82bab367e18a160107794d82fe/t2e2.mp4" },
@@ -330,6 +330,244 @@ const baseDeSeries = [
                     { ep: 10, titulo: "¡Larga vida al rey!", video: "https://www.burstcloud.co/embed/71f1c9af525ee5cb31fde958acaece9e4aa280e1ef0a04d2ff00991324176813/T2E10.mp4" },
                     { ep: 11, titulo: "Un cuento con final feliz", video: "https://www.burstcloud.co/embed/f4275111bbc425528f9fe7fa8c0ae28ec61c1a3008cc399209bd123efb2c128f/T2E811.mp4" },
                     { ep: 12, titulo: "Muerte: El alto costo de la vida", video: "https://www.burstcloud.co/embed/0b684f9853266480f2d5a3896dc546474751f00374cee627ff9f03acf871ff8c/T2E12.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S11", 
+        titulo: "Tierra de Mafia", 
+        poster: "https://image.tmdb.org/t/p/original/6KyJeOW7vTW0czdR0S6wzXAcfmw.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/6KyJeOW7vTW0czdR0S6wzXAcfmw.jpg", 
+        descripcion: "Los Harrigan y los Stevenson, familias criminales, luchan por el poder. Harry Da Souza, un 'solucionador', navega lealtades y conflictos en una batalla mortal por la supervivencia.", 
+        fecha: "2025", 
+        tags: "Crimen, Suspense, Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.5/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Pegar o torcer", video: "https://www.burstcloud.co/embed/0bf39c1174d1d62264d562ff32eab478c3514f1847297a92e86879f3a04cc2f5/T1S1.mp4" },
+                    { ep: 2, titulo: "Rompecabezas", video: "https://www.burstcloud.co/embed/608e57650f4d0e51504ee5917022760bc84dcd067ead401364b2c41e092e81f6/T1S2.mp4" },
+                    { ep: 3, titulo: "Plan B", video: "https://www.burstcloud.co/embed/1b386a07cf2c9d02dc6de066784fbbc27604cb1003db49f9d65f97e1c5aa7f45/T1S3.mp4" },
+                    { ep: 4, titulo: "Trampa para ratas", video: "https://www.burstcloud.co/embed/04d9629fa2a375fb9b6ef9e4818b335293b77890312799630bdc02b0535148f9/T1S4.mp4" },
+                    { ep: 5, titulo: "Funeral de un Amigo", video: "https://www.burstcloud.co/embed/4b56f68adc45278db4e5a0699a4cdc4f99fc8fe49c88587b4cc032bdf7b86df0/T1S5.mp4" },
+                    { ep: 6, titulo: "El blues de Amberes", video: "https://www.burstcloud.co/embed/4e01c619c6754320e432327cc76dd30c69e8ba3263ba21fdb393fee3b4940ee2/T1S6.mp4" },
+                    { ep: 7, titulo: "La encrucijada", video: "https://www.burstcloud.co/embed/8ab7e6c83b4fa885a93f9ab5728ed2515cf8ff1ea2046ec0a1c809b1c0af99dc/T1S7.mp4" },
+                    { ep: 10, titulo: "Helter Skelter", video: "https://www.burstcloud.co/embed/46a4a2b613458de9a1bf4541b2ccc51c7a84d5a46889f5aee2e0ad12f509fc5d/T1S8.mp4" },
+                    { ep: 9, titulo: "El banquete de los mendigos", video: "https://www.burstcloud.co/embed/521ec2c760291403be29027b5aecccf0cbb2dded8a91e78e064c482dcb5388df/T1S9.mp4" },
+                    { ep: 10, titulo: "La bestia en mí", video: "https://www.burstcloud.co/embed/d3dbfdd0f6fdc61ef993cf963ee721273f39b95e4c3e960e5250386caca9ebe5/TIS10.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S12", 
+        titulo: "Andor", 
+        poster: "https://image.tmdb.org/t/p/original/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg", 
+        descripcion: "La serie, ambientada cinco años antes de Rogue One, sigue a Cassian Andor en su transformación de ladrón a revolucionario, durante la formación de la Alianza Rebelde contra el Imperio Galáctico.", 
+        fecha: "2025", 
+        tags: "Fantasia, Suspense, Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.2/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Un año después", video: "https://www.burstcloud.co/embed/1f342bd5c1e214734efba0e2a1aaf0e8e31c043961ddd87251bd6a0c7b0f3281/S2E1.mp4" },
+                    { ep: 2, titulo: "Sagrona Teema", video: "https://www.burstcloud.co/embed/00c4243c625c109ba2f3629e4fa6b0778b888944ad12ceaed2dfb2bd7cfd1afa/S2E2.mp4" },
+                    { ep: 3, titulo: "La cosecha", video: "https://www.burstcloud.co/embed/e5ac0d2cb287e0cb83017370b8e755185325e598622033a6640948dff6e630b1/S2E3.mp4" },
+                    { ep: 4, titulo: "¿Has visitado Ghorman?", video: "https://www.burstcloud.co/embed/7710204f75e3f6e7e4de37fe1aeab055405ea232e8e72bc6bcfd6a6a1e57d946/2X4.mp4" },
+                    { ep: 5, titulo: "Tengo amigos en todos lados", video: "https://www.burstcloud.co/embed/4ce1cd3d494d7122551bb04e70dd55dfd3817730f0b651ac7777b931c5a09bc0/2X5.mp4" },
+                    { ep: 6, titulo: "Una velada festiva", video: "https://www.burstcloud.co/embed/9f2645b35aafb7e2de2e393828e2c93496d2ea3e9a07f5c543845914c110d211/2X6.mp4" },
+                    { ep: 7, titulo: "Messenger", video: "https://www.burstcloud.co/embed/feefe6ef92dd68a78c338a8f1a54c03b5e6b933c832499d00f795e8196807921/2X7.mp4" },
+                    { ep: 8, titulo: "¿Quién eres?", video: "https://www.burstcloud.co/embed/25a2f20ec70a7410ca72ed2bc8cae2a93adff9e6e4abda60ef2a87aa0dfda1e9/2X8.mp4" },
+                    { ep: 9, titulo: "Bienvenida a la Rebelión", video: "https://www.burstcloud.co/embed/2d190a18ee643c364e4d4204da66bdd258b29995700727fe7f77029a1c2206da/2X9.mp4" },
+                    { ep: 10, titulo: "Haz que se detenga", video: "https://www.burstcloud.co/embed/569eae49d4cbedf90f264f1a049699411889fb863265db8f67cb1e0889592e31/2X10.mp4" },
+                    { ep: 11, titulo: "¿Quién más lo sabe?", video: "https://www.burstcloud.co/embed/5addddc4a803a785cdface7db4d7f0a37624f2bc25082b480a2905e448726b66/2X11.mp4" },
+                    { ep: 12, titulo: "Jedha, Kyber, Erso", video: "https://www.burstcloud.co/embed/d8fcb316a1ca3e5d4a68dd45012c3d04efc11874b808b31f608520fb9012987a/2X12.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S13", 
+        titulo: "Cazador de Demonios", 
+        poster: "https://image.tmdb.org/t/p/original/vfEtEzBIn0wwWM7ppzJCGEZUSu2.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/vfEtEzBIn0wwWM7ppzJCGEZUSu2.jpg", 
+        descripcion: "Hub Halloran, un cazarrecompensas resucitado por el Diablo, debe capturar demonios fugitivos del Infierno mientras enfrenta su pasado y busca redención a través del amor y la música country.", 
+        fecha: "2025", 
+        tags: "Accion, Suspense, Fantasia",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "1 La olla de oro", video: "https://www.burstcloud.co/embed/3da5bca9352432f5c1699f5137173ecc69833664ef3ad0c81b6816ff95fc5577/1x1.mp4" },
+                    { ep: 2, titulo: "2 Valacor", video: "https://www.burstcloud.co/embed/a85ef2d98e805e152a6b0b2b5691e9a29b3fb81f0a1c897cbf6f15b3874ec8b8/1x2.mp4" },
+                    { ep: 3, titulo: "3 Marphos", video: "https://www.burstcloud.co/embed/4d801b6f013f8051f0647380ee3a2ad90175830ffc7b11163e45301f9819d975/1x3.mp4" },
+                    { ep: 4, titulo: "4 Erdos", video: "https://www.burstcloud.co/embed/a7186e359f7a6548de6043afc34afa333e82aafd92e976d2f37ffebf75addb40/1x4.mp4" },
+                    { ep: 5, titulo: "5 Slypharis", video: "https://www.burstcloud.co/embed/4a873364b7a251ef3555840347e19dc80e7bf37ee4154b9883130ae6b489d244/1x5.mp4" },
+                    { ep: 6, titulo: "6 Revelaciones", video: "https://www.burstcloud.co/embed/b40e2535a3fe293bba3df4e9cb7e4148fc8a554509a19432009233b8c953d2f6/1x6.mp4" },
+                    { ep: 7, titulo: "7 Pyralis", video: "https://www.burstcloud.co/embed/5368990ec30840230e6084926c4243b865f38a527bf3c335c68351524b545642/1x7.mp4" },
+                    { ep: 8, titulo: "8 Lilith", video: "https://www.burstcloud.co/embed/4a4810df3182c2f342b48ec35371787509db84292faf96b06db366b0881f697a/1x8.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S14", 
+        titulo: "La casa de David", 
+        poster: "https://image.tmdb.org/t/p/original/zuK80w6WgR5fPq6dxu3NJ4uRN5b.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/zuK80w6WgR5fPq6dxu3NJ4uRN5b.jpg", 
+        descripcion: "La serie narra el ascenso de David al trono de Israel, mientras el rey Saúl cae por su orgullo. Guiado por Dios, el profeta Samuel unge a un joven marginado como el futuro rey.", 
+        fecha: "2025", 
+        tags: "Drama, Suspense, Familiar",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Pastor y rey", video: "https://www.burstcloud.co/embed/a50c746f5c311f54bb45ad2bc9bc0459aa950691128c22ecbea9154b17e703c6/1x1.mp4" },
+                    { ep: 2, titulo: "Un abismo llama a otro abismo", video: "https://www.burstcloud.co/embed/2a58f412e7a84ba38687ac508e9a6c0f08bbe6fabb6f116b6cf2ea6cd68e7b78/1x2.mp4" },
+                    { ep: 3, titulo: "La unción", video: "https://www.burstcloud.co/embed/a3f8adbe30e45ce99b0dedadef646d83a7ca1b5f28462f19cc5e7801c059007e/1x3.mp4" },
+                    { ep: 4, titulo: "El cántico de Moisés", video: "https://www.burstcloud.co/embed/62695246ae332d6d5644e9c122cf2b2519f8096299eb6222ed3d0f68b8cf23cb/1x4.mp4" },
+                    { ep: 5, titulo: "El lobo y el león", video: "https://www.burstcloud.co/embed/fd8af6e34d54dc577eb628f9d125fcdeeba71e8d023457a3ab02e0218405c8c1/1x5.mp4" },
+                    { ep: 6, titulo: "El despertar de los gigantes", video: "https://www.burstcloud.co/embed/d6d6680dd4bda8e45106e08ebd54470500f2a579d5c65b9dd40925693810ac4a/1x6.mp4" },
+                    { ep: 7, titulo: "David y Goliat - Parte 1", video: "https://www.burstcloud.co/embed/f3bf18353d5897d765bc552ae9ec699b455d07be6b08a63b5dd432bdf3c3ca0d/1x7.mp4" },
+                    { ep: 8, titulo: "David y Goliat - Parte 2", video: "https://www.burstcloud.co/embed/b44724b06879a2ecedd1c32a3ae50775b1604b6a8167541d1105f95fd8ad9adb/1x8.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S15", 
+        titulo: "Reacher", 
+        poster: "https://image.tmdb.org/t/p/original/6cQQEbxqoOE4lHEG1g8zZc44VFD.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/6cQQEbxqoOE4lHEG1g8zZc44VFD.jpg", 
+        descripcion: "Cuando el policía militar retirado Jack Reacher es arrestado por un asesinato que no cometió, se encuentra en medio de una conspiración mortal llena de policías sucios, empresarios turbios y políticos intrigantes.", 
+        fecha: "2022", 
+        tags: "Acción, Suspense, Drama",
+        etiqueta: "3 TEMPORADAS",
+        coincidencia: "8.0/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Capítulo 1: La desaparición de Will Byers", video: "https://www.burstcloud.co/embed/19e5a448455ee8fb0882f5912e54cc4f15522d4e495127e1fd5162de64c5674a/3x1.mp4" },
+                    { ep: 2, titulo: "Capítulo 2: La loca de la calle Maple", video: "https://www.burstcloud.co/embed/414b810acd556aafe6278e0eae07c85b799514817d61f8da1776198fd1246f65/3x2.mp4" },
+                    { ep: 3, titulo: "Capítulo 3: El experimento", video: "https://www.burstcloud.co/embed/a2b03380ad42dfce6fafeb0a8eee5fe336538d34a256500a1075da24031372ee/3x3.mp4" },
+                    { ep: 4, titulo: "Capítulo 4: El rescate", video: "https://www.burstcloud.co/embed/19e5a448455ee8fb0882f5912e54cc4f15522d4e495127e1fd5162de64c5674a/3x4.mp4" }
+                ]
+            },
+            {
+                numero: 3,
+                episodios: [
+                    { ep: 1, titulo: "Persuasión", video: "https://www.burstcloud.co/embed/19e5a448455ee8fb0882f5912e54cc4f15522d4e495127e1fd5162de64c5674a/3x1.mp4" },
+                    { ep: 2, titulo: "Camionaje", video: "https://www.burstcloud.co/embed/414b810acd556aafe6278e0eae07c85b799514817d61f8da1776198fd1246f65/3x2.mp4" },
+                    { ep: 3, titulo: "Número 2 con una bala", video: "https://www.burstcloud.co/embed/a2b03380ad42dfce6fafeb0a8eee5fe336538d34a256500a1075da24031372ee/3x3.mp4" },
+                    { ep: 4, titulo: "Dominica", video: "https://www.burstcloud.co/embed/30787a84d5aaf1a8448cb45cf33f8549085f0390f005a14ff88672b128ae4f5d/3x4.mp4" },
+                    { ep: 5, titulo: "Bofetada", video: "https://www.burstcloud.co/embed/62edc08d48d40df3814a735d495bc20a21b2ed561832df2fb127f76e2fd5fb2c/3x5.mp4" },
+                    { ep: 6, titulo: "Humo en el agua", video: "https://www.burstcloud.co/embed/42b6d2131c3b0193f0c206efc9334d7f9bc7d193492bfd3d0373a29adee42a05/3x6.mp4" },
+                    { ep: 7, titulo: "Historia de Los Ángeles", video: "https://www.burstcloud.co/embed/8862b229f030a02c28feebb39f1f5236114d3b660897d59ea62e6accb0c51452/3x7.mp4" },
+                    { ep: 8, titulo: "Asunto inconcluso", video: "https://www.burstcloud.co/embed/2fdda172b4173895240f5005f6b943e7ff0cdfe4b99a99e253410eab6f0d8c02/3x8.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S16", 
+        titulo: "Duna: La profecía", 
+        poster: "https://image.tmdb.org/t/p/original/lBoHzOgft2QfpjkVVvZCqeM4ttT.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lBoHzOgft2QfpjkVVvZCqeM4ttT.jpg", 
+        descripcion: "10.000 años antes de la ascensión de Paul Atreides, las Hermanas Harkonnen luchan contra las fuerzas que amenazan el futuro de la humanidad y establecen la legendaria secta conocida como Bene Gesserit.", 
+        fecha: "2024", 
+        tags: "Sci-Fi, Accion, Aventura",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.6/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "La Mano Oculta", video: "https://www.burstcloud.co/embed/d417f6102e35f8220d6d9bdec0d07559ecf51aa5bc857eb70cb3190e914a1635/1x1.mp4" },
+                    { ep: 2, titulo: "Dos Lobas", video: "https://www.burstcloud.co/embed/b546f3f2f726cb1deab14e7587608ea4555fe26aa40c9d7c837f1929ec4de3c6/1x2.mp4" },
+                    { ep: 3, titulo: "La Hermandad Por Encima De Todo", video: "https://www.burstcloud.co/embed/09494d0e446f539e9047dd9a262f9071c9be5b22daeeeeb522dca441766ae0f6/1x3.mp4" },
+                    { ep: 4, titulo: "Nacido Dos Veces", video: "https://www.burstcloud.co/embed/005d64f9abbcf36cdccba43f0c238213562139ca03a91c7d50326d60944ebe49/1x4.mp4" },
+                    { ep: 5, titulo: "Verdad en la Sangre", video: "https://www.burstcloud.co/embed/041987c431430383374c0c73241c5858f118bf396f2a42279d4c3800ffd2e253/1x5.mp4" },
+                    { ep: 6, titulo: "El Enemigo De La Mano En Alto", video: "https://www.burstcloud.co/embed/71cb0bc00a3b6e0ab4a6cb87c0de157c1cdcc0923c4432593e1942d08697e29c/1x6.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S17", 
+        titulo: "The Last of Us", 
+        poster: "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg", 
+        descripcion: "Veinte años después de una plaga, Joel debe escoltar a Ellie, quien podría cambiar el destino de la humanidad, a través de un mundo peligroso.", 
+        fecha: "2023", 
+        tags: "Acción, Suspense, Drama",
+        etiqueta: "2 TEMPORADAS",
+        coincidencia: "8.0/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Cuando estés perdido en la oscuridad", video: "https://www.burstcloud.co/embed/e238bb2e2c2996e4d84b8124fdaae921775c83344da911f70ec4c1ec86433a7f/S1E1.mp4" },
+                    { ep: 2, titulo: "Infectado", video: "https://www.burstcloud.co/embed/cdada6bdfb2002d70960a26d59420431ff227ad434c874e95cf7a8b5693cdabb/S1E2.mp4" },
+                    { ep: 3, titulo: "Mucho, mucho tiempo", video: "https://www.burstcloud.co/embed/1e5de3db5480751a454d1d3971bd8333e44e2fc5fe1a6032eb59751708dc9d10/S1E3.mp4" },
+                    { ep: 4, titulo: "Por favor, sostén mi mano", video: "https://www.burstcloud.co/embed/b8c0e5e6634748044a5ca97effbf45da995dfe195b6350ceb55bd0b9c15bc53b/S1E4.mp4" },
+                    { ep: 5, titulo: "Resistir y Sobrevivir", video: "https://www.burstcloud.co/embed/2fb224837fed68a2e181b083493b888452b96733abf0cb6721e9529968e1f943/S1E5.mp4" },
+                    { ep: 6, titulo: "Kin", video: "https://www.burstcloud.co/embed/f6af6ae844612188bf82be9d5a0069fe69b876b63fa2bd3304605b120b5ff8de/S1E6.mp4" },
+                    { ep: 7, titulo: "Lo que dejamos atrás", video: "https://www.burstcloud.co/embed/76019e7dbd44cab691229e7553a1dac0f26e896ccbf3621c44a7687474fed446/S1E7.mp4" },
+                    { ep: 8, titulo: "En nuestras horas más bajas", video: "https://www.burstcloud.co/embed/f2699a33e7502be289cb5cc53c95d4b17f0ce394c447d25717eaa741783d3a6b/S1E8.mp4" },
+                    { ep: 9, titulo: "Busca la luz", video: "https://www.burstcloud.co/embed/34390e9f528452badcfe01e9a382d40c02e603c312587c784a998651a82fe1dd/S1E9.mp4" }
+                ]
+            },
+            {
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "Días Futuros", video: "https://www.burstcloud.co/embed/063990e2508a62e929eaa385c436f1c8e25588701989a32d4dd1d4cb81df1e28/S2E1.mp4" },
+                    { ep: 2, titulo: "A Través del Valle", video: "https://www.burstcloud.co/embed/8042a6ae4d3e2cc6a83344a65d5f313cfe76e4a331a13809403907b2c981af0b/S2E2.mp4" },
+                    { ep: 3, titulo: "El Camino", video: "https://www.burstcloud.co/embed/182aed248e9d8f1d04313946073a17fd5ca41041c52208dfa60c24d2a9e12798/S2E3.mp4" },
+                    { ep: 4, titulo: "Dia Uno", video: "https://www.burstcloud.co/embed/417617c2642457e5f1e7c1eadaa21e22cf8d2a7f5431e835c7e70e2c45c9a80a/S2E4.mp4" },
+                    { ep: 5, titulo: "Siente Su Amor", video: "https://www.burstcloud.co/embed/3e0b0b7a5262bf63f6cce8a8cac6848251ec4fc2b0781cf3b7130e292f0a2568/S2E5.mp4" },
+                    { ep: 6, titulo: "El Precio", video: "https://www.burstcloud.co/embed/4f8841247b495dd643679ff330539dad201b96cffd40e67d4e9933e03b505da9/S2E6.mp4" },
+                    { ep: 7, titulo: "Convergencia", video: "https://www.burstcloud.co/embed/5b6a45b0395876b910e8c98a8aa3060eaaf6a642ef94079851d469a6eeae286f/S2E7.mp4" }
+                ]
+            }
+        ]
+    },
+	{ 
+        id: "S18", 
+        titulo: "Adolescencia", 
+        poster: "https://image.tmdb.org/t/p/original/nil2ISKAie7PVfNsKmdGsOCqBD1.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/nil2ISKAie7PVfNsKmdGsOCqBD1.jpg", 
+        descripcion: "Cuando un chico de 13 años es acusado de asesinar a una compañera de clase, su familia, su terapeuta y el detective a cargo se preguntan qué pasó en realidad.", 
+        fecha: "2025", 
+        tags: "Acción, Suspense, Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.0/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://www.burstcloud.co/embed/6826812598298f65c1edca3bc9b054292c83c3000795c2ec9074c43603f14c60/1x1.mp4" },
+                    { ep: 2, titulo: "Episodio 2", video: "https://www.burstcloud.co/embed/a24a6f01718a9b69ab135a789ba5c10f49855573ab53ce80ad10c0e082d06344/1x2.mp4" },
+                    { ep: 3, titulo: "Episodio 3", video: "https://www.burstcloud.co/embed/62fdde54199fdb7a0e7d47944b5e1d8f78b8da941f7330500034eae0009a1841/1x3.mp4" },
+                    { ep: 4, titulo: "Episodio 4", video: "https://www.burstcloud.co/embed/36c254b47b7e5f79108a172625823c25410565dba4c85b8c76113367960366f2/1x4.mp4" }
                 ]
             }
         ]
