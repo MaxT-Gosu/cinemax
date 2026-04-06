@@ -27,24 +27,22 @@
         .meta-row { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: bold; margin-bottom: 15px; color: var(--text-color-sec); }
         .match-text { color: #46d369; } 
         .age-badge { background: #333; padding: 2px 5px; border-radius: 3px; font-size: 11px; color: #fff; }
-        .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; }
+        .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; text-transform: uppercase; }
 
         /* Información de Texto */
         .info-box { padding: 0 20px; font-size: 14px; line-height: 1.5; color: #fff; margin-bottom: 25px; }
         .p-descripcion { font-size: 15px; color: #e5e5e5; margin-bottom: 20px; display: block; line-height: 1.6; }
         .text-gray { color: var(--text-color-sec); font-weight: bold; }
-        .text-link { color: #fff; text-decoration: none; }
 
         /* SECCIÓN DE TEMPORADAS Y EPISODIOS */
         .episodes-section { padding: 0 20px; }
+        .selector-wrapper { position: relative; width: 100%; max-width: 220px; margin-bottom: 20px; }
         .season-selector { 
             background: #222; color: #fff; border: 1px solid #333; padding: 12px 15px; 
             font-size: 16px; font-weight: bold; border-radius: 4px; width: 100%; 
-            margin-bottom: 15px; outline: none; cursor: pointer;
-            appearance: none;
+            outline: none; cursor: pointer; appearance: none;
         }
-        .selector-wrapper { position: relative; width: 100%; max-width: 220px; margin-bottom: 20px; }
-        .selector-wrapper::after { content: '\f0d7'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 15px; top: 12px; color: #fff; pointer-events: none; }
+        .selector-wrapper::after { content: '\f0d7'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 15px; top: 14px; color: #fff; pointer-events: none; }
 
         /* Lista de Episodios */
         .episode-list { display: flex; flex-direction: column; gap: 12px; }
@@ -83,16 +81,15 @@
 <div class="header-content">
     <h1 id="p-title">Cargando...</h1>
     <div class="meta-row">
-        <span class="match-text">98% para ti</span>
+        <span id="p-match" class="match-text"></span>
         <span id="p-fecha">---</span>
         <span class="age-badge">16+</span>
-        <span class="hd-badge">HD</span>
+        <span id="p-calidad" class="hd-badge"></span>
     </div>
 </div>
 
 <div class="info-box">
     <span id="p-descripcion" class="p-descripcion">Cargando sinopsis...</span>
-    
     <p><span class="text-gray">Géneros:</span> <span id="p-tags">---</span></p>
 </div>
 
@@ -112,7 +109,7 @@
     <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
     <a href="peliculas.html" class="menu-item"><i class="fas fa-film"></i><span>Películas</span></a>
     <a href="series.html" class="menu-item active"><i class="fas fa-tv"></i><span>Series</span></a>
-    <a href="peliculas.html" class="menu-item"><i class="fas fa-search"></i><span>Buscar</span></a>
+    <a href="buscar.html" class="menu-item"><i class="fas fa-search"></i><span>Buscar</span></a>
 </nav>
 
 <div id="player-overlay">
@@ -140,20 +137,25 @@
     };
 
     function cargarInterfaz() {
+        // Fondo Hero
         const finalBg = serieActual.bg || serieActual.poster;
         if(finalBg) {
             const heroBgElement = document.getElementById('hero-bg');
-            heroBgElement.style.backgroundImage = "url('" + finalBg + "')";
+            heroBgElement.style.backgroundImage = `url('${finalBg}')`;
             heroBgElement.style.opacity = '1'; 
         }
 
+        // Datos de Texto
         document.getElementById('p-title').innerText = serieActual.titulo;
-        document.getElementById('p-fecha').innerText = serieActual.fecha || "2024";
+        document.getElementById('p-fecha').innerText = serieActual.fecha || "2025";
         document.getElementById('p-tags').innerText = serieActual.tags || "Serie";
+        document.getElementById('p-descripcion').innerText = serieActual.descripcion || "Sin descripción disponible.";
         
-        // Muestra la descripción del series.js
-        document.getElementById('p-descripcion').innerText = serieActual.descripcion || "Disfruta de esta increíble serie exclusiva en Cinemax.";
+        // Datos Dinámicos (Homologados con películas)
+        document.getElementById('p-match').innerText = serieActual.coincidencia || "98% para ti";
+        document.getElementById('p-calidad').innerText = serieActual.calidad || "HD";
 
+        // Selector de Temporadas
         const select = document.getElementById('season-select');
         select.innerHTML = '';
         
@@ -161,13 +163,13 @@
             serieActual.temporadas.forEach((temp, index) => {
                 let option = document.createElement('option');
                 option.value = index;
-                option.text = "Temporada " + temp.numero;
+                option.text = `Temporada ${temp.numero}`;
                 select.appendChild(option);
             });
             renderizarEpisodios(0);
         } else {
-            select.style.display = 'none';
-            document.getElementById('episode-list-container').innerHTML = "<p>Próximamente más episodios.</p>";
+            select.parentElement.style.display = 'none';
+            document.getElementById('episode-list-container').innerHTML = "<p style='color:gray;'>Próximamente más episodios.</p>";
         }
     }
 
@@ -181,6 +183,8 @@
         contenedor.innerHTML = ''; 
         const temporada = serieActual.temporadas[indiceTemporada];
         
+        if(!temporada) return;
+
         temporada.episodios.forEach(ep => {
             const card = document.createElement('div');
             card.className = 'episode-card';
@@ -209,22 +213,30 @@
 
     function closePlayer() {
         const v = document.getElementById('v');
-        v.pause(); v.src = "";
+        v.pause(); 
+        v.src = "";
         document.getElementById('player-overlay').style.display = 'none';
     }
 
     function cargarRecomendados() {
         if (typeof baseDeSeries === 'undefined') return;
-        let recomendaciones = baseDeSeries.filter(item => item.id !== idBuscado).sort(() => 0.5 - Math.random()).slice(0, 5);
         const grid = document.getElementById('grid-recomendados');
+        grid.innerHTML = '';
+
+        let recomendaciones = baseDeSeries
+            .filter(item => item.id !== idBuscado)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 6);
+
         recomendaciones.forEach(item => {
             const card = document.createElement("div");
             card.className = "card-item";
             card.onclick = () => {
                 localStorage.setItem('peli_id', item.id);
+                window.scrollTo(0,0);
                 location.reload(); 
             };
-            card.innerHTML = `<div class="img-wrapper"><img src="${item.poster}" loading="lazy"></div>`;
+            card.innerHTML = `<div class="img-wrapper"><img src="${item.poster}" alt="${item.titulo}" loading="lazy"></div>`;
             grid.appendChild(card);
         });
     }
