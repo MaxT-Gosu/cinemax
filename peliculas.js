@@ -273,4 +273,56 @@ const baseDeDatos = [
         coincidencia: "76% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P22", 
+        titulo: "Beetlejuice Beetlejuice", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9w6YSml4bDADocgEVTpMUy1MBd1.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/8tRGvXpVfPHkGqYSGcoeWsAT9o8.jpg", 
+        video: "https://www.burstcloud.co/embed/0e0301f079893809743e3a848cab99d8d8c4fdb068458815a633beee00070d4b/Beetlejuice%20Beetlejuice.mp4", 
+        descripcion: "Tras una tragedia, la familia Deetz regresa a Winter River, donde Lydia y su hija Astrid provocan un caos sobrenatural.", 
+        fecha: "2024", 
+        tags: "Comedia, Fantasía y Terror",
+        etiqueta: "ESTRENO",
+        coincidencia: "69% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P23", 
+        titulo: "Batman inicia", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zBVNawbcB9z3cQw3uOvQ6dTLBS2.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/3MEXbwZUTzzAYXZTsHiWNMSmAVW.jpg", 
+        video: "https://www.burstcloud.co/embed/9bb1c2716bf9a0f6f6e3597e6bbd34d41f59fd23b54e070517543f242d9bdcc6/batmanbegins.mp4", 
+        descripcion: "Después de entrenar con su mentor, Batman comienza su lucha para liberar a Ciudad Gótica de la corrupción.", 
+        fecha: "2005", 
+        tags: "Drama, Crimen y Acción",
+        etiqueta: "ESTRENO",
+        coincidencia: "85% para ti",
+        calidad: "HD"
+    },
+	{ 
+        id: "P24", 
+        titulo: "Batman: El caballero de la noche", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vLFCrzI3V4kbze877tP1H7TqppL.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/adlPZoRdysBMVTSTsGamcn5apYt.jpg", 
+        video: "https://www.burstcloud.co/embed/53e422d8c02951ba377dfd008910dc7c7d0238be428440b1b9e58ecc3f2f81c0/thedartknigth.mp4", 
+        descripcion: "Batman enfrenta una dura prueba psicológica y física ante el caos causado por el Joker en Gotham.", 
+        fecha: "2008", 
+        tags: "Drama, Crimen y Acción",
+        etiqueta: "ESTRENO",
+        coincidencia: "89% para ti",
+        calidad: "HD"
+    }
+	{ 
+        id: "P25", 
+        titulo: "Batman: El caballero de la noche asciende", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pi6mwFCtTDIAHOHWan4AQ36Tdh2.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/8p1btPA5ME6OsfAmL3bcf7P2yoP.jpg", 
+        video: "https://www.burstcloud.co/embed/0ee02ce488a61af2495f3a1f125ad4de90fadf4a66bd0bc62615d43a66b75199/thedarknithgrises.mp4", 
+        descripcion: "Ocho años después del reinado de anarquía del Joker, Batman, con la ayuda de la enigmática Gatúbela, se ve obligado a salir de su exilio para salvar a Ciudad Gótica del brutal terrorista guerrillero Bane.", 
+        fecha: "2012", 
+        tags: "Drama, Crimen y Acción",
+        etiqueta: "ESTRENO",
+        coincidencia: "78% para ti",
+        calidad: "HD"
+    }
 ];
