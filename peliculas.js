@@ -520,4 +520,56 @@ const baseDeDatos = [
         coincidencia: "74% para ti",
         calidad: "HD"
     },
+	{ 
+        id: "P41", 
+        titulo: "Harry Potter y la piedra filosofal", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3MKK7vAJLtSkBTABMTjxf6TOCo3.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/hziiv14OpD73u9gAak4XDDfBKa2.jpg", 
+        video: "https://www.burstcloud.co/embed/23b4af3f91d2c396970ef8ed7ad4cb1fe66a1da0cf86aedcc1b91893eb86a087/cadenadefavores.mp4", 
+        descripcion: "Harry Potter descubre en su cumpleaños que es un mago y entra a Hogwarts, donde aprende magia y su verdadera historia.", 
+        fecha: "2001", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P42", 
+        titulo: "Harry Potter y la cámara secreta", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d7lK3K1QWmcgjHyRMBV3rT2yzTM.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/pWkpvgDbyc7Cxe4aHEOkPx8oCtB.jpg", 
+        video: "https://www.burstcloud.co/embed/e9a53eb3df80ada1960fbc9553e3acc6cb3e1f2143a1296f63fdb4a9daed5644/Harry%20Potter%20Y%20La%20C%C3%83%C2%A1mara%20Secreta.mp4", 
+        descripcion: "Harry Potter recibe la visita de Dobby, un elfo doméstico, que le advierte sobre un peligro en Hogwarts. A pesar de esto, Ron y sus hermanos lo rescatan con un coche volador.", 
+        fecha: "2002", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P43", 
+        titulo: "Harry Potter y el prisionero de Azkaban", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xBph7rrwtxUuDxyZVDQtbP2H0sM.jpg", // 
+        bg: "https://image.tmdb.org/t/p/original/zJbsaD7XqezmXi7tol7lX6HCAzT.jpg", 
+        video: "https://www.burstcloud.co/embed/68c75b592f10c551106f6dd3f64e3a20bb99ac330280030b4a09e25120327e08/Harry%20Potter%20Y%20El%20Prisionero%20De%20Azkaban.mp4", 
+        descripcion: "Harry Potter regresa a Hogwarts y descubre que Sirius Black, un fugitivo de Azkaban, lo está buscando.", 
+        fecha: "2004", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.0/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P44", 
+        titulo: "Harry Potter y el cáliz de fuego", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5hrrncgY7GfRHz6JmnhPlvJUONe.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/okPobv1v7AZECnKUCFCTZUw970u.jpg", 
+        video: "https://www.burstcloud.co/embed/5ac9fb2d551069ce5df44fc9ed80c5ba9b42509066a383700cbb2a38d074cb88/Harry%20Potter%20Y%20El%20C%C3%83%C2%A1liz%20De%20Fuego.mp4", 
+        descripcion: "Harry participa en el Torneo de los Tres Magos, enfrentando peligros mientras Voldemort regresa al poder.", 
+        fecha: "2005", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
+        calidad: "HD"
+    },
 ];
