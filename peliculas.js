@@ -685,7 +685,7 @@ const baseDeDatos = [
         descripcion: "Mientras la Tierra es invadida por máquinas alienígenas de combate, una familia lucha por la supervivencia.", 
         fecha: "2005", 
         tags: "Aventura, Suspenso, Ciencia Ficcion",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.9/10",
         calidad: "HD"
     },
@@ -698,7 +698,7 @@ const baseDeDatos = [
         descripcion: "Holmes enfrenta a un enemigo formidable mientras desentraña un complot que amenaza con destruir el país.", 
         fecha: "2009", 
         tags: "Aventura, Accion, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.2/10",
         calidad: "HD"
     },
@@ -711,7 +711,7 @@ const baseDeDatos = [
         descripcion: "El detective Sherlock Holmes está tras la pista del profesor Moriarty, que está llevando a cabo una serie de crímenes al azar en toda Europa.", 
         fecha: "2011", 
         tags: "Aventura, Accion, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.1/10",
         calidad: "HD"
     },
@@ -724,7 +724,7 @@ const baseDeDatos = [
         descripcion: "Mina, una artista de 28 años, queda atrapada en un bosque irlandés con tres desconocidos, mientras misteriosas criaturas los acechan cada noche.", 
         fecha: "2024", 
         tags: "Fantasia, Terror, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.4/10",
         calidad: "HD"
     },
@@ -737,7 +737,7 @@ const baseDeDatos = [
         descripcion: "En 1997, el capitán Nascimento lidera el BOPE en Río de Janeiro. Antes de retirarse, entrena a dos policías para enfrentar el crimen en las favelas.", 
         fecha: "2007", 
         tags: "Drama, Accion, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD"
     },
@@ -750,7 +750,7 @@ const baseDeDatos = [
         descripcion: "Nascimento, ahora un alto oficial de seguridad en Río de Janeiro, se enfrenta a la corrupción política y a las milicias paramilitares que controlan las favelas.", 
         fecha: "2010", 
         tags: "Drama, Accion, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD"
     },
@@ -763,7 +763,7 @@ const baseDeDatos = [
         descripcion: "En 2154, el soldado Jake Sully viaja a Pandora para controlar un avatar y convivir con los Na'vi. Pronto deberá decidir entre obedecer órdenes o defender a la civilización Na'vi.", 
         fecha: "2009", 
         tags: "Aventura, Accion, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.2/10",
         calidad: "HD"
     },
@@ -776,7 +776,7 @@ const baseDeDatos = [
         descripcion: "Años después, Jake Sully, Neytiri y sus hijos viven en paz en Pandora hasta que los humanos regresan. Para proteger a su pueblo, la familia Sully enfrenta nuevos peligros.", 
         fecha: "2022", 
         tags: "Aventura, Accion, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD"
     },
@@ -789,7 +789,7 @@ const baseDeDatos = [
         descripcion: "Jake Sully y Neytiri enfrentan la amenaza del pueblo de la ceniza, liderado por los despiadados Varang, tras la guerra en Pandora.", 
         fecha: "2025", 
         tags: "Ficcion, Aventura, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "73% de Interes",
         calidad: "HD"
     },
@@ -802,7 +802,7 @@ const baseDeDatos = [
         descripcion: "Tres amigos de la infancia inventan a un personaje imaginario llamado Ricky Stanicky para salirse siempre con la suya. Años después, se ven obligados a contratar a un actor para que le dé vida.", 
         fecha: "2024", 
         tags: "Comedia, Drama, Accion",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.5/10",
         calidad: "HD"
     },
@@ -815,7 +815,7 @@ const baseDeDatos = [
         descripcion: "Pam Bales, en un trekking por New Hampshire, encuentra a un montañero en peligro y juntos luchan por sobrevivir ante una tormenta inminente.", 
         fecha: "2024", 
         tags: "Drama, Suspenso, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "5.7/10",
         calidad: "HD"
     },
@@ -828,7 +828,7 @@ const baseDeDatos = [
         descripcion: "Dos hermanas bucean en un lugar remoto cuando una queda atrapada a 28 metros de profundidad. Con poco oxígeno y temperaturas gélidas, la otra debe luchar contra el tiempo para salvarla.", 
         fecha: "2023", 
         tags: "Drama, Suspenso, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.3/10",
         calidad: "HD"
     },
@@ -841,7 +841,7 @@ const baseDeDatos = [
         descripcion: "Batman es transportado al Japón feudal, donde debe enfrentarse a sus enemigos convertidos en señores de guerra, con el Joker como el más poderoso de todos.", 
         fecha: "2018", 
         tags: "Accion, Animacion, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.5/10",
         calidad: "HD"
     },
@@ -854,7 +854,7 @@ const baseDeDatos = [
         descripcion: "Dominic Toretto enfrenta a su hermano Jakob, un asesino y piloto, cuya amenaza lo obliga a reunir a su equipo una vez más.", 
         fecha: "2021", 
         tags: "Accion, Aventura, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.1/10",
         calidad: "HD"
     },
@@ -867,7 +867,7 @@ const baseDeDatos = [
         descripcion: "David Rice puede teletransportarse a cualquier lugar del mundo que desee. Sin embargo, pronto descubre que no es el único y que un grupo fanático lo persigue para eliminarlo.", 
         fecha: "2008", 
         tags: "Accion, Aventura, Ficcion",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.2/10",
         calidad: "HD"
     },
@@ -880,7 +880,7 @@ const baseDeDatos = [
         descripcion: "Eddie Morra, un escritor desempleado, prueba la MDT, una droga que le permite usar el 100% de su capacidad cerebral, pero los efectos secundarios y un magnate ambicioso amenazan su vida.", 
         fecha: "2011", 
         tags: "Accion, Aventura, Suspenso",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.2/10",
         calidad: "HD"
     },
@@ -893,9 +893,99 @@ const baseDeDatos = [
         descripcion: "Mickey Barnes se encuentra en la extraordinaria circunstancia de trabajar para un empleador que exige el compromiso máximo con el trabajo… morir, para ganarse la vida.", 
         fecha: "2025", 
         tags: "Ficcion, Aventura, Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.0/10",
         calidad: "HD"
     },
-	
+	{ 
+        id: "P70", 
+        titulo: "Paprika: El reino de los sueños", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/34m4eBBqcMqkaTsXZeOTGqbqR5N.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/3fgcEjBNrhstYgPlG1c8WT7UpIN.jpg", 
+        video: "https://www.burstcloud.co/embed/266ede14152ff1c26ebc9580ab90b6b88730bc0e20686706db3f579032844ee7/Paprika%20.mp4", 
+        descripcion: "Un thriller anime de Satoshi Kon donde realidad y sueños se entrelazan. Cuando una máquina que graba sueños es robada, un detective y un terapeuta deben recuperarla antes de que un terrorista de sueños cause el caos.", 
+        fecha: "2006", 
+        tags: "Animacion, Ficcion, Suspenso",
+        etiqueta: "",
+        coincidencia: "7.8/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P71", 
+        titulo: "Akira", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vjPt8HYymLOkRv82x9JwVO7M2a5.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/pHtVkUvKiG7CEemZkUiqPzjpMri.jpg", 
+        video: "https://www.burstcloud.co/embed/c67a5d5f8562d8258cb85c0c246e791283bb9f381450466d5755c8ecd914db65/Akira.mp4", 
+        descripcion: "En 2019, Neo-Tokyo está al borde del colapso. En medio del caos, un joven pandillero adquiere poderes telequinéticos peligrosos que lo vinculan con un proyecto secreto del gobierno llamado Akira.", 
+        fecha: "1988", 
+        tags: "Animacion, Ficcion, Suspenso",
+        etiqueta: "",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P72", 
+        titulo: "Héroes al rescate", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/r8SzZKHfF1lzu9SpXk1afmaviC0.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/uyoMSxljkDo0znBXlrcPjRl8Lqc.jpg", 
+        video: "https://www.burstcloud.co/embed/c67a5d5f8562d8258cb85c0c246e791283bb9f381450466d5755c8ecd914db65/Akira.mp4", 
+        descripcion: "Es Navidad en Tokio. Tres vagabundos encuentran un bebé en la basura e inician una aventura por toda la ciudad para encontrar a su familia, enfrentando su propio pasado en el camino.", 
+        fecha: "2003", 
+        tags: "Animacion, Drama, Comedia",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P73", 
+        titulo: "Perfect Blue", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kk8p22JheV6MB0fBXOOUgZK9UWQ.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/hX0veoqKRKyd8OwZza8lv5Y4gve.jpg", 
+        video: "https://www.burstcloud.co/embed/8ce269f8b010c40265fabb5cd489cd1248acca16b6e069ddcd90ef399d6999e7/Perfect%20Blue%20%5BBd-1080P%5D%5BCast%2BEng%2BJap%2BSubs%5D.mp4", 
+        descripcion: "Mima Kirigoe deja su exitosa carrera como cantante de J-pop para convertirse en actriz. Sin embargo, empieza a ser víctima de un acosador y a perder la noción entre la realidad y la ficción.", 
+        fecha: "1998", 
+        tags: "Animacion, Drama, Suspenso",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.3/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P74", 
+        titulo: "Chiyoko, la actriz milenaria", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fHgOXnMLARAJrMq9lesyZtcYPy2.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/3fgcEjBNrhstYgPlG1c8WT7UpIN.jpg", 
+        video: "https://www.burstcloud.co/embed/a30bf42fe9a36aad2b43bf06ea5d20596f65b0900a12c5116b38b9e6d7f25d2b/Millennium%20Actress%20%5B1080P%5D.mp4", 
+        descripcion: "Chiyoko Fujiwara, una legendaria estrella de cine que se retiró en la cima de su carrera, es entrevistada por un cineasta que le entrega una llave misteriosa, desencadenando un viaje visual a través de sus recuerdos y sus películas.", 
+        fecha: "2002", 
+        tags: "Animacion, Drama, Romance",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P75", 
+        titulo: "Ghost in the Shell 2.0", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ZJRbLDVr90KLtKdmTT4WZhT26E.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/5di18eve0QBzdO4rEvwDl3c9aoz.jpg", 
+        video: "https://www.burstcloud.co/embed/bcc27eed8f558014a2e17976d4d160c4ee773777ccee05843cd544fdd2646fae/GhostInTheShell2%20.mp4", 
+        descripcion: "En un futuro cercano donde la tecnología permite la interconexión cerebral, la Mayor Motoko Kusanagi persigue a un hacker conocido como el 'Titiritero' que es capaz de controlar las mentes.", 
+        fecha: "2008", 
+        tags: "Animacion, Drama, Crimen",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.4/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P76", 
+        titulo: "El Brutalista", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vJZGpf0nZ4abnjY3vWzazmciatl.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/hmZnqijPaaACjenDkrbWcCmcADI.jpg", 
+        video: "https://www.burstcloud.co/embed/750d5bb8d2de3f6cde2963e040860813f6cd50d1ba8efd8182ff60766676bf16/El%20Brutalista.mp4", 
+        descripcion: "Tras escapar de Europa, el arquitecto László Tóth llega a EE. UU. y reconstruye su vida. Se establece en Pensilvania, donde el industrial Harrison Lee Van Buren reconoce su talento.", 
+        fecha: "2024", 
+        tags: "Accion, Drama, Crimen",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.4/10",
+        calidad: "HD"
+    },
 ];
