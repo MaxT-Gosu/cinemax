@@ -587,14 +587,14 @@ const baseDeSeries = [
     {
       "numero": 1,
       "episodios": [
-        { "ep": 1, "El Nombre del Juego": "Episodio 1", "video": "https://www.burstcloud.co/embed/6c3e9d61348185f35fa649d921aa337f3223b7860f5edd37120433f217b4f3f6/The%20Boys%201X01.mp4" },
-        { "ep": 2, "Cherry": "Episodio 2", "video": "https://www.burstcloud.co/embed/13746b7852e32b9755bfee70f51523351c64f9bfc9501d77d67e5a9d166a5cb8/The%20Boys%201X02.mp4" },
-        { "ep": 3, "Consigue Algo": "Episodio 3", "video": "https://www.burstcloud.co/embed/5777e79d2b00ed9a58458d8a30766d8b7d46f33ca6c6277225d07d2b096eec5d/The%20Boys%201X03.mp4" },
-        { "ep": 4, "La Hembra de la Especie": "Episodio 4", "video": "https://www.burstcloud.co/embed/2e87ca6013c566b6b70784358022b6345f104f0a7822df528f12bde69553b39b/The%20Boys%201X04.mp4" },
-        { "ep": 5, "Bueno para el Alma": "Episodio 5", "video": "https://www.burstcloud.co/embed/8d393b8f4075dc831fe430f739c9126c8afd97c2bca68512ccf6e19c0998dbe1/The%20Boys%201X05.mp4" },
-        { "ep": 6, "Los Inocentes": "Episodio 6", "video": "https://www.burstcloud.co/embed/ece4d843458a0d721dd3c3b39135a0ff26074ef47f6f48339332aca5df8f612b/The%20Boys%201X06.mp4" },
-        { "ep": 7, "La Sociedad de la Supervivencia": "Episodio 7", "video": "" },
-        { "ep": 8, "Me Encontraste": "Episodio 8", "video": "https://www.burstcloud.co/embed/1bd92d3287e9ea0baddc90fa24dcf6b056069c48663e3778a1aa6ad646a1b7c0/The%20Boys%201X08.mp4" }
+        { "ep": 1, "titulo": "El Nombre del Juego", "video": "https://www.burstcloud.co/embed/6c3e9d61348185f35fa649d921aa337f3223b7860f5edd37120433f217b4f3f6/The%20Boys%201X01.mp4" },
+        { "ep": 2, "titulo": "Cherry", "video": "https://www.burstcloud.co/embed/13746b7852e32b9755bfee70f51523351c64f9bfc9501d77d67e5a9d166a5cb8/The%20Boys%201X02.mp4" },
+        { "ep": 3, "titulo": "Consigue Algo", "video": "https://www.burstcloud.co/embed/5777e79d2b00ed9a58458d8a30766d8b7d46f33ca6c6277225d07d2b096eec5d/The%20Boys%201X03.mp4" },
+        { "ep": 4, "titulo": "La Hembra de la Especie", "video": "https://www.burstcloud.co/embed/2e87ca6013c566b6b70784358022b6345f104f0a7822df528f12bde69553b39b/The%20Boys%201X04.mp4" },
+        { "ep": 5, "titulo": "Bueno para el Alma", "video": "https://www.burstcloud.co/embed/8d393b8f4075dc831fe430f739c9126c8afd97c2bca68512ccf6e19c0998dbe1/The%20Boys%201X05.mp4" },
+        { "ep": 6, "titulo": "Los Inocentes", "video": "https://www.burstcloud.co/embed/ece4d843458a0d721dd3c3b39135a0ff26074ef47f6f48339332aca5df8f612b/The%20Boys%201X06.mp4" },
+        { "ep": 7, "titulo": "La Sociedad de la Supervivencia", "video": "" },
+        { "ep": 8, "titulo": "Me Encontraste", "video": "https://www.burstcloud.co/embed/1bd92d3287e9ea0baddc90fa24dcf6b056069c48663e3778a1aa6ad646a1b7c0/The%20Boys%201X08.mp4" }
       ]
     },
     {
