@@ -575,7 +575,7 @@ const baseDeSeries = [
 	{
   "id": "S19",
   "titulo": "The Boys",
-  "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
+  "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
   "bg": "https://image.tmdb.org/t/p/original/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
   "descripcion": "La serie muestra a The Boys, un grupo de vigilantes que lucha contra superhéroes corruptos que dañan la sociedad, revelando el lado oscuro de la fama.",
   "fecha": "2019",
@@ -600,40 +600,40 @@ const baseDeSeries = [
     {
       "numero": 2,
       "episodios": [
-        { "ep": 1, "titulo": "Episodio 1", "video": "" },
-        { "ep": 2, "titulo": "Episodio 2", "video": "" },
-        { "ep": 3, "titulo": "Episodio 3", "video": "" },
-        { "ep": 4, "titulo": "Episodio 4", "video": "" },
-        { "ep": 5, "titulo": "Episodio 5", "video": "" },
-        { "ep": 6, "titulo": "Episodio 6", "video": "" },
-        { "ep": 7, "titulo": "Episodio 7", "video": "" },
-        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+        { "ep": 1, "titulo": "El gran paseo", "video": "https://www.burstcloud.co/embed/2db6520aa8bcc871fee06ecf2d0e8303e086af0864f3938bcbae8a7690e7255f/S02e01.mp4" },
+        { "ep": 2, "titulo": "Los preparativos", "video": "https://www.burstcloud.co/embed/004bf2798337e238781bf9532bfc7ae5f475693d19c75311d2e185e75b682bea/S02e02.mp4" },
+        { "ep": 3, "titulo": "Por la colina con las espadas", "video": "https://www.burstcloud.co/embed/615bf72409de068753de14c828f83b654e8abc68e4f28cf8ca74889e84f1a7ea/S02e03.mp4" },
+        { "ep": 4, "titulo": "Nada igual en el mundo", "video": "https://www.burstcloud.co/embed/a5ca9e7a280c6cc3171f40e29cf46e6c16f19b1867d0a814efd3a4aaf644ae71/S02e04.mp4" },
+        { "ep": 5, "titulo": "Nos tenemos que ir", "video": "https://www.burstcloud.co/embed/61cc45f996363a14e2dcf4d18f874f27dfc185f9592512eb56afcb3fde9a1152/S02e05.mp4" },
+        { "ep": 6, "titulo": "Volando las malditas puertas", "video": "https://www.burstcloud.co/embed/7508463c1da8f2f79793d981f6d3ede744954519b4a17b68628d745fa2cc87d5/S02e06.mp4" },
+        { "ep": 7, "titulo": "Carnicero, panadero, eres un buen compañero", "video": "https://www.burstcloud.co/embed/1965f2178ada8fd15b5871b9c01d95ab34e122b11b9199f19b72b569858454fc/S02e07.mp4" },
+        { "ep": 8, "titulo": "Lo que sé", "video": "https://www.burstcloud.co/embed/9c1bf74a10f51fcc07bd9f34976871a014b4e293a23aca7da55ae5f2aa935d59/S02e08.mp4" }
       ]
     },
     {
       "numero": 3,
       "episodios": [
-        { "ep": 1, "titulo": "Episodio 1", "video": "" },
-        { "ep": 2, "titulo": "Episodio 2", "video": "" },
-        { "ep": 3, "titulo": "Episodio 3", "video": "" },
-        { "ep": 4, "titulo": "Episodio 4", "video": "" },
-        { "ep": 5, "titulo": "Episodio 5", "video": "" },
-        { "ep": 6, "titulo": "Episodio 6", "video": "" },
-        { "ep": 7, "titulo": "Episodio 7", "video": "" },
-        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+        { "ep": 1, "titulo": "Revancha", "video": "https://www.burstcloud.co/embed/4b1077a73ef7bf125c3f7906b75c1561fdfb99410d6b683eb32e4c18ce61870e/ep1.mp4" },
+        { "ep": 2, "titulo": "El único hombre en el cielo", "video": "https://www.burstcloud.co/embed/1d92a111cf6d21838954c7811768e07f4015ad2122149d3592927608324b6167/ep2.mp4" },
+        { "ep": 3, "titulo": "Costa Bereber", "video": "https://www.burstcloud.co/embed/071bc0af10da90ad83b4d15a4e5b1041e550da28dedbb0810767c3c90bbdec2d/ep3.mp4" },
+        { "ep": 4, "titulo": "Un plan glorioso de cinco años", "video": "https://www.burstcloud.co/embed/4520a432ff5a2f9132521367917de355c496b563361220fbd478df5c6e026a98/ep4.mp4" },
+        { "ep": 5, "titulo": "Última oportunidad de ver este mundo", "video": "https://www.burstcloud.co/embed/c084155a5af5d982e526786f834e8e546e7e197d34745b8fad652dfb52171fcf/ep5.mp4" },
+        { "ep": 6, "titulo": "Herogasmo", "video": "https://www.burstcloud.co/embed/15a63e89c8c4b3e9bf9172f48b4ba42221c5d55570e48bdfe83841933d99f81e/ep6.mp4" },
+        { "ep": 7, "titulo": "Una vela para acompañarte", "video": "https://www.burstcloud.co/embed/00f45c2475974677f2fe87aff5c7edfd2dc13fed268bd0c8588d8738706b2bab/ep7.mp4" },
+        { "ep": 8, "titulo": "Salvaje y ardiente instantánemente", "video": "https://www.burstcloud.co/embed/ab18d8711372f15bf712e26e82d464521b3de7ee55604497a82346b324135b8e/ep8.mp4" }
       ]
     },
     {
       "numero": 4,
       "episodios": [
-        { "ep": 1, "titulo": "Episodio 1", "video": "" },
-        { "ep": 2, "titulo": "Episodio 2", "video": "" },
-        { "ep": 3, "titulo": "Episodio 3", "video": "" },
-        { "ep": 4, "titulo": "Episodio 4", "video": "" },
-        { "ep": 5, "titulo": "Episodio 5", "video": "" },
-        { "ep": 6, "titulo": "Episodio 6", "video": "" },
-        { "ep": 7, "titulo": "Episodio 7", "video": "" },
-        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+        { "ep": 1, "titulo": "Departamento de juegos sucios", "video": "https://www.burstcloud.co/embed/a62c7cc36bbb3320b23e2ffda6f824580e36c9dbdf44bb9b3e62d14a12505541/ep1.mp4" },
+        { "ep": 2, "titulo": "La vida entre los sépticos", "video": "https://www.burstcloud.co/embed/9c55ebb2bca944ff13ae65177c82c6188f0a8a904f3d93bc771b820675e25fc2/ep2.mp4" },
+        { "ep": 3, "titulo": "Mantendremos la bandera roja ondeando", "video": "https://www.burstcloud.co/embed/ad92e68a5813c077b0edb0c7bf925e58c2e78bf5a1b6fc3db6b56ed3f88a836c/ep3.mp4" },
+        { "ep": 4, "titulo": "La sabiduría de todos los tiempos", "video": "https://www.burstcloud.co/embed/d74a03e02fe1a6b92e1ff4d2a8f47da894d7361fdb84b93904c8a5a810092fb6/ep4.mp4" },
+        { "ep": 5, "titulo": "Cuidado con el Jabberwock, hijo mío", "video": "https://www.burstcloud.co/embed/3f6eba4fa8218a46c4eb5640aa9674e7083b50c117dc445676eeaff6387906c2/ep5.mp4" },
+        { "ep": 6, "titulo": "Negocios sucios", "video": "https://www.burstcloud.co/embed/7c1a2c2e6db37898e6ccb96fd31c75c2fc74b3d78caf44dbbfd45e084b6c4ce9/EP6.mp4" },
+        { "ep": 7, "titulo": "El informante", "video": "https://www.burstcloud.co/embed/6b31fe3505546bd94fe70e921c8f78017523f5800444640ae21ad9c1e563f94a/ep7.mp4" },
+        { "ep": 8, "titulo": "Gran Final de la Cuarta Temporada", "video": "https://www.burstcloud.co/embed/bb5c8221e893d17953e79da2da3b135c61c4c008c612f377d1cbd50183638a8b/ep8.mp4" }
       ]
     },
     {
