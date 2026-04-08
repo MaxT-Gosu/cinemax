@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinemax</title>
+    <title>Cinemax - Streaming</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { 
@@ -25,54 +25,89 @@
         
         header { 
             display: flex; justify-content: space-between; align-items: center; 
-            padding: 10px 20px; background: rgba(20, 20, 20, 0.9); 
-            position: fixed; width: 100%; z-index: 100; backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 15px 20px; background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%); 
+            position: fixed; width: 100%; z-index: 100; transition: 0.3s;
         }
-        header h1 { font-size: 26px; color: var(--accent-color); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; font-family: 'Arial Black', sans-serif;}
+        header h1 { font-size: 28px; color: var(--accent-color); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; font-family: 'Arial Black', sans-serif;}
 
+        /* --- NUEVO HERO MODERNO --- */
+        .hero { 
+            position: relative; 
+            width: 100%; 
+            height: 75vh; 
+            overflow: hidden; 
+            background: #000; 
+        }
+        .hero img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            object-position: top; 
+            opacity: 0; 
+            transition: opacity 1.2s ease-in-out; 
+        }
+        /* Degradado triple para profundidad */
+        .hero::after { 
+            content: ''; 
+            position: absolute; 
+            inset: 0;
+            background: linear-gradient(to top, var(--bg-color) 8%, transparent 45%),
+                        linear-gradient(to right, rgba(20,20,20,0.8) 0%, transparent 60%),
+                        linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 20%);
+        }
+        .hero-content { 
+            position: absolute; 
+            bottom: 15%; 
+            left: 5%; 
+            width: 90%; 
+            z-index: 10; 
+        }
+        .hero-content h2 { 
+            font-size: clamp(28px, 7vw, 50px); 
+            font-weight: 900; 
+            margin-bottom: 18px; 
+            line-height: 1.1; 
+            text-transform: uppercase;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+        }
+        .hero-btns { display: flex; gap: 12px; }
+        .hero-btns button { 
+            background: #fff; color: #000; border: none; 
+            padding: 12px 24px; font-size: 15px; font-weight: 700; 
+            border-radius: 4px; cursor: pointer; display: flex; 
+            align-items: center; gap: 10px; transition: 0.2s;
+        }
+        .hero-btns .btn-info { background: rgba(109, 109, 110, 0.7); color: #fff; }
+        .hero-btns button:active { transform: scale(0.95); }
+
+        /* --- BUSCADOR --- */
         #modal-busqueda { display: none; position: fixed; inset: 0; background: rgba(20, 20, 20, 0.98); z-index: 2000; padding: 20px; backdrop-filter: blur(15px); overflow-y: auto; }
         .search-box-modal { background: rgba(255,255,255,0.1); border-radius: 4px; display: flex; align-items: center; padding: 12px 15px; margin-top: 60px; }
         .search-box-modal input { background: transparent; border: none; color: #fff; width: 100%; font-size: 16px; }
-        .search-box-modal input::placeholder { color: var(--text-color-sec); }
         .close-search { position: absolute; top: 20px; right: 20px; font-size: 24px; color: var(--text-color-sec); cursor: pointer; border: none; background: none; }
-        
-        /* Ajuste rejilla de búsqueda para que no se vea tan apretado */
         #resultados-busqueda { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px; }
-        .res-item { background: var(--bg-color-alt); border-radius: 4px; overflow: hidden; aspect-ratio: 2/3; position: relative; border: 1px solid rgba(255,255,255,0.05); }
+        .res-item { background: var(--bg-color-alt); border-radius: 4px; overflow: hidden; aspect-ratio: 2/3; position: relative; }
         .res-item img { width: 100%; height: 100%; object-fit: cover; }
-        .res-title { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 9px; text-align: center; padding: 3px 0; font-weight: bold;}
+        .res-title { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 9px; text-align: center; padding: 4px 0; font-weight: bold;}
 
-        .hero { position: relative; width: 100%; height: 60vh; overflow: hidden; background: #000; padding-top: 60px;}
-        .hero img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease; }
-        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 80%; background: linear-gradient(to top, var(--bg-color), transparent 70%, rgba(0,0,0,0.5)); }
-        .hero-content { position: absolute; bottom: 30px; width: 100%; padding: 0 20px; z-index: 5; text-align: left; }
-        .hero-content h2 { font-size: 28px; font-weight: 800; margin-bottom: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); font-family: 'Arial Narrow', sans-serif;}
-        .hero-content button { background: var(--accent-color); color: #fff; border: none; padding: 10px 20px; font-size: 14px; font-weight: 700; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: 0.2s; text-transform: uppercase;}
-        
-        .section { margin: 25px 0; padding-left: 15px; }
-        .section h2 { font-size: 17px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
-
+        /* --- SECCIONES Y CARDS --- */
+        .section { margin: 30px 0; padding-left: 15px; }
+        .section h2 { font-size: 18px; margin-bottom: 15px; font-weight: 700; color: var(--text-color); }
         .scroll-row { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 12px; scrollbar-width: none; padding-right: 20px; }
         .scroll-row::-webkit-scrollbar { display: none; }
-
         .card-item { flex-shrink: 0; cursor: pointer; transition: transform 0.2s; position: relative; }
         .card-item:active { transform: scale(0.95); }
         .card-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
-
-        /* FORMATO 1: Horizontales (Aumentado de 200px a 240px) */
         .row-h .card-item { width: 240px; } 
         .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
-
-        /* FORMATO 2: Verticales (Aumentado de 122px a 145px) */
         .row-v .card-item { width: 145px; } 
         .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
-        
-        .etiqueta-card { position: absolute; top: 6px; right: 6px; background: var(--accent-color); color: #fff; font-size: 8px; font-weight: 900; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .etiqueta-card { position: absolute; top: 6px; right: 6px; background: var(--accent-color); color: #fff; font-size: 8px; font-weight: 900; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; z-index: 2; }
 
-        .bottom-menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.98); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; border-top: 1px solid rgba(255, 255, 255, 0.03); }
+        /* --- MENÚ INFERIOR --- */
+        .bottom-menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; border-top: 1px solid rgba(255, 255, 255, 0.05); }
         .menu-item { display: flex; flex-direction: column; align-items: center; color: var(--text-color-sec); text-decoration: none; font-size: 10px; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;}
-        .menu-item i { font-size: 19px; margin-bottom: 5px; opacity: 0.8;}
+        .menu-item i { font-size: 20px; margin-bottom: 5px; }
         .menu-item.active { color: var(--accent-color); }
     </style>
 </head>
@@ -91,10 +126,13 @@
     </div>
     
     <div class="hero skeleton" id="hero-box">
-        <img id="hero-img" src="" onload="this.style.opacity='1'; document.getElementById('hero-box').classList.remove('skeleton')">
+        <img id="hero-img" src="" alt="">
         <div class="hero-content">
             <h2 id="hero-title">Cargando...</h2>
-            <button id="hero-button"><i class="fas fa-play"></i> Reproducir</button>
+            <div class="hero-btns">
+                <button id="hero-button"><i class="fas fa-play"></i> Reproducir</button>
+                <button class="btn-info"><i class="fas fa-info-circle"></i> Información</button>
+            </div>
         </div>
     </div>
 
@@ -133,10 +171,51 @@ window.onload = function() {
     inicializarApp();
 };
 
+function inicializarApp() {
+    // --- LÓGICA HERO: ALEATORIO POR HORA ---
+    if(window.dbPelis.length > 0) {
+        const ahora = new Date();
+        // La semilla cambia solo cuando cambia la hora
+        const semillaHora = ahora.getFullYear() + ahora.getMonth() + ahora.getDate() + ahora.getHours();
+        const indiceAleatorio = semillaHora % window.dbPelis.length;
+        const pHero = window.dbPelis[indiceAleatorio];
+
+        const imgHero = document.getElementById("hero-img");
+        const boxHero = document.getElementById("hero-box");
+        
+        imgHero.src = pHero.bg || pHero.poster;
+        document.getElementById("hero-title").innerText = pHero.titulo;
+        document.getElementById("hero-button").onclick = () => abrirDetalles(pHero, 'peli');
+        
+        imgHero.onload = () => {
+            imgHero.style.opacity = '1';
+            boxHero.classList.remove('skeleton');
+        };
+    }
+
+    // --- SECCIÓN: RECIENTES (Últimas 8) ---
+    const gridRecientes = document.getElementById("grid-recientes");
+    window.dbPelis.slice(-8).reverse().forEach(p => {
+        gridRecientes.appendChild(crearCard(p, 'peli', true)); 
+    });
+
+    // --- SECCIÓN: RECOMENDADOS (Mezcla Diaria) ---
+    const gridPeliVistas = document.getElementById("grid-peli-vistas");
+    mezclarPorDia(window.dbPelis).slice(0, 12).forEach(p => {
+        gridPeliVistas.appendChild(crearCard(p, 'peli', false)); 
+    });
+
+    const gridSeriesVistas = document.getElementById("grid-series-vistas");
+    mezclarPorDia(window.dbSeries).slice(0, 12).forEach(s => {
+        gridSeriesVistas.appendChild(crearCard(s, 'serie', false));
+    });
+
+    configurarBuscador();
+}
+
 function mezclarPorDia(array) {
     const hoy = new Date().toISOString().slice(0, 10);
     let semilla = hoy.split('-').reduce((a, b) => parseInt(a) + parseInt(b), 0);
-    
     let copia = [...array];
     for (let i = copia.length - 1; i > 0; i--) {
         const j = semilla % (i + 1);
@@ -146,48 +225,15 @@ function mezclarPorDia(array) {
     return copia;
 }
 
-function inicializarApp() {
-    const pHero = window.dbPelis[window.dbPelis.length - 1]; 
-    if(pHero) {
-        document.getElementById("hero-img").src = pHero.bg || pHero.poster;
-        document.getElementById("hero-title").innerText = pHero.titulo;
-        document.getElementById("hero-button").onclick = () => abrirDetalles(pHero, 'peli');
-    }
-
-    const gridRecientes = document.getElementById("grid-recientes");
-    window.dbPelis.slice(-8).reverse().forEach(p => {
-        gridRecientes.appendChild(crearCard(p, 'peli', true)); 
-    });
-
-    const gridPeliVistas = document.getElementById("grid-peli-vistas");
-    const pelisMezcladas = mezclarPorDia(window.dbPelis);
-    pelisMezcladas.slice(0, 12).forEach(p => {
-        gridPeliVistas.appendChild(crearCard(p, 'peli', false)); 
-    });
-
-    const gridSeriesVistas = document.getElementById("grid-series-vistas");
-    const seriesMezcladas = mezclarPorDia(window.dbSeries);
-    seriesMezcladas.slice(0, 12).forEach(s => {
-        gridSeriesVistas.appendChild(crearCard(s, 'serie', false));
-    });
-
-    configurarBuscador();
-}
-
 function crearCard(item, tipo, esHorizontal) {
     const card = document.createElement("div");
     card.className = "card-item";
     card.onclick = () => abrirDetalles(item, tipo);
-
     const imagenUrl = esHorizontal ? (item.bg || item.poster) : item.poster;
-
     let htmlWrapper = `<div class="img-wrapper skeleton">`;
-    if (item.etiqueta) {
-        htmlWrapper += `<span class="etiqueta-card">${item.etiqueta}</span>`;
-    }
+    if (item.etiqueta) htmlWrapper += `<span class="etiqueta-card">${item.etiqueta}</span>`;
     htmlWrapper += `<img src="${imagenUrl}" alt="${item.titulo}" onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton')" loading="lazy">`;
     htmlWrapper += `</div>`;
-    
     card.innerHTML = htmlWrapper;
     return card;
 }
@@ -214,12 +260,10 @@ function configurarBuscador() {
         const resultadosDiv = document.getElementById('resultados-busqueda');
         resultadosDiv.innerHTML = "";
         if (texto.length < 2) return;
-
         const todoFiltrado = [
             ...window.dbPelis.filter(p => p.titulo.toLowerCase().includes(texto)).map(p => ({...p, tipo: 'peli'})),
             ...window.dbSeries.filter(s => s.titulo.toLowerCase().includes(texto)).map(s => ({...s, tipo: 'serie'}))
         ];
-
         todoFiltrado.forEach(item => {
             const resItem = document.createElement('div');
             resItem.className = 'res-item';
