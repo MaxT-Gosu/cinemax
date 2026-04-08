@@ -25,16 +25,16 @@
         
         header { 
             display: flex; justify-content: space-between; align-items: center; 
-            padding: 15px 20px; background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%); 
-            position: fixed; width: 100%; z-index: 100; transition: 0.3s;
+            padding: 15px 20px; background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%); 
+            position: fixed; width: 100%; z-index: 100;
         }
         header h1 { font-size: 28px; color: var(--accent-color); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; font-family: 'Arial Black', sans-serif;}
 
-        /* --- NUEVO HERO MODERNO --- */
+        /* --- HERO OPTIMIZADO --- */
         .hero { 
             position: relative; 
             width: 100%; 
-            height: 75vh; 
+            height: 70vh; /* Bajado un poco para reducir el vacío visual */
             overflow: hidden; 
             background: #000; 
         }
@@ -46,39 +46,37 @@
             opacity: 0; 
             transition: opacity 1.2s ease-in-out; 
         }
-        /* Degradado triple para profundidad */
         .hero::after { 
             content: ''; 
             position: absolute; 
             inset: 0;
-            background: linear-gradient(to top, var(--bg-color) 8%, transparent 45%),
-                        linear-gradient(to right, rgba(20,20,20,0.8) 0%, transparent 60%),
-                        linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 20%);
+            background: linear-gradient(to top, var(--bg-color) 2%, transparent 40%),
+                        linear-gradient(to right, rgba(20,20,20,0.7) 0%, transparent 60%);
         }
         .hero-content { 
             position: absolute; 
-            bottom: 15%; 
+            bottom: 10%; /* Más cerca del borde inferior */
             left: 5%; 
             width: 90%; 
             z-index: 10; 
         }
         .hero-content h2 { 
-            font-size: clamp(28px, 7vw, 50px); 
+            font-size: clamp(26px, 7vw, 48px); 
             font-weight: 900; 
-            margin-bottom: 18px; 
+            margin-bottom: 15px; 
             line-height: 1.1; 
-            text-transform: uppercase;
-            text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
-        .hero-btns { display: flex; gap: 12px; }
         .hero-btns button { 
-            background: #fff; color: #000; border: none; 
+            background: rgba(255, 255, 255, 0.2); 
+            color: #fff; 
+            border: 1px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
             padding: 12px 24px; font-size: 15px; font-weight: 700; 
             border-radius: 4px; cursor: pointer; display: flex; 
             align-items: center; gap: 10px; transition: 0.2s;
         }
-        .hero-btns .btn-info { background: rgba(109, 109, 110, 0.7); color: #fff; }
-        .hero-btns button:active { transform: scale(0.95); }
+        .hero-btns button:hover { background: rgba(255, 255, 255, 0.3); }
 
         /* --- BUSCADOR --- */
         #modal-busqueda { display: none; position: fixed; inset: 0; background: rgba(20, 20, 20, 0.98); z-index: 2000; padding: 20px; backdrop-filter: blur(15px); overflow-y: auto; }
@@ -90,19 +88,23 @@
         .res-item img { width: 100%; height: 100%; object-fit: cover; }
         .res-title { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 9px; text-align: center; padding: 4px 0; font-weight: bold;}
 
-        /* --- SECCIONES Y CARDS --- */
-        .section { margin: 30px 0; padding-left: 15px; }
-        .section h2 { font-size: 18px; margin-bottom: 15px; font-weight: 700; color: var(--text-color); }
+        /* --- SECCIONES (Espacio Corregido) --- */
+        #sections-container { margin-top: -20px; position: relative; z-index: 20; }
+        .section { margin-bottom: 25px; padding-left: 15px; }
+        .section h2 { font-size: 17px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
+        
         .scroll-row { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 12px; scrollbar-width: none; padding-right: 20px; }
         .scroll-row::-webkit-scrollbar { display: none; }
         .card-item { flex-shrink: 0; cursor: pointer; transition: transform 0.2s; position: relative; }
         .card-item:active { transform: scale(0.95); }
         .card-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
-        .row-h .card-item { width: 240px; } 
-        .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
-        .row-v .card-item { width: 145px; } 
-        .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.08); }
-        .etiqueta-card { position: absolute; top: 6px; right: 6px; background: var(--accent-color); color: #fff; font-size: 8px; font-weight: 900; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; z-index: 2; }
+        
+        .row-h .card-item { width: 220px; } 
+        .row-h .img-wrapper { width: 100%; aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.05); }
+        
+        .row-v .card-item { width: 135px; } 
+        .row-v .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 4px; overflow: hidden; background: var(--skeleton-bg); border: 1px solid rgba(255,255,255,0.05); }
+        .etiqueta-card { position: absolute; top: 5px; right: 5px; background: var(--accent-color); color: #fff; font-size: 7px; font-weight: 900; padding: 2px 5px; border-radius: 2px; text-transform: uppercase; z-index: 2; }
 
         /* --- MENÚ INFERIOR --- */
         .bottom-menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; border-top: 1px solid rgba(255, 255, 255, 0.05); }
@@ -130,8 +132,7 @@
         <div class="hero-content">
             <h2 id="hero-title">Cargando...</h2>
             <div class="hero-btns">
-                <button id="hero-button"><i class="fas fa-play"></i> Reproducir</button>
-                <button class="btn-info"><i class="fas fa-info-circle"></i> Información</button>
+                <button id="hero-button"><i class="fas fa-info-circle"></i> Más información</button>
             </div>
         </div>
     </div>
@@ -172,10 +173,8 @@ window.onload = function() {
 };
 
 function inicializarApp() {
-    // --- LÓGICA HERO: ALEATORIO POR HORA ---
     if(window.dbPelis.length > 0) {
         const ahora = new Date();
-        // La semilla cambia solo cuando cambia la hora
         const semillaHora = ahora.getFullYear() + ahora.getMonth() + ahora.getDate() + ahora.getHours();
         const indiceAleatorio = semillaHora % window.dbPelis.length;
         const pHero = window.dbPelis[indiceAleatorio];
@@ -193,13 +192,11 @@ function inicializarApp() {
         };
     }
 
-    // --- SECCIÓN: RECIENTES (Últimas 8) ---
     const gridRecientes = document.getElementById("grid-recientes");
     window.dbPelis.slice(-8).reverse().forEach(p => {
         gridRecientes.appendChild(crearCard(p, 'peli', true)); 
     });
 
-    // --- SECCIÓN: RECOMENDADOS (Mezcla Diaria) ---
     const gridPeliVistas = document.getElementById("grid-peli-vistas");
     mezclarPorDia(window.dbPelis).slice(0, 12).forEach(p => {
         gridPeliVistas.appendChild(crearCard(p, 'peli', false)); 
