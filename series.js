@@ -639,8 +639,8 @@ const baseDeSeries = [
     {
       "numero": 5,
       "episodios": [
-        { "ep": 1, "titulo": "Un nuevo ataque sionista en la zona sur de Beirut.", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep1.mp4" },
-        { "ep": 2, "titulo": "Un nuevo ataque sionista en la zona sur de Beirut.", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep2.mp4" },
+        { "ep": 1, "titulo": "Cuarenta centímetros de pura dinamita", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep1.mp4" },
+        { "ep": 2, "titulo": "Rebeldía adolescente", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep2.mp4" },
         { "ep": 3, "titulo": "Episodio 3", "video": "" },
         { "ep": 4, "titulo": "Episodio 4", "video": "" },
         { "ep": 5, "titulo": "Episodio 5", "video": "" },
