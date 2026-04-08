@@ -572,4 +572,56 @@ const baseDeDatos = [
         coincidencia: "7.8/10",
         calidad: "HD"
     },
+	{ 
+        id: "P45", 
+        titulo: "Harry Potter y la orden del Fénix", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xxXiM2Ij7plbzibKWW9BfDk23aI.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/rCniHYrpaLXcEOCiESwvPySp2GX.jpg", 
+        video: "https://www.burstcloud.co/embed/b8f1b5e3b102556dec787acaee8ab8577b46a310b82a8c51b8d5373ca3e2962b/Harry%20Potter%20Y%20La%20Orden%20Del.mp4", 
+        descripcion: "Harry enfrenta la negación del regreso de Voldemort por parte del Ministerio de Magia y la tiranía de Umbridge en Hogwarts.", 
+        fecha: "2007", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P46", 
+        titulo: "Harry Potter y el misterio del príncipe", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tO0UGkNuQoxyXve0mvwtXP49NAO.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/gcusUxQrzi6txonROEeHyCuXnKd.jpg", 
+        video: "https://www.burstcloud.co/embed/d079b482b6fe9c251734ee8fa87914a903dac9150a241796196aad77bfabcd85/Harry%20Potter%20Y%20El%20Misterio%20Del%20Pr%C3%83%C2%ADncipe.mp4", 
+        descripcion: "Harry descubre secretos de Voldemort con Dumbledore mientras un viejo libro de pociones le ayuda en su sexto año en Hogwarts.", 
+        fecha: "2009", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P47", 
+        titulo: "Harry Potter y las reliquias de la muerte (1ª parte).", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bZYziROYpqXI1DeW4Xz3egMOqej.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/vptTQxOH4eeBzSpT0ceeQWUCwuN.jpg", 
+        video: "https://www.burstcloud.co/embed/114d0fa906bc81297892ef028dbcc9c6fa40528ef1bdd3470405558005b55830/Harry%20Potter%207%20Y%20Las%20Reliquias%20De%20La%20Muerte%20%C3%A2%C2%80%C2%93%20Parte%20I.mp4", 
+        descripcion: "Harry, Hermione y Ron buscan los últimos horrocruxes para derrotar a Voldemort mientras huyen y enfrentan crecientes peligros.", 
+        fecha: "2010", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P48", 
+        titulo: "Harry Potter y las reliquias de la muerte (2ª parte).", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aM1TuUiPtV8OAZyu61CTdy9Ymtk.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ngqeWyeGsMR8gEGq9qKpTZXk0Pk.jpg", 
+        video: "https://www.burstcloud.co/embed/bd0ef44edc61e68a411ccfb36d523a0645af0f92eecd2b0cf42dbe40d7a2b0ee/Harry%20Potter%207%20Y%20Las%20Reliquias%20De%20La%20Muerte%20%C3%A2%C2%80%C2%93%20Parte%202.mp4", 
+        descripcion: "Harry y sus amigos buscan los últimos horrocruxes mientras Voldemort toma Hogwarts. La batalla final decidirá el destino del mundo mágico.", 
+        fecha: "2011", 
+        tags: "Drama, Adventura, Ciencia Ficcion",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.1/10",
+        calidad: "HD"
+    },
 ];
