@@ -572,4 +572,83 @@ const baseDeSeries = [
             }
         ]
     },
+	{
+  "id": "S19",
+  "titulo": "The Boys",
+  "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
+  "bg": "https://image.tmdb.org/t/p/original/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+  "descripcion": "La serie muestra a The Boys, un grupo de vigilantes que lucha contra superhéroes corruptos que dañan la sociedad, revelando el lado oscuro de la fama.",
+  "fecha": "2019",
+  "tags": "Sci-Fi & Fantasy y Action & Adventure",
+  "etiqueta": "ESTRENO",
+  "coincidencia": "8.6/10",
+  "calidad": "HD",
+  "temporadas": [
+    {
+      "numero": 1,
+      "episodios": [
+        { "ep": 1, "El Nombre del Juego": "Episodio 1", "video": "https://www.burstcloud.co/embed/6c3e9d61348185f35fa649d921aa337f3223b7860f5edd37120433f217b4f3f6/The%20Boys%201X01.mp4" },
+        { "ep": 2, "Cherry": "Episodio 2", "video": "https://www.burstcloud.co/embed/13746b7852e32b9755bfee70f51523351c64f9bfc9501d77d67e5a9d166a5cb8/The%20Boys%201X02.mp4" },
+        { "ep": 3, "Consigue Algo": "Episodio 3", "video": "https://www.burstcloud.co/embed/5777e79d2b00ed9a58458d8a30766d8b7d46f33ca6c6277225d07d2b096eec5d/The%20Boys%201X03.mp4" },
+        { "ep": 4, "La Hembra de la Especie": "Episodio 4", "video": "https://www.burstcloud.co/embed/2e87ca6013c566b6b70784358022b6345f104f0a7822df528f12bde69553b39b/The%20Boys%201X04.mp4" },
+        { "ep": 5, "Bueno para el Alma": "Episodio 5", "video": "https://www.burstcloud.co/embed/8d393b8f4075dc831fe430f739c9126c8afd97c2bca68512ccf6e19c0998dbe1/The%20Boys%201X05.mp4" },
+        { "ep": 6, "Los Inocentes": "Episodio 6", "video": "https://www.burstcloud.co/embed/ece4d843458a0d721dd3c3b39135a0ff26074ef47f6f48339332aca5df8f612b/The%20Boys%201X06.mp4" },
+        { "ep": 7, "La Sociedad de la Supervivencia": "Episodio 7", "video": "" },
+        { "ep": 8, "Me Encontraste": "Episodio 8", "video": "https://www.burstcloud.co/embed/1bd92d3287e9ea0baddc90fa24dcf6b056069c48663e3778a1aa6ad646a1b7c0/The%20Boys%201X08.mp4" }
+      ]
+    },
+    {
+      "numero": 2,
+      "episodios": [
+        { "ep": 1, "titulo": "Episodio 1", "video": "" },
+        { "ep": 2, "titulo": "Episodio 2", "video": "" },
+        { "ep": 3, "titulo": "Episodio 3", "video": "" },
+        { "ep": 4, "titulo": "Episodio 4", "video": "" },
+        { "ep": 5, "titulo": "Episodio 5", "video": "" },
+        { "ep": 6, "titulo": "Episodio 6", "video": "" },
+        { "ep": 7, "titulo": "Episodio 7", "video": "" },
+        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+      ]
+    },
+    {
+      "numero": 3,
+      "episodios": [
+        { "ep": 1, "titulo": "Episodio 1", "video": "" },
+        { "ep": 2, "titulo": "Episodio 2", "video": "" },
+        { "ep": 3, "titulo": "Episodio 3", "video": "" },
+        { "ep": 4, "titulo": "Episodio 4", "video": "" },
+        { "ep": 5, "titulo": "Episodio 5", "video": "" },
+        { "ep": 6, "titulo": "Episodio 6", "video": "" },
+        { "ep": 7, "titulo": "Episodio 7", "video": "" },
+        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+      ]
+    },
+    {
+      "numero": 4,
+      "episodios": [
+        { "ep": 1, "titulo": "Episodio 1", "video": "" },
+        { "ep": 2, "titulo": "Episodio 2", "video": "" },
+        { "ep": 3, "titulo": "Episodio 3", "video": "" },
+        { "ep": 4, "titulo": "Episodio 4", "video": "" },
+        { "ep": 5, "titulo": "Episodio 5", "video": "" },
+        { "ep": 6, "titulo": "Episodio 6", "video": "" },
+        { "ep": 7, "titulo": "Episodio 7", "video": "" },
+        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+      ]
+    },
+    {
+      "numero": 5,
+      "episodios": [
+        { "ep": 1, "titulo": "Episodio 1", "video": "" },
+        { "ep": 2, "titulo": "Episodio 2", "video": "" },
+        { "ep": 3, "titulo": "Episodio 3", "video": "" },
+        { "ep": 4, "titulo": "Episodio 4", "video": "" },
+        { "ep": 5, "titulo": "Episodio 5", "video": "" },
+        { "ep": 6, "titulo": "Episodio 6", "video": "" },
+        { "ep": 7, "titulo": "Episodio 7", "video": "" },
+        { "ep": 8, "titulo": "Episodio 8", "video": "" }
+      ]
+    }
+  ]
+}
 ];
