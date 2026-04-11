@@ -932,7 +932,7 @@ const baseDeDatos = [
         descripcion: "Es Navidad en Tokio. Tres vagabundos encuentran un bebé en la basura e inician una aventura por toda la ciudad para encontrar a su familia, enfrentando su propio pasado en el camino.", 
         fecha: "2003", 
         tags: "Animacion, Drama, Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD"
     },
@@ -945,7 +945,7 @@ const baseDeDatos = [
         descripcion: "Mima Kirigoe deja su exitosa carrera como cantante de J-pop para convertirse en actriz. Sin embargo, empieza a ser víctima de un acosador y a perder la noción entre la realidad y la ficción.", 
         fecha: "1998", 
         tags: "Animacion, Drama, Suspenso",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.3/10",
         calidad: "HD"
     },
@@ -958,7 +958,7 @@ const baseDeDatos = [
         descripcion: "Chiyoko Fujiwara, una legendaria estrella de cine que se retiró en la cima de su carrera, es entrevistada por un cineasta que le entrega una llave misteriosa, desencadenando un viaje visual a través de sus recuerdos y sus películas.", 
         fecha: "2002", 
         tags: "Animacion, Drama, Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD"
     },
@@ -971,7 +971,7 @@ const baseDeDatos = [
         descripcion: "En un futuro cercano donde la tecnología permite la interconexión cerebral, la Mayor Motoko Kusanagi persigue a un hacker conocido como el 'Titiritero' que es capaz de controlar las mentes.", 
         fecha: "2008", 
         tags: "Animacion, Drama, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.4/10",
         calidad: "HD"
     },
@@ -984,7 +984,7 @@ const baseDeDatos = [
         descripcion: "Tras escapar de Europa, el arquitecto László Tóth llega a EE. UU. y reconstruye su vida. Se establece en Pensilvania, donde el industrial Harrison Lee Van Buren reconoce su talento.", 
         fecha: "2024", 
         tags: "Accion, Drama, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.4/10",
         calidad: "HD"
     },
@@ -997,7 +997,7 @@ const baseDeDatos = [
         descripcion: "Documental que narra la historia de Antares de la Luz, líder de una secta en Chile que convenció a sus seguidores de cometer un crimen brutal para salvarse de un supuesto fin del mundo en 2012.", 
         fecha: "2024", 
         tags: "Documental, Drama, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.7/10",
         calidad: "HD"
     },
@@ -1010,7 +1010,7 @@ const baseDeDatos = [
         descripcion: "Michael, un atleta que compite en el Campeonato Mundial de Carreras de Aventura, encuentra a un perro herido en el camino. Su decisión de ayudarlo cambiará su vida y la de su equipo para siempre.", 
         fecha: "2024", 
         tags: "Aventura, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD"
     },
@@ -1023,7 +1023,7 @@ const baseDeDatos = [
         descripcion: "Cuando un agente de la CIA descubre comprometedores secretos de la agencia, se enfrenta a un sociópata que lo busca por todo el mundo y que le puso precio a su cabeza.", 
         fecha: "2022", 
         tags: "Accion, Suspenso, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -1036,7 +1036,7 @@ const baseDeDatos = [
         descripcion: "En un futuro cercano, un grupo de periodistas de guerra intenta sobrevivir mientras informan la verdad mientras Estados Unidos se encuentra al borde de una guerra civil.", 
         fecha: "2024", 
         tags: "Belica, Accion, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.9/10",
         calidad: "HD"
     },
@@ -1049,7 +1049,7 @@ const baseDeDatos = [
         descripcion: "Las utopías inducidas por las drogas de cuatro personas de Coney Island se hacen añicos cuando sus adicciones se intensifican, llevándolos por una espiral de degradación física y mental.", 
         fecha: "2000", 
         tags: "Crimen, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.9/10",
         calidad: "HD"
     },
@@ -1062,7 +1062,7 @@ const baseDeDatos = [
         descripcion: "En un barrio peligroso de Río de Janeiro, los caminos de dos niños se cruzan a lo largo de los años: uno lucha por convertirse en fotógrafo, mientras el otro asciende como un implacable capo del crimen.", 
         fecha: "2002", 
         tags: "Crimen, Accion, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.4/10",
         calidad: "HD"
     },
@@ -1075,7 +1075,7 @@ const baseDeDatos = [
         descripcion: "El teniente Waters debe rescatar a una doctora en África, pero ella se niega a irse sin los refugiados bajo su cuidado. Waters se verá obligado a elegir entre cumplir sus órdenes estrictas o seguir los dictados de su conciencia.", 
         fecha: "2003", 
         tags: "Belica, Accion, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.3/10",
         calidad: "HD"
     },
@@ -1088,7 +1088,7 @@ const baseDeDatos = [
         descripcion: "En el Japón de la posguerra surge un nuevo terror. ¿Podrán sobrevivir las personas devastadas... y mucho menos defenderse?", 
         fecha: "2024", 
         tags: "Accion, Ficcion, Terror",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD"
     },
@@ -1101,7 +1101,7 @@ const baseDeDatos = [
         descripcion: "En el Japón de la posguerra surge un nuevo terror. ¿Podrán sobrevivir las personas devastadas... y mucho menos defenderse?", 
         fecha: "2024", 
         tags: "Accion, Ficcion, Terror",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD"
     },
@@ -1114,7 +1114,7 @@ const baseDeDatos = [
         descripcion: "Balto, un perro lobo marginado, debe enfrentarse a una tormenta ártica mortal para guiar a un equipo de trineos que transporta medicinas vitales para salvar a los niños de Nome, Alaska.", 
         fecha: "1995", 
         tags: "Familia, Animacion, Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.3/10",
         calidad: "HD"
     },
@@ -1127,7 +1127,7 @@ const baseDeDatos = [
         descripcion: "Aleu, la hija de Balto, huye al sentirse rechazada por su apariencia de lobo. Balto emprende una búsqueda épica por Alaska para encontrarla y ayudarla a aceptar su verdadera herencia.", 
         fecha: "2002", 
         tags: "Familia, Animacion, Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.3/10",
         calidad: "HD"
     },
@@ -1140,7 +1140,7 @@ const baseDeDatos = [
         descripcion: "Balto y su hijo Kodi enfrentan el reto de los aviones que amenazan reemplazar los trineos. Cuando un avión desaparece en una tormenta, Balto debe partir al rescate para demostrar que el valor no tiene sustituto.", 
         fecha: "2004", 
         tags: "Familia, Animacion, Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.7/10",
         calidad: "HD"
     },
@@ -1153,7 +1153,7 @@ const baseDeDatos = [
         descripcion: "En un mundo postapocalíptico, Finch, un ingeniero moribundo, construye un robot para asegurar que su amado perro Goodyear sea cuidado después de su muerte. Los tres emprenden un peligroso viaje por el oeste americano.", 
         fecha: "2021", 
         tags: "Ficcion, Drama, Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.7/10",
         calidad: "HD"
     },
@@ -1166,7 +1166,7 @@ const baseDeDatos = [
         descripcion: "Una historia gótica de obsesiones entre una joven atormentada en la Alemania del siglo XIX y el antiguo vampiro de Transilvania que la acecha, trayendo consigo un inefable horror.", 
         fecha: "2024", 
         tags: "Fantasia, Drama, Terror",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.7/10",
         calidad: "HD"
     },
@@ -1179,7 +1179,7 @@ const baseDeDatos = [
         descripcion: "Graham Hess, un ex pastor que perdió la fe, descubre misteriosas y aterradoras señales circulares en sus campos de maíz, lo que desencadena una serie de eventos que pondrán a prueba sus creencias y la supervivencia de su familia.", 
         fecha: "2002", 
         tags: "Suspenso, Drama, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD"
     },
@@ -1192,7 +1192,7 @@ const baseDeDatos = [
         descripcion: "Adaptación del mito de Perseo, hijo de Zeus. Tras crecer en Sérifos, Perseo descubre su destino y se embarca en un peligroso viaje para enfrentar a Hades y salvar a la humanidad de la destrucción.", 
         fecha: "2010", 
         tags: "Aventura, Fantasia, Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "5.9/10",
         calidad: "HD"
     },
@@ -1205,7 +1205,7 @@ const baseDeDatos = [
         descripcion: "Diez años después de derrotar al Kraken, Perseo debe abandonar su vida tranquila para rescatar a Zeus, quien ha sido traicionado por Hades y Ares para liberar al temible titán Kronos.", 
         fecha: "2012", 
         tags: "Aventura, Fantasia, Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.1/10",
         calidad: "HD"
     },
@@ -1218,7 +1218,7 @@ const baseDeDatos = [
         descripcion: "Un codicioso productor cinematográfico viaja a la infame Isla de la Calavera con su equipo de rodaje. Allí descubren una civilización perdida y al gigantesco gorila Kong, iniciando una aventura épica que termina en las calles de Nueva York.", 
         fecha: "2005", 
         tags: "Aventura, Drama, Acción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD"
     },
@@ -1231,7 +1231,7 @@ const baseDeDatos = [
         descripcion: "En Alaska, la terapeuta Abbey Tyler investiga desapariciones misteriosas. Sus pacientes, bajo hipnosis, recuerdan ver un búho antes de dormir y escuchar ruidos aterradores, conectando estos eventos con incidentes sin resolver desde los años 60.", 
         fecha: "2009", 
         tags: "Misterio, Ciencia Ficción, Suspenso",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD"
     },
@@ -1244,7 +1244,7 @@ const baseDeDatos = [
         descripcion: "Batman regresa al Japón feudal para enfrentarse a versiones alternativas de la Liga de la Justicia, quienes ahora operan como una peligrosa organización Yakuza en esta épica continuación de Batman Ninja.", 
         fecha: "2025", 
         tags: "Animacion, Ciencia Ficción, Accion",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD"
     },
@@ -1257,7 +1257,7 @@ const baseDeDatos = [
         descripcion: "Cuando una niña de 8 años desaparece misteriosamente en el lago Caddo, una serie de muertes y desapariciones pasadas comienzan a conectarse, alterando para siempre la historia de una familia rota.", 
         fecha: "2024", 
         tags: "Drama, Suspenso, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -1270,7 +1270,7 @@ const baseDeDatos = [
         descripcion: "Un misterioso doble de acción de Hollywood que trabaja como conductor de huida para criminales ve cómo su vida se complica peligrosamente al intentar ayudar al esposo de su vecina.", 
         fecha: "2011", 
         tags: "Drama, Suspenso, Crimen",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -1283,8 +1283,138 @@ const baseDeDatos = [
         descripcion: "En la víspera del Día-D, un grupo de paracaidistas aliados cae tras las líneas enemigas y descubre un laboratorio nazi donde se realizan experimentos grotescos. Ahora deben enfrentar a super soldados modificados para detener una amenaza sobrenatural.", 
         fecha: "2018", 
         tags: "Belica, Terror, Ficcion",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P101", 
+        titulo: "La Gran Apuesta", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kNjz9Ezuf8tZHP2MfMbtDzDJ8wR.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/iof28QKa6bKFYCXSexuITxdKBvi.jpg", 
+        video: "https://www.burstcloud.co/embed/11d878608934809aa5f0f077850aabbafe48bfad85c95f908a51d19dc3780a8e/lagranapuesta.mp4", 
+        descripcion: "Cuatro inversores visionarios predicen el colapso de la burbuja inmobiliaria y financiera de 2008 antes que los bancos y el gobierno. Deciden apostar contra el sistema, descubriendo la profundidad de la corrupción en Wall Street.", 
+        fecha: "2015", 
+        tags: "Comedia, Drama, Thriller",
+        etiqueta: "",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P102", 
+        titulo: "Profesión peligro", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDuk47n2ZPM7KYbk3tj4vhIh4qG.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/H5HjE7Xb9N09rbWn1zBfxgI8uz.jpg", 
+        video: "https://www.burstcloud.co/embed/d08948ac551581c92224dc779769d795832273a7f318e6d1449f06fbb56c114a/profesionpeligro.mp4", 
+        descripcion: "Un doble de acción maltratado y en horas bajas debe investigar la desaparición de la estrella de cine de una gran producción dirigida por su exnovia, mientras intenta recuperar su carrera y su relación.", 
+        fecha: "2024", 
+        tags: "Comedia, Acción, Drama",
+        etiqueta: "",
+        coincidencia: "7.0/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P103", 
+        titulo: "La primera profecía", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bUa7hVsM2gU8DBYBfgl5LMbtzYN.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/mIBG74mhGEJnBubhYLkCtvplcNr.jpg", 
+        video: "https://www.burstcloud.co/embed/a0607a353319a16d1fdbc302724ca513fe14cdb0a3456b870ec7ea1a083a7249/la%20primera%20profesia.mp4", 
+        descripcion: "Una joven estadounidense es enviada a Roma para comenzar una vida de servicio a la iglesia, pero se encuentra con una oscuridad que la hace cuestionar su fe y descubre una aterradora conspiración que espera provocar el nacimiento del mal encarnado.", 
+        fecha: "2024", 
+        tags: "Terror, Suspenso, Drama",
+        etiqueta: "",
+        coincidencia: "6.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P104", 
+        titulo: "Legión de ángeles", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/39vqW5mUZtX0artpqeY4CoIJ4sl.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/jGyIsNQBQ17G92ZxuTErrMl6W1e.jpg", 
+        video: "https://www.burstcloud.co/embed/337c6ed15b0eef4407a8ae8e1723be8fd859516dd6e6b73c9173b6c206475038/legion%20de%20angeles.mp4", 
+        descripcion: "Dios pierde la fe en la humanidad y envía a su legión de ángeles para exterminarla. El arcángel Miguel decide rebelarse y ayudar a un grupo de extraños atrapados en un restaurante remoto, quienes protegen a una mujer embarazada cuyo hijo es la última esperanza de la raza humana.", 
+        fecha: "2010", 
+        tags: "Terror, Suspenso, Drama",
+        etiqueta: "",
+        coincidencia: "6.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P105", 
+        titulo: "Deus Irae", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pLgZE69iVhI6Hp7GG1B6p4TFIf0.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lBZYNdrZOCt2Wu1eEbwdWrBpfpF.jpg", 
+        video: "https://www.burstcloud.co/embed/24c8eebdca87abc99f6a0d9a0f0bc421f582f3897d82ea79d622388f22c77e85/Deus%20Irae.mp4", 
+        descripcion: "El Padre Javier ayuda a familias con milagros mientras caza poseídos junto a sacerdotes excomulgados. Pero para vencer al Mal de una vez por todas, deberá estar dispuesto a sacrificar su propia humanidad y cordura.", 
+        fecha: "2023", 
+        tags: "Terror, Suspenso, Drama",
+        etiqueta: "",
+        coincidencia: "5.1/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P110", 
+        titulo: "La era de hielo", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/j52ufQ4Y5QIESpCdgSN3MVNvZOK.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/tyVAGH1vw9JDgxPyTUQPn91nIYc.jpg", 
+        video: "https://www.burstcloud.co/embed/f3929f66391972d49bb94090f979f100b0f0767c7f64f1d39a7822f9b8697122/eradehielo1.mp4", 
+        descripcion: "En la época glacial, un mamut lanudo, un perezoso y un tigre de dientes de sable encuentran a un bebé humano perdido. A pesar de sus diferencias, se unen en una increíble aventura para devolver al niño a su familia.", 
+        fecha: "2002", 
+        tags: "Animacion, Comedia, Familia",
+        etiqueta: "CLÁSICO",
+        coincidencia: "7.4/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P111", 
+        titulo: "La era de hielo 2", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ifAsle0SWkYnL4CnqhwryGtBDl2.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/geKp17rEoImTIZp5nlzk1vpPrqP.jpg", 
+        video: "https://www.burstcloud.co/embed/ea526566fc61f2562ac036fa9089a359048bbd8dd0dda5f42ff81fe7c36376c0/eradehielo2.mp4", 
+        descripcion: "Manny, Sid y Diego deben evacuar su hogar ante una inundación inminente. Durante el viaje, Manny se preocupa por ser el último mamut vivo, hasta que conoce a Ellie, quien viaja con sus 'hermanos' zarigüeyas.", 
+        fecha: "2006", 
+        tags: "Animacion, Comedia, Familia",
+        etiqueta: "COLECCIÓN",
+        coincidencia: "7.1/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P112", 
+        titulo: "La era de hielo 3", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bFLbDLyE8BX4yccwoSotfHMJBZF.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/m9mF16B61z00pSAs3vN579G20p9.jpg", 
+        video: "https://www.burstcloud.co/embed/0b126d6cf4558219ca30b96c0dbb74796d703315ea5d2a8d52b29d54c0611daa/la%20era%20de%20hielo%203.mp4", 
+        descripcion: "Manny y Ellie esperan su primer hijo, mientras Sid se mete en problemas al intentar formar su propia familia robando huevos de dinosaurio. La manada deberá rescatarlo en un misterioso mundo subterráneo lleno de peligros y nuevos aliados como Buck.", 
+        fecha: "2009", 
+        tags: "Animacion, Comedia, Familia",
+        etiqueta: "COLECCIÓN",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P113", 
+        titulo: "La era de hielo 4", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iwib3jxIbKRNMPsuByrRWoV7dkN.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/cC3nr0KkXHPChZnFMBvFPdAYNyV.jpg", 
+        video: "https://www.burstcloud.co/embed/3e3fa65da13f6898aaaf2785de41145fcc10fb565dae16ac550c88644e068599/eradehielo4.mp4", 
+        descripcion: "La eterna persecución de Scrat por su bellota tiene consecuencias que cambian el mundo: un cataclismo continental que separa a Manny, Diego y Sid del resto de la manada. Utilizando un iceberg como barco improvisado, se lanzan a una épica aventura marítima.", 
+        fecha: "2012", 
+        tags: "Animacion, Comedia, Familia",
+        etiqueta: "COLECCIÓN",
+        coincidencia: "7.5/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P114", 
+        titulo: "La era de hielo 5: Choque de mundos", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fanzOE8x3biEMKriui7NwMmKyx.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/tyVAGH1vw9JDgxPyTUQPn91nIYc.jpg", 
+        video: "https://www.burstcloud.co/embed/5da9abd4239d85d9e8d8f585f9f7f1c7be57ecc3b525623dc2843e63a10d79ea/eradehielo5.mp4", 
+        descripcion: "La épica persecución de Scrat por la bellota lo catapulta al universo, donde accidentalmente desencadena una serie de eventos cósmicos que transforman y amenazan el mundo de la Edad de Hielo. Para salvarse, Manny, Sid, Diego y el resto de la manada deben abandonar su hogar y embarcarse en una búsqueda llena de comedia y aventura.", 
+        fecha: "2016", 
+        tags: "Animacion, Comedia, Familia",
+        etiqueta: "COLECCIÓN",
+        coincidencia: "7.6/10",
         calidad: "HD"
     },
 ];
