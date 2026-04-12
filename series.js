@@ -668,8 +668,8 @@ const baseDeSeries = [
             episodios: [
                 { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e01%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
                 { ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e02%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
-                { ep: 3, titulo: "Episodio 3", video: "https://www.burstcloud.co/embed/1e5de3db5480751a454d1d3971bd8333e44e2fc5fe1a6032eb59751708dc9d10/S1E3.mp4" },
-                { ep: 4, titulo: "Episodio 4", video: "https://www.burstcloud.co/embed/b8c0e5e6634748044a5ca97effbf45da995dfe195b6350ceb55bd0b9c15bc53b/S1E4.mp4" },
+                { ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e03%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                { ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e04%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
             ]
         }
     ]
