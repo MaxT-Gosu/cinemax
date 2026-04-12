@@ -651,4 +651,27 @@ const baseDeSeries = [
     }
   ]
 }
+{ 
+    id: "S20", 
+    titulo: "Malcolm in the Middle: La vida sigue siendo injusta", 
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4sMqoPaOos1ksHp1MOMdaw1iWeW.jpg", 
+    bg: "https://image.tmdb.org/t/p/original/g9k2BKMSP3cH0E738edj76EM4TA.jpg", 
+    descripcion: "Han pasado veinte años, y Malcolm y su familia siguen sin aprender nada.", 
+    fecha: "2026", 
+    tags: "Comedia y Drama",
+    etiqueta: "1 TEMPORADA",
+    coincidencia: "8.0/10",
+    calidad: "HD",
+    temporadas: [
+        {
+            numero: 1,
+            episodios: [
+                { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e01%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                { ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e02%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                { ep: 3, titulo: "Episodio 3", video: "https://www.burstcloud.co/embed/1e5de3db5480751a454d1d3971bd8333e44e2fc5fe1a6032eb59751708dc9d10/S1E3.mp4" },
+                { ep: 4, titulo: "Episodio 4", video: "https://www.burstcloud.co/embed/b8c0e5e6634748044a5ca97effbf45da995dfe195b6350ceb55bd0b9c15bc53b/S1E4.mp4" },
+            ]
+        }
+    ]
+}
 ];
