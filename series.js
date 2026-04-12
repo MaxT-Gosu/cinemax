@@ -650,7 +650,7 @@ const baseDeSeries = [
       ]
     }
   ]
-}
+},
 { 
     id: "S20", 
     titulo: "Malcolm in the Middle: La vida sigue siendo injusta", 
