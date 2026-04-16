@@ -641,7 +641,7 @@ const baseDeSeries = [
       "episodios": [
         { "ep": 1, "titulo": "Cuarenta centímetros de pura dinamita", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep1.mp4" },
         { "ep": 2, "titulo": "Rebeldía adolescente", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep2.mp4" },
-        { "ep": 3, "titulo": "Episodio 3", "video": "" },
+        { "ep": 3, "titulo": "Cada maldito hijo de perra", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep3.mp4" },
         { "ep": 4, "titulo": "Episodio 4", "video": "" },
         { "ep": 5, "titulo": "Episodio 5", "video": "" },
         { "ep": 6, "titulo": "Episodio 6", "video": "" },
