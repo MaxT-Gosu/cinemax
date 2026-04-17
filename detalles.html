@@ -11,45 +11,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
+        /* Mantenemos tus estilos originales de Cinemax */
         :root { 
             --bg-color: #141414; 
+            --bg-color-alt: #1a1a1a; 
             --accent-color: #E50914; 
             --text-color: #ffffff;
+            --text-color-sec: #b3b3b3; 
+            --skeleton-bg: #222222; 
         }
-        body { margin: 0; background: var(--bg-color); font-family: Arial, sans-serif; color: var(--text-color); }
+        body { margin: 0; background: var(--bg-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--text-color); padding-bottom: 100px; overflow-x: hidden; -webkit-tap-highlight-color: transparent;}
         
-        /* Contenedor del reproductor */
+        .hero { position: relative; width: 100%; height: 70vh; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 40px; box-sizing: border-box; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-color) 10%, transparent 90%); }
+        .hero-content { position: relative; z-index: 2; max-width: 600px; }
+        .hero h1 { font-size: 3rem; margin: 0 0 10px 0; font-weight: bold; }
+        
+        .play-btn { background: white; color: black; border: none; padding: 12px 30px; border-radius: 4px; font-size: 1.1rem; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; }
+        .play-btn:hover { background: rgba(255,255,255,0.8); }
+
+        /* Estilos del contenedor del Reproductor */
         #player-overlay {
             display: none;
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             background: #000; z-index: 10000;
         }
-        .close-btn {
-            position: absolute; top: 20px; right: 20px;
-            font-size: 30px; color: white; cursor: pointer; z-index: 10001;
-        }
+        .close-btn { position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer; z-index: 10001; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
         .video-js { width: 100% !important; height: 100% !important; }
-        
-        /* Estilos de tu diseño original (simplificados para el ejemplo) */
-        .hero { position: relative; width: 100%; height: 60vh; background-size: cover; background-position: center; }
-        .play-btn { background: var(--accent-color); color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 18px; cursor: pointer; margin: 20px; }
+
+        .info-section { padding: 40px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+        .metadata { color: #46d369; font-weight: bold; margin-bottom: 20px; display: flex; gap: 15px; }
+        .desc { font-size: 1.1rem; line-height: 1.6; color: var(--text-color-sec); }
+        .tags { margin-top: 20px; font-size: 0.9rem; color: #808080; }
+
+        .recomendados { padding: 0 40px; }
+        .grid-recomendados { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin-top: 20px; }
+        .card-item { cursor: pointer; transition: 0.3s; }
+        .card-item img { width: 100%; border-radius: 4px; }
     </style>
 </head>
 <body>
 
     <div id="detalle-content">
-        <div id="hero-bg" class="hero"></div>
-        <button class="play-btn" onclick="playVideo()"><i class="fas fa-play"></i> Reproducir</button>
+        <div id="hero-bg" class="hero">
+            <div class="hero-content">
+                <h1 id="peli-titulo">Cargando...</h1>
+                <div class="metadata">
+                    <span id="peli-coincidencia"></span>
+                    <span id="peli-fecha"></span>
+                    <span style="border: 1px solid #808080; padding: 0 5px; color: white;" id="peli-calidad"></span>
+                </div>
+                <button class="play-btn" onclick="playVideo()"><i class="fas fa-play"></i> Reproducir</button>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div>
+                <p class="desc" id="peli-desc"></p>
+                <div class="tags" id="peli-tags"></div>
+            </div>
+        </div>
+
+        <div class="recomendados">
+            <h3>Más títulos similares</h3>
+            <div id="grid-recomendados" class="grid-recomendados"></div>
+        </div>
     </div>
 
     <div id="player-overlay">
         <span class="close-btn" onclick="closePlayer()">&times;</span>
-        
         <div id="video-container" style="width:100%; height:100%;">
             <video id="vjs-player" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"></video>
         </div>
-
         <iframe id="v-frame" style="display:none; width:100%; height:100%; border:none;" allowfullscreen></iframe>
     </div>
 
@@ -60,36 +94,39 @@
     <script>
         const peliId = localStorage.getItem('peli_id');
         const peliReal = baseDeDatos.find(item => item.id === peliId);
-        
-        // Inicializar Video.js
+
+        if (peliReal) {
+            // Llenamos los datos de la peli (TU LÓGICA ORIGINAL)
+            document.getElementById('peli-titulo').innerText = peliReal.titulo;
+            document.getElementById('peli-desc').innerText = peliReal.descripcion;
+            document.getElementById('peli-fecha').innerText = peliReal.fecha;
+            document.getElementById('peli-tags').innerText = "Géneros: " + peliReal.tags;
+            document.getElementById('peli-coincidencia').innerText = peliReal.coincidencia;
+            document.getElementById('peli-calidad').innerText = peliReal.calidad;
+            document.getElementById('hero-bg').style.backgroundImage = `url(${peliReal.bg})`;
+        }
+
+        // Configuración de Video.js e IMA
         var player = videojs('vjs-player');
-
-        // CONFIGURACIÓN DE LA PUBLICIDAD (VAST)
-        // He puesto un link de prueba de Google. Aquí pondrás el de tu red de anuncios.
-        var adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvmap&cmsid=496&vid=short_onecue&correlator=';
-
         player.ima({
-            adTagUrl: adTagUrl
+            adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvmap&cmsid=496&vid=short_onecue&correlator='
         });
 
         function playVideo() {
-            if(!peliReal || !peliReal.video) return alert("Error al cargar video");
+            if(!peliReal || !peliReal.video) return alert("Video no disponible");
 
             const overlay = document.getElementById('player-overlay');
             const iframe = document.getElementById('v-frame');
             const videoDiv = document.getElementById('video-container');
-
             overlay.style.display = 'block';
 
-            // LÓGICA DE DETECCIÓN:
-            // Si el link contiene "burstcloud", usamos el iframe (con anuncios de ellos)
+            // Si el link es un embed (BurstCloud), usamos Iframe
             if (peliReal.video.includes('burstcloud') || peliReal.video.includes('embed')) {
                 videoDiv.style.display = 'none';
                 iframe.style.display = 'block';
                 iframe.src = peliReal.video;
-            } 
-            // Si es un link directo (.mp4, .m3u8 o de tu servidor CDN), usamos Video.js con TUS anuncios
-            else {
+            } else {
+                // Si es link directo, usamos el player con publicidad
                 iframe.style.display = 'none';
                 videoDiv.style.display = 'block';
                 player.src({ src: peliReal.video, type: 'video/mp4' });
@@ -103,8 +140,19 @@
             document.getElementById('player-overlay').style.display = 'none';
         }
 
-        // (Aquí iría el resto de tu código para cargar posters, descripción, etc.)
-        document.getElementById('hero-bg').style.backgroundImage = `url(${peliReal.bg})`;
+        // Función de Recomendados (TU LÓGICA ORIGINAL)
+        function cargarRecomendados() {
+            let recomendaciones = baseDeDatos.filter(item => item.id !== peliId).sort(() => 0.5 - Math.random()).slice(0, 6);
+            const grid = document.getElementById('grid-recomendados');
+            recomendaciones.forEach(item => {
+                const card = document.createElement("div");
+                card.className = "card-item";
+                card.onclick = () => { localStorage.setItem('peli_id', item.id); location.reload(); };
+                card.innerHTML = `<img src="${item.poster}">`;
+                grid.appendChild(card);
+            });
+        }
+        cargarRecomendados();
     </script>
 </body>
 </html>
