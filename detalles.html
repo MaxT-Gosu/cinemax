@@ -6,12 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles Película - Cinemax</title>
-    
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <style>
-        /* Mantenemos tus estilos originales de Cinemax */
         :root { 
             --bg-color: #141414; 
             --bg-color-alt: #1a1a1a; 
@@ -22,137 +20,195 @@
         }
         body { margin: 0; background: var(--bg-color); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--text-color); padding-bottom: 100px; overflow-x: hidden; -webkit-tap-highlight-color: transparent;}
         
-        .hero { position: relative; width: 100%; height: 70vh; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 40px; box-sizing: border-box; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-color) 10%, transparent 90%); }
-        .hero-content { position: relative; z-index: 2; max-width: 600px; }
-        .hero h1 { font-size: 3rem; margin: 0 0 10px 0; font-weight: bold; }
+        .hero { position: relative; width: 100%; height: 55vh; background: #000; overflow: hidden; }
+        #hero-bg { width: 100%; height: 100%; background-size: cover; background-position: center 20%; opacity: 0; transition: opacity 0.8s ease-in-out; }
+        .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-color) 0%, rgba(20,20,20,0.8) 20%, transparent 60%); }
+
+        .skeleton { background: var(--bg-color-alt); background-image: linear-gradient(90deg, var(--bg-color-alt) 0px, var(--skeleton-bg) 40px, var(--bg-color-alt) 80px); background-size: 200% 100%; animation: skeleton-loading 1.5s infinite linear; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+        @keyframes skeleton-loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+        .header-content { padding: 0 20px; margin-top: -80px; position: relative; z-index: 10; text-align: left; }
+        h1 { font-size: 32px; margin: 0 0 10px 0; line-height: 1.1; text-shadow: 0 2px 10px rgba(0,0,0,0.8); font-family: 'Arial Narrow', sans-serif; font-weight: 900; letter-spacing: -0.5px;}
         
-        .play-btn { background: white; color: black; border: none; padding: 12px 30px; border-radius: 4px; font-size: 1.1rem; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; }
-        .play-btn:hover { background: rgba(255,255,255,0.8); }
+        .meta-row { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: bold; margin-bottom: 20px; color: var(--text-color-sec); }
+        .match-text { color: #46d369; } 
+        .age-badge { background: #333; padding: 2px 5px; border-radius: 3px; font-size: 11px; color: #fff; }
+        .hd-badge { border: 1px solid var(--text-color-sec); padding: 1px 4px; border-radius: 3px; font-size: 10px; letter-spacing: 1px; }
+        .etiqueta-exclusiva { color: var(--accent-color); text-transform: uppercase; letter-spacing: 1px; }
 
-        /* Estilos del contenedor del Reproductor */
-        #player-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: #000; z-index: 10000;
-        }
-        .close-btn { position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer; z-index: 10001; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+        .action-buttons { display: flex; margin-bottom: 20px; }
+        .btn-play { flex: 1; background: #fff; color: #000; border: none; padding: 12px; border-radius: 4px; font-weight: bold; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.2s; }
+        .btn-play:active { background: #ccc; }
+
+        .info-box { padding: 0 20px; font-size: 15px; line-height: 1.6; color: #fff; }
+        .p-descripcion { color: #ddd; margin-bottom: 15px; display: block; }
+        .text-gray { color: var(--text-color-sec); font-weight: bold; }
+
+        .recommended-section { margin: 30px 0; padding-left: 20px; }
+        .recommended-section h2 { font-size: 16px; margin-bottom: 12px; font-weight: 700; color: var(--text-color); }
+        .scroll-row { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 15px; scrollbar-width: none; padding-right: 20px; }
+        .scroll-row::-webkit-scrollbar { display: none; }
+
+        .card-item { flex-shrink: 0; cursor: pointer; transition: transform 0.2s; width: 135px; }
+        @media (min-width: 768px) { .card-item { width: 160px; } }
+
+        .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); position: relative; border: 1px solid rgba(255,255,255,0.1);}
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
+
+        .menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.03); z-index: 100; }
+        .menu-item { color: var(--text-color-sec); text-decoration: none; font-size: 10px; text-align: center; display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;}
+        .menu-item i { font-size: 19px; margin-bottom: 5px; opacity: 0.8; }
+        .menu-item.active { color: var(--accent-color); }
+
+        /* REPRODUCTOR */
+        #player-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 5000; }
+        #v-frame, #video-container { width: 100%; height: 100%; border: none; }
+        .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5001; cursor: pointer; }
         .video-js { width: 100% !important; height: 100% !important; }
-
-        .info-section { padding: 40px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        .metadata { color: #46d369; font-weight: bold; margin-bottom: 20px; display: flex; gap: 15px; }
-        .desc { font-size: 1.1rem; line-height: 1.6; color: var(--text-color-sec); }
-        .tags { margin-top: 20px; font-size: 0.9rem; color: #808080; }
-
-        .recomendados { padding: 0 40px; }
-        .grid-recomendados { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin-top: 20px; }
-        .card-item { cursor: pointer; transition: 0.3s; }
-        .card-item img { width: 100%; border-radius: 4px; }
     </style>
 </head>
 <body>
 
-    <div id="detalle-content">
-        <div id="hero-bg" class="hero">
-            <div class="hero-content">
-                <h1 id="peli-titulo">Cargando...</h1>
-                <div class="metadata">
-                    <span id="peli-coincidencia"></span>
-                    <span id="peli-fecha"></span>
-                    <span style="border: 1px solid #808080; padding: 0 5px; color: white;" id="peli-calidad"></span>
-                </div>
-                <button class="play-btn" onclick="playVideo()"><i class="fas fa-play"></i> Reproducir</button>
-            </div>
-        </div>
+<div class="hero">
+    <div id="hero-skeleton" class="skeleton"></div>
+    <div id="hero-bg"></div>
+</div>
 
-        <div class="info-section">
-            <div>
-                <p class="desc" id="peli-desc"></p>
-                <div class="tags" id="peli-tags"></div>
-            </div>
-        </div>
-
-        <div class="recomendados">
-            <h3>Más títulos similares</h3>
-            <div id="grid-recomendados" class="grid-recomendados"></div>
-        </div>
+<div class="header-content">
+    <h1 id="p-title">Cargando...</h1>
+    
+    <div class="meta-row">
+        <span id="p-coincidencia" class="match-text"></span>
+        <span id="p-fecha">---</span>
+        <span id="p-etiqueta" class="etiqueta-exclusiva"></span>
+        <span id="p-calidad" class="hd-badge"></span>
     </div>
 
-    <div id="player-overlay">
-        <span class="close-btn" onclick="closePlayer()">&times;</span>
-        <div id="video-container" style="width:100%; height:100%;">
-            <video id="vjs-player" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"></video>
-        </div>
-        <iframe id="v-frame" style="display:none; width:100%; height:100%; border:none;" allowfullscreen></iframe>
+    <div class="action-buttons">
+        <button class="btn-play" onclick="playVideo()"><i class="fas fa-play"></i> Reproducir</button>
     </div>
+</div>
 
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-    <script src="https://googleads.github.io/videojs-ima/dist/videojs.ima.js"></script>
-    <script src="peliculas.js"></script>
+<div class="info-box">
+    <span id="p-descripcion" class="p-descripcion">Cargando sinopsis...</span>
+    <p><span class="text-gray">Géneros:</span> <span id="p-tags">---</span></p>
+</div>
 
-    <script>
-        const peliId = localStorage.getItem('peli_id');
-        const peliReal = baseDeDatos.find(item => item.id === peliId);
+<div class="recommended-section">
+    <h2>También puedes ver:</h2>
+    <div class="scroll-row" id="grid-recomendados"></div>
+</div>
 
-        if (peliReal) {
-            // Llenamos los datos de la peli (TU LÓGICA ORIGINAL)
-            document.getElementById('peli-titulo').innerText = peliReal.titulo;
-            document.getElementById('peli-desc').innerText = peliReal.descripcion;
-            document.getElementById('peli-fecha').innerText = peliReal.fecha;
-            document.getElementById('peli-tags').innerText = "Géneros: " + peliReal.tags;
-            document.getElementById('peli-coincidencia').innerText = peliReal.coincidencia;
-            document.getElementById('peli-calidad').innerText = peliReal.calidad;
-            document.getElementById('hero-bg').style.backgroundImage = `url(${peliReal.bg})`;
+<nav class="menu">
+    <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+    <a href="peliculas.html" class="menu-item"><i class="fas fa-film"></i><span>Películas</span></a>
+    <a href="series.html" class="menu-item"><i class="fas fa-tv"></i><span>Series</span></a>
+    <button class="menu-item" onclick="location.href='peliculas.html'"><i class="fas fa-search"></i><span>Buscar</span></button>
+</nav>
+
+<div id="player-overlay">
+    <button class="close-player" onclick="closePlayer()">&times;</button>
+    
+    <div id="video-container" style="display:none;">
+        <video id="vjs-player" class="video-js vjs-default-skin" controls preload="auto"></video>
+    </div>
+    
+    <iframe id="v-frame" src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+</div>
+
+<script src="peliculas.js"></script>
+
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+<script src="https://googleads.github.io/videojs-ima/dist/videojs.ima.js"></script>
+
+<script>
+    const peliId = localStorage.getItem('peli_id');
+    const peliReal = baseDeDatos.find(item => item.id === peliId);
+
+    // Inicializar Video.js de forma segura
+    var player = videojs('vjs-player');
+    player.ima({
+        adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvmap&cmsid=496&vid=short_onecue&correlator='
+    });
+
+    if(peliReal) {
+        const finalBg = (peliReal.bg && peliReal.bg !== "") ? peliReal.bg : peliReal.poster;
+        const heroBgElement = document.getElementById('hero-bg');
+        const skeletonElement = document.getElementById('hero-skeleton');
+
+        const imgLoader = new Image();
+        imgLoader.src = finalBg;
+        imgLoader.onload = () => {
+            skeletonElement.style.display = 'none';
+            heroBgElement.style.backgroundImage = "url('" + finalBg + "')";
+            heroBgElement.style.opacity = '1'; 
+        };
+
+        document.getElementById('p-title').innerText = peliReal.titulo;
+        document.getElementById('p-fecha').innerText = peliReal.fecha;
+        document.getElementById('p-tags').innerText = peliReal.tags;
+        document.getElementById('p-descripcion').innerText = peliReal.descripcion || "Sin descripción disponible.";
+        document.getElementById('p-coincidencia').innerText = peliReal.coincidencia || "";
+        document.getElementById('p-calidad').innerText = peliReal.calidad || "";
+        
+        if(peliReal.etiqueta) {
+            document.getElementById('p-etiqueta').innerText = peliReal.etiqueta;
+        } else {
+            document.getElementById('p-etiqueta').style.display = 'none';
         }
 
-        // Configuración de Video.js e IMA
-        var player = videojs('vjs-player');
-        player.ima({
-            adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinearvmap&cmsid=496&vid=short_onecue&correlator='
+        if(!peliReal.calidad) {
+            document.getElementById('p-calidad').style.display = 'none';
+        }
+    }
+
+    function cargarRecomendados() {
+        if (typeof baseDeDatos === 'undefined') return;
+        let recomendaciones = baseDeDatos.filter(item => item.id !== peliId).sort(() => 0.5 - Math.random()).slice(0, 6);
+        const grid = document.getElementById('grid-recomendados');
+        recomendaciones.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card-item";
+            card.onclick = () => { localStorage.setItem('peli_id', item.id); location.reload(); };
+            card.innerHTML = `<div class="img-wrapper skeleton"><img src="${item.poster}" onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton')"></div>`;
+            grid.appendChild(card);
         });
+    }
+    cargarRecomendados();
 
-        function playVideo() {
-            if(!peliReal || !peliReal.video) return alert("Video no disponible");
-
-            const overlay = document.getElementById('player-overlay');
-            const iframe = document.getElementById('v-frame');
-            const videoDiv = document.getElementById('video-container');
-            overlay.style.display = 'block';
-
-            // Si el link es un embed (BurstCloud), usamos Iframe
-            if (peliReal.video.includes('burstcloud') || peliReal.video.includes('embed')) {
-                videoDiv.style.display = 'none';
-                iframe.style.display = 'block';
-                iframe.src = peliReal.video;
-            } else {
-                // Si es link directo, usamos el player con publicidad
-                iframe.style.display = 'none';
-                videoDiv.style.display = 'block';
-                player.src({ src: peliReal.video, type: 'video/mp4' });
-                player.play();
-            }
+    function playVideo() {
+        const frame = document.getElementById('v-frame');
+        const videoDiv = document.getElementById('video-container');
+        if(!peliReal || !peliReal.video) {
+            alert("Video no disponible.");
+            return;
         }
 
-        function closePlayer() {
-            player.pause();
-            document.getElementById('v-frame').src = "";
-            document.getElementById('player-overlay').style.display = 'none';
-        }
+        document.getElementById('player-overlay').style.display = 'block';
 
-        // Función de Recomendados (TU LÓGICA ORIGINAL)
-        function cargarRecomendados() {
-            let recomendaciones = baseDeDatos.filter(item => item.id !== peliId).sort(() => 0.5 - Math.random()).slice(0, 6);
-            const grid = document.getElementById('grid-recomendados');
-            recomendaciones.forEach(item => {
-                const card = document.createElement("div");
-                card.className = "card-item";
-                card.onclick = () => { localStorage.setItem('peli_id', item.id); location.reload(); };
-                card.innerHTML = `<img src="${item.poster}">`;
-                grid.appendChild(card);
-            });
+        // DETECCIÓN: Si el link es de BurstCloud, usa tu iframe de siempre
+        if (peliReal.video.includes('burstcloud') || peliReal.video.includes('embed')) {
+            videoDiv.style.display = 'none';
+            frame.style.display = 'block';
+            frame.src = peliReal.video;
+        } 
+        // Si es un link directo (ej: .mp4), usa el nuevo reproductor con publicidad
+        else {
+            frame.style.display = 'none';
+            videoDiv.style.display = 'block';
+            player.src({ src: peliReal.video, type: 'video/mp4' });
+            player.play();
         }
-        cargarRecomendados();
-    </script>
+    }
+
+    function closePlayer() {
+        player.pause();
+        document.getElementById('v-frame').src = "";
+        document.getElementById('player-overlay').style.display = 'none';
+    }
+</script>
+
+<script src="https://pl29068763.profitablecpmratenetwork.com/8a/d9/09/8ad90910ee1a6b666e2312fd0e6a5abe.js"></script>
+
 </body>
 </html>
