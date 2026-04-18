@@ -48,16 +48,16 @@
         .img-wrapper { width: 100%; aspect-ratio: 2/3; border-radius: 6px; overflow: hidden; background: var(--skeleton-bg); position: relative; border: 1px solid rgba(255,255,255,0.1);}
         .img-wrapper img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s; }
 
-        /* MENU INFERIOR */
         .menu { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); display: flex; justify-content: space-around; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.03); z-index: 100; }
         .menu-item { color: var(--text-color-sec); text-decoration: none; font-size: 10px; text-align: center; display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;}
         .menu-item i { font-size: 19px; margin-bottom: 5px; opacity: 0.8; }
         .menu-item.active { color: var(--accent-color); }
 
-        /* REPRODUCTOR HÍBRIDO */
+        /* REPRODUCTOR HÍBRIDO FIJO */
         #player-overlay { display: none; position: fixed; inset: 0; background: #000; z-index: 5000; }
-        #player-content { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
-        .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5001; cursor: pointer; }
+        #player-content { width: 100%; height: 100%; position: relative; }
+        #v-native, #v-frame { width: 100%; height: 100%; border: none; background: #000; display: none; }
+        .close-player { position: absolute; top: 30px; right: 20px; color: #fff; font-size: 35px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; z-index: 5002; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -98,7 +98,10 @@
 
 <div id="player-overlay">
     <button class="close-player" onclick="closePlayer()">&times;</button>
-    <div id="player-content"></div>
+    <div id="player-content">
+        <video id="v-native" controls playsinline></video>
+        <iframe id="v-frame" src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+    </div>
 </div>
 
 <script src="peliculas.js"></script>
@@ -136,26 +139,43 @@
     function playVideo() {
         if(!peliReal || !peliReal.video) return alert("No disponible");
         
-        const container = document.getElementById('player-content');
         const overlay = document.getElementById('player-overlay');
+        const vNative = document.getElementById('v-native');
+        const vFrame = document.getElementById('v-frame');
         const url = peliReal.video.toLowerCase();
 
-        // DETECTAR TIPO DE LINK
-        if (url.includes('.mp4') || url.includes('bunny')) {
-            // REPRODUCTOR NATIVO (BUNNY / MP4)
-            container.innerHTML = `<video id="v-native" src="${peliReal.video}" controls autoplay playsinline style="width:100%; height:100%; background:#000;"></video>`;
+        overlay.style.display = 'block';
+
+        // DETECCIÓN SEGURA DE TIPO DE LINK
+        if (url.includes('.mp4') || url.includes('bunny') || url.includes('b-cdn')) {
+            // MODO BUNNY / MP4 (Reproductor Nativo)
+            vFrame.style.display = 'none';
+            vFrame.src = ""; 
+            
+            vNative.style.display = 'block';
+            vNative.src = peliReal.video;
+            vNative.play();
         } else {
-            // IFRAME (BURSTCLOUD)
-            container.innerHTML = `<iframe id="v-frame" src="${peliReal.video}" allowfullscreen allow="autoplay; encrypted-media" style="width:100%; height:100%; border:none;"></iframe>`;
+            // MODO BURSTCLOUD / EMBED (Iframe)
+            vNative.style.display = 'none';
+            vNative.pause();
+            vNative.src = ""; 
+            
+            vFrame.style.display = 'block';
+            vFrame.src = peliReal.video;
         }
 
-        overlay.style.display = 'block';
         history.pushState({playing: true}, "Reproduciendo");
     }
 
     function closePlayer() {
-        const container = document.getElementById('player-content');
-        container.innerHTML = ""; // Detiene el video/iframe
+        const vNative = document.getElementById('v-native');
+        const vFrame = document.getElementById('v-frame');
+        
+        vNative.pause();
+        vNative.src = "";
+        vFrame.src = ""; 
+        
         document.getElementById('player-overlay').style.display = 'none';
     }
 
