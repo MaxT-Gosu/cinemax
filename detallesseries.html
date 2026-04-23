@@ -31,6 +31,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             overflow-x: hidden;
+            padding-bottom: 80px; /* Espacio para el menú inferior */
         }
 
         .hero {
@@ -87,9 +88,23 @@
         }
 
         .episodio-card:hover { transform: scale(1.03); background: #252525; }
-
         .ep-info { padding: 15px; }
         .ep-info h4 { margin: 0; font-size: 1rem; color: #fff; }
+
+        /* --- MENÚ DE NAVEGACIÓN --- */
+        .menu { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); 
+            display: flex; justify-content: space-around; padding: 12px 0; 
+            border-top: 1px solid rgba(255,255,255,0.03); z-index: 100; 
+        }
+        .menu-item { 
+            color: var(--text-color-sec); text-decoration: none; font-size: 10px; 
+            text-align: center; display: flex; flex-direction: column; 
+            align-items: center; background: none; border: none; cursor: pointer; width: 25%; font-weight: 500;
+        }
+        .menu-item i { font-size: 19px; margin-bottom: 5px; opacity: 0.8; }
+        .menu-item.active { color: var(--accent-color); }
 
         /* REPRODUCTOR */
         #player-overlay {
@@ -97,14 +112,15 @@
             top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.9);
             display: none;
-            z-index: 1000;
+            z-index: 5000;
         }
-
         iframe { width: 100%; height: 100%; border: none; }
         .close-btn {
             position: absolute;
-            top: 20px; right: 20px;
-            font-size: 30px; color: white; cursor: pointer; z-index: 1001;
+            top: 30px; right: 20px;
+            font-size: 35px; color: white; cursor: pointer; z-index: 5001;
+            background: rgba(0,0,0,0.5); border-radius: 50%; width: 45px; height: 45px;
+            display: flex; align-items: center; justify-content: center;
         }
     </style>
 </head>
@@ -124,9 +140,15 @@
         <select id="season-selector" class="selector-temporada" onchange="cambiarTemporada(this.value)">
         </select>
 
-        <div id="lista-episodios" class="episodios-container">
-            </div>
+        <div id="lista-episodios" class="episodios-container"></div>
     </div>
+
+    <nav class="menu">
+        <a href="index.html" class="menu-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+        <a href="peliculas.html" class="menu-item"><i class="fas fa-film"></i><span>Películas</span></a>
+        <a href="series.html" class="menu-item active"><i class="fas fa-tv"></i><span>Series</span></a>
+        <button class="menu-item" onclick="location.href='series.html'"><i class="fas fa-search"></i><span>Buscar</span></button>
+    </nav>
 
     <div id="player-overlay">
         <span class="close-btn" onclick="closePlayer()">&times;</span>
@@ -168,20 +190,18 @@
                 selector.appendChild(opt);
             });
 
-            // Forzar carga de la primera temporada disponible al inicio
             if(serieActual.temporadas.length > 0) {
                 renderEpisodios(serieActual.temporadas[0].numero);
             }
         }
 
         function cambiarTemporada(num) {
-            // Convertimos a número porque el value del select es string
             renderEpisodios(parseInt(num));
         }
 
         function renderEpisodios(numTemporada) {
             const contenedor = document.getElementById('lista-episodios');
-            contenedor.innerHTML = ''; // Limpiar lista actual
+            contenedor.innerHTML = '';
 
             const temporada = serieActual.temporadas.find(t => t.numero === numTemporada);
             
