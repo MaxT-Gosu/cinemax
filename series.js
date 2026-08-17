@@ -674,4 +674,25 @@ const baseDeSeries = [
         }
     ]
 }
+{ 
+    id: "S21", 
+    titulo: "Linternas", 
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/t6Ub9GTbw6uwphRZQQiQlKim0vO.jpg", 
+    bg: "https://image.tmdb.org/t/p/original/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg", 
+    descripcion: "John Stewart y Hal Jordan, policías intergalácticos, investigan un asesinato en EE. UU., desvelando oscuros misterios y ajustes de cuentas.", 
+    fecha: "2026", 
+    tags: "Misterio y Drama",
+    etiqueta: "1 TEMPORADA",
+    coincidencia: "7.6/10",
+    calidad: "HD",
+    temporadas: [
+        {
+            numero: 1,
+            episodios: [
+                { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+
+            ]
+        }
+    ]
+}
 ];
