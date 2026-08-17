@@ -16,17 +16,17 @@ const baseDeSeries = [
                 episodios: [
                     { ep: 1, titulo: "El País de Nunca Jamás", video: "https://www.burstcloud.co/embed/2e24babedc21bccf1705c1323410df3fac1149ccf94a89d69a2560040d07b5ee/T1E1.mp4" },
                     { ep: 2, titulo: "Mr. October", video: "https://www.burstcloud.co/embed/60e17f19ebf3890feee41d4cf5cf6e334966429098cf61c34e3b8f80fd23fa75/T1E2.mp4" },
-					{ ep: 3, titulo: "Metamorfosis", video: "https://www.burstcloud.co/embed/8abf06cd2474c752cd0429c53f142a2e37c1a7e3645c0ec153c057d06861cdc7/T1E3.mp4" },
+                    { ep: 3, titulo: "Metamorfosis", video: "https://www.burstcloud.co/embed/8abf06cd2474c752cd0429c53f142a2e37c1a7e3645c0ec153c057d06861cdc7/T1E3.mp4" },
                     { ep: 4, titulo: "Observación", video: "https://www.burstcloud.co/embed/29930495cf0ce11c9596fecdefe1ba63f4b8f0810cfdc4e02afba5d59e14e411/T1E4.mp4" },
-					{ ep: 5, titulo: "En el espacio, nadie...", video: "ttps://www.burstcloud.co/embed/6418f4637a2632eb768f8be39b1c232983fc0191f3f7de5f0d1c9461a9004a13/T1E5.mp4" },
+                    { ep: 5, titulo: "En el espacio, nadie...", video: "https://www.burstcloud.co/embed/6418f4637a2632eb768f8be39b1c232983fc0191f3f7de5f0d1c9461a9004a13/T1E5.mp4" },
                     { ep: 6, titulo: "El vuelo", video: "https://www.burstcloud.co/embed/4b2cd7378732d5a275ed5a4540db5e3083d1b66b41783f362155eb00ca919a0c/T1E6.mp4" },
-					{ ep: 7, titulo: "Emergencia", video: "https://www.burstcloud.co/embed/ccd282bf105bce64ed573101396d71f77cef9a598ffea13ddfe4afa1034ea770/T1E7.mp4" },
-                    { ep: 8, titulo: "Los verdaderos monstruos", video: "https://www.burstcloud.co/embed/849d121a0ad4f430f240729452c2e2b19e24e2b3ea1b150dc682db9dbedc57d5/T1E8.mp4" },
+                    { ep: 7, titulo: "Emergencia", video: "https://www.burstcloud.co/embed/ccd282bf105bce64ed573101396d71f77cef9a598ffea13ddfe4afa1034ea770/T1E7.mp4" },
+                    { ep: 8, titulo: "Los verdaderos monstruos", video: "https://www.burstcloud.co/embed/849d121a0ad4f430f240729452c2e2b19e24e2b3ea1b150dc682db9dbedc57d5/T1E8.mp4" }
                 ]
             }
         ]
     },
-{ 
+    { 
         id: "S2", 
         titulo: "True Detective", 
         poster: "https://image.tmdb.org/t/p/original/e1XkGtAg3obOdO7xMcat8Orh9XA.jpg", 
@@ -79,7 +79,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S3", 
         titulo: "Daredevil: Born Again", 
         poster: "https://image.tmdb.org/t/p/original/qsVW888AvaRiQqhYj8hI2DtYNor.jpg", 
@@ -120,7 +120,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S4", 
         titulo: "IT: Bienvenidos a Derry", 
         poster: "https://image.tmdb.org/t/p/original/2fOKVDoc2O3eZmBZesWPuE5kgPN.jpg", 
@@ -147,7 +147,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S5", 
         titulo: "El gran guerrero", 
         poster: "https://image.tmdb.org/t/p/original/2c3PCbxVgWen5HrYsaukUmfu4J9.jpg", 
@@ -175,7 +175,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S6", 
         titulo: "Gen V", 
         poster: "https://image.tmdb.org/t/p/original/ScaVfT5IkwVC3Edhmxqyl0GbK0.jpg", 
@@ -215,7 +215,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S7", 
         titulo: "Cuenta regresiva", 
         poster: "https://image.tmdb.org/t/p/original/hPluvztO5rqRWC02SUJ7Iob7xWh.jpg", 
@@ -246,7 +246,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S8", 
         titulo: "Fallout", 
         poster: "https://image.tmdb.org/t/p/original/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg", 
@@ -280,7 +280,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S9", 
         titulo: "Peacemaker", 
         poster: "https://image.tmdb.org/t/p/original/1dqYOT6Q5mCuj0qgw56YFAjWJo.jpg", 
@@ -303,7 +303,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S10", 
         titulo: "Sandman", 
         poster: "https://image.tmdb.org/t/p/original/6KyJeOW7vTW0czdR0S6wzXAcfmw.jpg", 
@@ -334,7 +334,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S11", 
         titulo: "Tierra de Mafia", 
         poster: "https://image.tmdb.org/t/p/original/6KyJeOW7vTW0czdR0S6wzXAcfmw.jpg", 
@@ -356,14 +356,14 @@ const baseDeSeries = [
                     { ep: 5, titulo: "Funeral de un Amigo", video: "https://www.burstcloud.co/embed/4b56f68adc45278db4e5a0699a4cdc4f99fc8fe49c88587b4cc032bdf7b86df0/T1S5.mp4" },
                     { ep: 6, titulo: "El blues de Amberes", video: "https://www.burstcloud.co/embed/4e01c619c6754320e432327cc76dd30c69e8ba3263ba21fdb393fee3b4940ee2/T1S6.mp4" },
                     { ep: 7, titulo: "La encrucijada", video: "https://www.burstcloud.co/embed/8ab7e6c83b4fa885a93f9ab5728ed2515cf8ff1ea2046ec0a1c809b1c0af99dc/T1S7.mp4" },
-                    { ep: 10, titulo: "Helter Skelter", video: "https://www.burstcloud.co/embed/46a4a2b613458de9a1bf4541b2ccc51c7a84d5a46889f5aee2e0ad12f509fc5d/T1S8.mp4" },
+                    { ep: 8, titulo: "Helter Skelter", video: "https://www.burstcloud.co/embed/46a4a2b613458de9a1bf4541b2ccc51c7a84d5a46889f5aee2e0ad12f509fc5d/T1S8.mp4" },
                     { ep: 9, titulo: "El banquete de los mendigos", video: "https://www.burstcloud.co/embed/521ec2c760291403be29027b5aecccf0cbb2dded8a91e78e064c482dcb5388df/T1S9.mp4" },
                     { ep: 10, titulo: "La bestia en mí", video: "https://www.burstcloud.co/embed/d3dbfdd0f6fdc61ef993cf963ee721273f39b95e4c3e960e5250386caca9ebe5/TIS10.mp4" }
                 ]
             }
         ]
     },
-	{ 
+    { 
         id: "S12", 
         titulo: "Andor", 
         poster: "https://image.tmdb.org/t/p/original/kCGwvjpqM1owt9kI4pkYPJWJLvc.jpg", 
@@ -394,7 +394,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S13", 
         titulo: "Cazador de Demonios", 
         poster: "https://image.tmdb.org/t/p/original/vfEtEzBIn0wwWM7ppzJCGEZUSu2.jpg", 
@@ -421,7 +421,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S14", 
         titulo: "La casa de David", 
         poster: "https://image.tmdb.org/t/p/original/zuK80w6WgR5fPq6dxu3NJ4uRN5b.jpg", 
@@ -448,7 +448,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S15", 
         titulo: "Reacher", 
         poster: "https://image.tmdb.org/t/p/original/6cQQEbxqoOE4lHEG1g8zZc44VFD.jpg", 
@@ -484,7 +484,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S16", 
         titulo: "Duna: La profecía", 
         poster: "https://image.tmdb.org/t/p/original/lBoHzOgft2QfpjkVVvZCqeM4ttT.jpg", 
@@ -509,7 +509,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S17", 
         titulo: "The Last of Us", 
         poster: "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg", 
@@ -549,7 +549,7 @@ const baseDeSeries = [
             }
         ]
     },
-	{ 
+    { 
         id: "S18", 
         titulo: "Adolescencia", 
         poster: "https://image.tmdb.org/t/p/original/nil2ISKAie7PVfNsKmdGsOCqBD1.jpg", 
@@ -572,127 +572,126 @@ const baseDeSeries = [
             }
         ]
     },
-	{
-  "id": "S19",
-  "titulo": "The Boys",
-  "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
-  "bg": "https://image.tmdb.org/t/p/original/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
-  "descripcion": "La serie muestra a The Boys, un grupo de vigilantes que lucha contra superhéroes corruptos que dañan la sociedad, revelando el lado oscuro de la fama.",
-  "fecha": "2019",
-  "tags": "Sci-Fi & Fantasy y Action & Adventure",
-  "etiqueta": "ESTRENO",
-  "coincidencia": "8.6/10",
-  "calidad": "HD",
-  "temporadas": [
     {
-      "numero": 1,
-      "episodios": [
-        { "ep": 1, "titulo": "El Nombre del Juego", "video": "https://www.burstcloud.co/embed/6c3e9d61348185f35fa649d921aa337f3223b7860f5edd37120433f217b4f3f6/The%20Boys%201X01.mp4" },
-        { "ep": 2, "titulo": "Cherry", "video": "https://www.burstcloud.co/embed/13746b7852e32b9755bfee70f51523351c64f9bfc9501d77d67e5a9d166a5cb8/The%20Boys%201X02.mp4" },
-        { "ep": 3, "titulo": "Consigue Algo", "video": "https://www.burstcloud.co/embed/5777e79d2b00ed9a58458d8a30766d8b7d46f33ca6c6277225d07d2b096eec5d/The%20Boys%201X03.mp4" },
-        { "ep": 4, "titulo": "La Hembra de la Especie", "video": "https://www.burstcloud.co/embed/2e87ca6013c566b6b70784358022b6345f104f0a7822df528f12bde69553b39b/The%20Boys%201X04.mp4" },
-        { "ep": 5, "titulo": "Bueno para el Alma", "video": "https://www.burstcloud.co/embed/8d393b8f4075dc831fe430f739c9126c8afd97c2bca68512ccf6e19c0998dbe1/The%20Boys%201X05.mp4" },
-        { "ep": 6, "titulo": "Los Inocentes", "video": "https://www.burstcloud.co/embed/ece4d843458a0d721dd3c3b39135a0ff26074ef47f6f48339332aca5df8f612b/The%20Boys%201X06.mp4" },
-        { "ep": 7, "titulo": "La Sociedad de la Supervivencia", "video": "" },
-        { "ep": 8, "titulo": "Me Encontraste", "video": "https://www.burstcloud.co/embed/1bd92d3287e9ea0baddc90fa24dcf6b056069c48663e3778a1aa6ad646a1b7c0/The%20Boys%201X08.mp4" }
-      ]
+        id: "S19",
+        titulo: "The Boys",
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+        bg: "https://image.tmdb.org/t/p/original/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+        descripcion: "La serie muestra a The Boys, un grupo de vigilantes que lucha contra superhéroes corruptos que dañan la sociedad, revelando el lado oscuro de la fama.",
+        fecha: "2019",
+        tags: "Sci-Fi & Fantasy y Action & Adventure",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.6/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "El Nombre del Juego", video: "https://www.burstcloud.co/embed/6c3e9d61348185f35fa649d921aa337f3223b7860f5edd37120433f217b4f3f6/The%20Boys%201X01.mp4" },
+                    { ep: 2, titulo: "Cherry", video: "https://www.burstcloud.co/embed/13746b7852e32b9755bfee70f51523351c64f9bfc9501d77d67e5a9d166a5cb8/The%20Boys%201X02.mp4" },
+                    { ep: 3, titulo: "Consigue Algo", video: "https://www.burstcloud.co/embed/5777e79d2b00ed9a58458d8a30766d8b7d46f33ca6c6277225d07d2b096eec5d/The%20Boys%201X03.mp4" },
+                    { ep: 4, titulo: "La Hembra de la Especie", video: "https://www.burstcloud.co/embed/2e87ca6013c566b6b70784358022b6345f104f0a7822df528f12bde69553b39b/The%20Boys%201X04.mp4" },
+                    { ep: 5, titulo: "Bueno para el Alma", video: "https://www.burstcloud.co/embed/8d393b8f4075dc831fe430f739c9126c8afd97c2bca68512ccf6e19c0998dbe1/The%20Boys%201X05.mp4" },
+                    { ep: 6, titulo: "Los Inocentes", video: "https://www.burstcloud.co/embed/ece4d843458a0d721dd3c3b39135a0ff26074ef47f6f48339332aca5df8f612b/The%20Boys%201X06.mp4" },
+                    { ep: 7, titulo: "La Sociedad de la Supervivencia", video: "" },
+                    { ep: 8, titulo: "Me Encontraste", video: "https://www.burstcloud.co/embed/1bd92d3287e9ea0baddc90fa24dcf6b056069c48663e3778a1aa6ad646a1b7c0/The%20Boys%201X08.mp4" }
+                ]
+            },
+            {
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "El gran paseo", video: "https://www.burstcloud.co/embed/2db6520aa8bcc871fee06ecf2d0e8303e086af0864f3938bcbae8a7690e7255f/S02e01.mp4" },
+                    { ep: 2, titulo: "Los preparativos", video: "https://www.burstcloud.co/embed/004bf2798337e238781bf9532bfc7ae5f475693d19c75311d2e185e75b682bea/S02e02.mp4" },
+                    { ep: 3, titulo: "Por la colina con las espadas", video: "https://www.burstcloud.co/embed/615bf72409de068753de14c828f83b654e8abc68e4f28cf8ca74889e84f1a7ea/S02e03.mp4" },
+                    { ep: 4, titulo: "Nada igual en el mundo", video: "https://www.burstcloud.co/embed/a5ca9e7a280c6cc3171f40e29cf46e6c16f19b1867d0a814efd3a4aaf644ae71/S02e04.mp4" },
+                    { ep: 5, titulo: "Nos tenemos que ir", video: "https://www.burstcloud.co/embed/61cc45f996363a14e2dcf4d18f874f27dfc185f9592512eb56afcb3fde9a1152/S02e05.mp4" },
+                    { ep: 6, titulo: "Volando las malditas puertas", video: "https://www.burstcloud.co/embed/7508463c1da8f2f79793d981f6d3ede744954519b4a17b68628d745fa2cc87d5/S02e06.mp4" },
+                    { ep: 7, titulo: "Carnicero, panadero, eres un buen compañero", video: "https://www.burstcloud.co/embed/1965f2178ada8fd15b5871b9c01d95ab34e122b11b9199f19b72b569858454fc/S02e07.mp4" },
+                    { ep: 8, titulo: "Lo que sé", video: "https://www.burstcloud.co/embed/9c1bf74a10f51fcc07bd9f34976871a014b4e293a23aca7da55ae5f2aa935d59/S02e08.mp4" }
+                ]
+            },
+            {
+                numero: 3,
+                episodios: [
+                    { ep: 1, titulo: "Revancha", video: "https://www.burstcloud.co/embed/4b1077a73ef7bf125c3f7906b75c1561fdfb99410d6b683eb32e4c18ce61870e/ep1.mp4" },
+                    { ep: 2, titulo: "El único hombre en el cielo", video: "https://www.burstcloud.co/embed/1d92a111cf6d21838954c7811768e07f4015ad2122149d3592927608324b6167/ep2.mp4" },
+                    { ep: 3, titulo: "Costa Bereber", video: "https://www.burstcloud.co/embed/071bc0af10da90ad83b4d15a4e5b1041e550da28dedbb0810767c3c90bbdec2d/ep3.mp4" },
+                    { ep: 4, titulo: "Un plan glorioso de cinco años", video: "https://www.burstcloud.co/embed/4520a432ff5a2f9132521367917de355c496b563361220fbd478df5c6e026a98/ep4.mp4" },
+                    { ep: 5, titulo: "Última oportunidad de ver este mundo", video: "https://www.burstcloud.co/embed/c084155a5af5d982e526786f834e8e546e7e197d34745b8fad652dfb52171fcf/ep5.mp4" },
+                    { ep: 6, titulo: "Herogasmo", video: "https://www.burstcloud.co/embed/15a63e89c8c4b3e9bf9172f48b4ba42221c5d55570e48bdfe83841933d99f81e/ep6.mp4" },
+                    { ep: 7, titulo: "Una vela para acompañarte", video: "https://www.burstcloud.co/embed/00f45c2475974677f2fe87aff5c7edfd2dc13fed268bd0c8588d8738706b2bab/ep7.mp4" },
+                    { ep: 8, titulo: "Salvaje y ardiente instantánemente", video: "https://www.burstcloud.co/embed/ab18d8711372f15bf712e26e82d464521b3de7ee55604497a82346b324135b8e/ep8.mp4" }
+                ]
+            },
+            {
+                numero: 4,
+                episodios: [
+                    { ep: 1, titulo: "Departamento de juegos sucios", video: "https://www.burstcloud.co/embed/a62c7cc36bbb3320b23e2ffda6f824580e36c9dbdf44bb9b3e62d14a12505541/ep1.mp4" },
+                    { ep: 2, titulo: "La vida entre los sépticos", video: "https://www.burstcloud.co/embed/9c55ebb2bca944ff13ae65177c82c6188f0a8a904f3d93bc771b820675e25fc2/ep2.mp4" },
+                    { ep: 3, titulo: "Mantendremos la bandera roja ondeando", video: "https://www.burstcloud.co/embed/ad92e68a5813c077b0edb0c7bf925e58c2e78bf5a1b6fc3db6b56ed3f88a836c/ep3.mp4" },
+                    { ep: 4, titulo: "La sabiduría de todos los tiempos", video: "https://www.burstcloud.co/embed/d74a03e02fe1a6b92e1ff4d2a8f47da894d7361fdb84b93904c8a5a810092fb6/ep4.mp4" },
+                    { ep: 5, titulo: "Cuidado con el Jabberwock, hijo mío", video: "https://www.burstcloud.co/embed/3f6eba4fa8218a46c4eb5640aa9674e7083b50c117dc445676eeaff6387906c2/ep5.mp4" },
+                    { ep: 6, titulo: "Negocios sucios", video: "https://www.burstcloud.co/embed/7c1a2c2e6db37898e6ccb96fd31c75c2fc74b3d78caf44dbbfd45e084b6c4ce9/EP6.mp4" },
+                    { ep: 7, titulo: "El informante", video: "https://www.burstcloud.co/embed/6b31fe3505546bd94fe70e921c8f78017523f5800444640ae21ad9c1e563f94a/ep7.mp4" },
+                    { ep: 8, titulo: "Gran Final de la Cuarta Temporada", video: "https://www.burstcloud.co/embed/bb5c8221e893d17953e79da2da3b135c61c4c008c612f377d1cbd50183638a8b/ep8.mp4" }
+                ]
+            },
+            {
+                numero: 5,
+                episodios: [
+                    { ep: 1, titulo: "Cuarenta centímetros de pura dinamita", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep1.mp4" },
+                    { ep: 2, titulo: "Rebeldía adolescente", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep2.mp4" },
+                    { ep: 3, titulo: "Cada maldito hijo de perra", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep3.mp4" },
+                    { ep: 4, titulo: "El rey del infierno", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep4.mp4" },
+                    { ep: 5, titulo: "Golpe Directo", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep5.mp4" },
+                    { ep: 6, titulo: "Aunque los cielos se desplomen", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep6.mp4" },
+                    { ep: 7, titulo: "El francés, la mujer y el hombre llamado Mother's Milk", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep7.mp4" },
+                    { ep: 8, titulo: "Sangre y Hueso", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/The%20Boys%20S05e08%20Amzn%20Web-Dl%20%5BBoosterspa%5D.mp4" }
+                ]
+            }
+        ]
     },
-    {
-      "numero": 2,
-      "episodios": [
-        { "ep": 1, "titulo": "El gran paseo", "video": "https://www.burstcloud.co/embed/2db6520aa8bcc871fee06ecf2d0e8303e086af0864f3938bcbae8a7690e7255f/S02e01.mp4" },
-        { "ep": 2, "titulo": "Los preparativos", "video": "https://www.burstcloud.co/embed/004bf2798337e238781bf9532bfc7ae5f475693d19c75311d2e185e75b682bea/S02e02.mp4" },
-        { "ep": 3, "titulo": "Por la colina con las espadas", "video": "https://www.burstcloud.co/embed/615bf72409de068753de14c828f83b654e8abc68e4f28cf8ca74889e84f1a7ea/S02e03.mp4" },
-        { "ep": 4, "titulo": "Nada igual en el mundo", "video": "https://www.burstcloud.co/embed/a5ca9e7a280c6cc3171f40e29cf46e6c16f19b1867d0a814efd3a4aaf644ae71/S02e04.mp4" },
-        { "ep": 5, "titulo": "Nos tenemos que ir", "video": "https://www.burstcloud.co/embed/61cc45f996363a14e2dcf4d18f874f27dfc185f9592512eb56afcb3fde9a1152/S02e05.mp4" },
-        { "ep": 6, "titulo": "Volando las malditas puertas", "video": "https://www.burstcloud.co/embed/7508463c1da8f2f79793d981f6d3ede744954519b4a17b68628d745fa2cc87d5/S02e06.mp4" },
-        { "ep": 7, "titulo": "Carnicero, panadero, eres un buen compañero", "video": "https://www.burstcloud.co/embed/1965f2178ada8fd15b5871b9c01d95ab34e122b11b9199f19b72b569858454fc/S02e07.mp4" },
-        { "ep": 8, "titulo": "Lo que sé", "video": "https://www.burstcloud.co/embed/9c1bf74a10f51fcc07bd9f34976871a014b4e293a23aca7da55ae5f2aa935d59/S02e08.mp4" }
-      ]
+    { 
+        id: "S20", 
+        titulo: "Malcolm in the Middle: La vida sigue siendo injusta", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4sMqoPaOos1ksHp1MOMdaw1iWeW.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/g9k2BKMSP3cH0E738edj76EM4TA.jpg", 
+        descripcion: "Han pasado veinte años, y Malcolm y su familia siguen sin aprender nada.", 
+        fecha: "2026", 
+        tags: "Comedia y Drama",
+        etiqueta: "1 TEMPORADA",
+        coincidencia: "8.0/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e01%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                    { ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e02%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                    { ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e03%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
+                    { ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e04%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" }
+                ]
+            }
+        ]
     },
-    {
-      "numero": 3,
-      "episodios": [
-        { "ep": 1, "titulo": "Revancha", "video": "https://www.burstcloud.co/embed/4b1077a73ef7bf125c3f7906b75c1561fdfb99410d6b683eb32e4c18ce61870e/ep1.mp4" },
-        { "ep": 2, "titulo": "El único hombre en el cielo", "video": "https://www.burstcloud.co/embed/1d92a111cf6d21838954c7811768e07f4015ad2122149d3592927608324b6167/ep2.mp4" },
-        { "ep": 3, "titulo": "Costa Bereber", "video": "https://www.burstcloud.co/embed/071bc0af10da90ad83b4d15a4e5b1041e550da28dedbb0810767c3c90bbdec2d/ep3.mp4" },
-        { "ep": 4, "titulo": "Un plan glorioso de cinco años", "video": "https://www.burstcloud.co/embed/4520a432ff5a2f9132521367917de355c496b563361220fbd478df5c6e026a98/ep4.mp4" },
-        { "ep": 5, "titulo": "Última oportunidad de ver este mundo", "video": "https://www.burstcloud.co/embed/c084155a5af5d982e526786f834e8e546e7e197d34745b8fad652dfb52171fcf/ep5.mp4" },
-        { "ep": 6, "titulo": "Herogasmo", "video": "https://www.burstcloud.co/embed/15a63e89c8c4b3e9bf9172f48b4ba42221c5d55570e48bdfe83841933d99f81e/ep6.mp4" },
-        { "ep": 7, "titulo": "Una vela para acompañarte", "video": "https://www.burstcloud.co/embed/00f45c2475974677f2fe87aff5c7edfd2dc13fed268bd0c8588d8738706b2bab/ep7.mp4" },
-        { "ep": 8, "titulo": "Salvaje y ardiente instantánemente", "video": "https://www.burstcloud.co/embed/ab18d8711372f15bf712e26e82d464521b3de7ee55604497a82346b324135b8e/ep8.mp4" }
-      ]
-    },
-    {
-      "numero": 4,
-      "episodios": [
-        { "ep": 1, "titulo": "Departamento de juegos sucios", "video": "https://www.burstcloud.co/embed/a62c7cc36bbb3320b23e2ffda6f824580e36c9dbdf44bb9b3e62d14a12505541/ep1.mp4" },
-        { "ep": 2, "titulo": "La vida entre los sépticos", "video": "https://www.burstcloud.co/embed/9c55ebb2bca944ff13ae65177c82c6188f0a8a904f3d93bc771b820675e25fc2/ep2.mp4" },
-        { "ep": 3, "titulo": "Mantendremos la bandera roja ondeando", "video": "https://www.burstcloud.co/embed/ad92e68a5813c077b0edb0c7bf925e58c2e78bf5a1b6fc3db6b56ed3f88a836c/ep3.mp4" },
-        { "ep": 4, "titulo": "La sabiduría de todos los tiempos", "video": "https://www.burstcloud.co/embed/d74a03e02fe1a6b92e1ff4d2a8f47da894d7361fdb84b93904c8a5a810092fb6/ep4.mp4" },
-        { "ep": 5, "titulo": "Cuidado con el Jabberwock, hijo mío", "video": "https://www.burstcloud.co/embed/3f6eba4fa8218a46c4eb5640aa9674e7083b50c117dc445676eeaff6387906c2/ep5.mp4" },
-        { "ep": 6, "titulo": "Negocios sucios", "video": "https://www.burstcloud.co/embed/7c1a2c2e6db37898e6ccb96fd31c75c2fc74b3d78caf44dbbfd45e084b6c4ce9/EP6.mp4" },
-        { "ep": 7, "titulo": "El informante", "video": "https://www.burstcloud.co/embed/6b31fe3505546bd94fe70e921c8f78017523f5800444640ae21ad9c1e563f94a/ep7.mp4" },
-        { "ep": 8, "titulo": "Gran Final de la Cuarta Temporada", "video": "https://www.burstcloud.co/embed/bb5c8221e893d17953e79da2da3b135c61c4c008c612f377d1cbd50183638a8b/ep8.mp4" }
-      ]
-    },
-    {
-      "numero": 5,
-      "episodios": [
-        { "ep": 1, "titulo": "Cuarenta centímetros de pura dinamita", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep1.mp4" },
-        { "ep": 2, "titulo": "Rebeldía adolescente", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep2.mp4" },
-        { "ep": 3, "titulo": "Cada maldito hijo de perra", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep3.mp4" },
-        { "ep": 4, "titulo": "El rey del infierno", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep4.mp4" },
-        { "ep": 5, "titulo": "Golpe Directo", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep5.mp4" },
-        { "ep": 6, "titulo": "Aunque los cielos se desplomen", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep6.mp4" },
-        { "ep": 7, "titulo": "El francés, la mujer y el hombre llamado Mother's Milk", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/ep7.mp4" },
-        { "ep": 8, "titulo": "Sangre y Hueso", "video": "https://appcine.b-cdn.net/Cinemax/Series/the%20boys/5ta/The%20Boys%20S05e08%20Amzn%20Web-Dl%20%5BBoosterspa%5D.mp4" }
-      ]
+    { 
+        id: "S21", 
+        titulo: "Linternas", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/t6Ub9GTbw6uwphRZQQiQlKim0vO.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg", 
+        descripcion: "John Stewart y Hal Jordan, policías intergalácticos, investigan un asesinato en EE. UU., desvelando oscuros misterios y ajustes de cuentas.", 
+        fecha: "2026", 
+        tags: "Misterio y Drama",
+        etiqueta: "1 TEMPORADA",
+        coincidencia: "7.6/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
+                ]
+            }
+        ]
     }
-  ]
-},
-{ 
-    id: "S20", 
-    titulo: "Malcolm in the Middle: La vida sigue siendo injusta", 
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4sMqoPaOos1ksHp1MOMdaw1iWeW.jpg", 
-    bg: "https://image.tmdb.org/t/p/original/g9k2BKMSP3cH0E738edj76EM4TA.jpg", 
-    descripcion: "Han pasado veinte años, y Malcolm y su familia siguen sin aprender nada.", 
-    fecha: "2026", 
-    tags: "Comedia y Drama",
-    etiqueta: "1 TEMPORADA",
-    coincidencia: "8.0/10",
-    calidad: "HD",
-    temporadas: [
-        {
-            numero: 1,
-            episodios: [
-                { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e01%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
-                { ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e02%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
-                { ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e03%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
-                { ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Malcon%20el%20del%20enmedio/Malcolm%20In%20The%20Middle%20Lifes%20Still%20Unfair%20S01e04%20Dual%20Audio%20Dsnp%20Web-Dl%20%5BBoosterspa%5D.mp4" },
-            ]
-        }
-    ]
-},
-{ 
-    id: "S21", 
-    titulo: "Linternas", 
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/t6Ub9GTbw6uwphRZQQiQlKim0vO.jpg", 
-    bg: "https://image.tmdb.org/t/p/original/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg", 
-    descripcion: "John Stewart y Hal Jordan, policías intergalácticos, investigan un asesinato en EE. UU., desvelando oscuros misterios y ajustes de cuentas.", 
-    fecha: "2026", 
-    tags: "Misterio y Drama",
-    etiqueta: "1 TEMPORADA",
-    coincidencia: "7.6/10",
-    calidad: "HD",
-    temporadas: [
-        {
-            numero: 1,
-            episodios: [
-                { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-
-            ]
-        }
-    ]
-}
 ];
