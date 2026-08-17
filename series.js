@@ -673,7 +673,7 @@ const baseDeSeries = [
             ]
         }
     ]
-}
+},
 { 
     id: "S21", 
     titulo: "Linternas", 
