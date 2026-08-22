@@ -2323,8 +2323,21 @@ const baseDeDatos = [
         descripcion: "Kara Zor-El se une a un aliado inesperado para un viaje épico de venganza, enfrentando dilemas de poder.", 
         fecha: "2026", 
         tags: "Acción, Aventura y Ciencia ficción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.3/10",
+        calidad: "HD"
+    },
+	{ 
+        id: "P185", 
+        titulo: "Scary Movie", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/6cZWeiHW9hul7BqggRn5gaQHfvU.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Scary%20Movie.mp4", 
+        descripcion: "El Core Four enfrenta nuevamente al asesino enmascarado, peligroso regreso.", 
+        fecha: "2026", 
+        tags: "Comedia",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.3/10",
         calidad: "HD"
     },
 	
