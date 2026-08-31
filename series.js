@@ -689,8 +689,8 @@ const baseDeSeries = [
             {
                 numero: 1,
                 episodios: [
-                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
-					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e02%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e02%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
 					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e03%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
                 ]
             }
