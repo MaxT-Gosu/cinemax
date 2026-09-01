@@ -695,5 +695,41 @@ const baseDeSeries = [
                 ]
             }
         ]
+    },
+	{ 
+        id: "S22", 
+        titulo: "Materia oscura", 
+        poster: "https://image.tmdb.org/t/p/original/4OHMWMLEhJf74hMjtqLuNuw4mwx.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lcyaTfX6KEMpWNnzPoGPKp7LwwC.jpg", 
+        descripcion: "Los Dessens buscan tranquilidad, pero enfrentan nuevas amenazas que ponen en riesgo su estabilidad.", 
+        fecha: "2026", 
+        tags: "Sci-Fi & Fantasy y Drama",
+        etiqueta: "2 TEMPORADA",
+        coincidencia: "7.6/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp1/Mtriaoscrs01e09.mp4" }					
+                ]
+            },
+			{
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e01%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					
+                ]
+            }
+			
+        ]
     }
 ];
