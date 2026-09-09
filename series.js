@@ -732,5 +732,42 @@ const baseDeSeries = [
             }
 			
         ]
+    },
+	{ 
+        id: "S23", 
+        titulo: "Silo", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/s4yRu8IRcMLbfoUsO4q9Yuci4F0.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/kDq0SV60yKs98yebWjtofjiQIJ5.jpg", 
+        descripcion: "En un silo subterráneo, una comunidad vive en normas restrictivas para sobrevivir en un futuro tóxico.", 
+        fecha: "2026", 
+        tags: "Sci-Fi & Fantasy y Drama",
+        etiqueta: "1 TEMPORADA",
+        coincidencia: "8.6/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e09.mp4" },	
+                    { ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/Silos01e10.mp4" },					
+                ]
+            },
+			{
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e01.mp4" },
+					
+                ]
+            }
+			
+        ]
     }
 ];
