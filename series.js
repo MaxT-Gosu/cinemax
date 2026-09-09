@@ -763,7 +763,16 @@ const baseDeSeries = [
 			{
                 numero: 2,
                 episodios: [
-                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e01.mp4" },
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e09.mp4" },	
+                    { ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e10.mp4" },
 					
                 ]
             }
