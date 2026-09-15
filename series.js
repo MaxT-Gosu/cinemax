@@ -779,5 +779,34 @@ const baseDeSeries = [
             }
 			
         ]
+    },
+	{ 
+        id: "S24", 
+        titulo: "Chacal", 
+        poster: "https://media.themoviedb.org/t/p/w300_and_h450_face/69LMkzR76BHqjQ43LW0KJo1g8RB.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/a3YSTMRhv1vYgDoQtPe15LmORRx.jpg", 
+        descripcion: "El Chacal (Eddie Redmayne), un asesino a sueldo solitario, es perseguido por Europa por Bianca (Lashana Lynch), una tenaz agente de inteligencia británica, tras su último trabajo.", 
+        fecha: "2024", 
+        tags: "Drama, Action & Adventure y Misterio",
+        etiqueta: "1 TEMPORADA",
+        coincidencia: "8.8/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e09.mp4" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/chacal/Elchcls01e10.mp4" },
+                ]
+            }
+        ]
     }
 ];
