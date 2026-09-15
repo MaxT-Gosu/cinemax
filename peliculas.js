@@ -2340,6 +2340,19 @@ const baseDeDatos = [
         coincidencia: "7.3/10",
         calidad: "HD"
     },
+	{ 
+        id: "P186", 
+        titulo: "El final de Oak Street", 
+        poster: "https://media.themoviedb.org/t/p/w300_and_h450_face/g9DUGw8ufetrwhCIrwq3h1NlpWO.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/hBwfWpZMnto1w2YT9NgRj6WJi6I.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/The%20End%20Of%20Oak%20Street%20(2026)%20Amzn%20Web-Dl%20Dual%20Audio%20%5BBoosterspa%5D.mp4", 
+        descripcion: "Familia Platt debe mantenerse unida en un entorno desconocido tras un fenómeno cósmico.", 
+        fecha: "2026", 
+        tags: "Ciencia ficción, Misterio y Suspense",
+        etiqueta: "ESTRENO",
+        coincidencia: "6.3/10",
+        calidad: "HD"
+    },
 	
 	
 ];
