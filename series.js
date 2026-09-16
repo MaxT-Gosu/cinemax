@@ -743,7 +743,7 @@ const baseDeSeries = [
         fecha: "2026", 
         tags: "Sci-Fi & Fantasy y Drama",
         etiqueta: "1 TEMPORADA",
-        coincidencia: "8.6/10",
+        coincidencia: "8.9/10",
         calidad: "HD",
         temporadas: [
             {
@@ -774,6 +774,22 @@ const baseDeSeries = [
 					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e08.mp4" },
 					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e09.mp4" },	
                     { ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp2/Silos02e10.mp4" },
+					
+                ]
+            },
+			{
+                numero: 3,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e09.mp4" },	
+                    { ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/silo/temp3/Silos03e10.mp4" },
 					
                 ]
             }
