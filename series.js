@@ -693,7 +693,8 @@ const baseDeSeries = [
 					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e02%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
 					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e03%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
 					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e04%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e05%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e05%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e06%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
                 ]
             }
         ]
@@ -728,7 +729,9 @@ const baseDeSeries = [
                 numero: 2,
                 episodios: [
                     { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e01.mp4" },
-					
+                    { ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e02.mp4" },
+                    { ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e03.mp4" },
+                    { ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Materia%20oscura/temp2/Mtriaoscrs02e04.mp4" }					
                 ]
             }
 			
