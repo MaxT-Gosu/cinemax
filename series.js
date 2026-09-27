@@ -827,5 +827,34 @@ const baseDeSeries = [
                 ]
             }
         ]
+    },
+    { 
+        id: "S2", 
+        titulo: "Proyecto Blue Book", 
+        poster: "https://image.tmdb.org/t/p/original/yEivQTm42X6CMVUmmB9Qy8yzXWQ.jpg", 
+        bg: "https://www.themoviedb.org/t/p/w600_and_h900_face/nexuOn0gRy53AgbsQbrbL2g4PEt.jpg", 
+        descripcion: "J. Allen Hynek, profesor universitario, investiga casos no resueltos para las Fuerzas Especiales Aéreas de EE. UU., revelando misterios históricos.", 
+        fecha: "2019", 
+        tags: "Sci-Fi & Fantasy, Misterio y Drama",
+        etiqueta: "1 TEMPORADA",
+        coincidencia: "8.9/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e09.mp4" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e10.mp4" },
+                ]
+            }
+        ]
     }
 ];
