@@ -838,7 +838,7 @@ const baseDeSeries = [
         descripcion: "J. Allen Hynek, profesor universitario, investiga casos no resueltos para las Fuerzas Especiales Aéreas de EE. UU., revelando misterios históricos.", 
         fecha: "2019", 
         tags: "Sci-Fi & Fantasy, Misterio y Drama",
-        etiqueta: "1 TEMPORADA",
+        etiqueta: "DOS TEMPORADA",
         coincidencia: "8.9/10",
         calidad: "HD",
         temporadas: [
@@ -855,6 +855,21 @@ const baseDeSeries = [
 					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e08.mp4" },
 					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e09.mp4" },
 					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp1/S01e10.mp4" },
+                ]
+            },
+            {
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e001.1080P%20Dual-002.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e002.1080P%20Dual.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e003.1080P%20Dual-006.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e004.1080P%20Dual-003.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e005.1080P%20Dual-001.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e006.1080P%20Dual.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e007.1080P%20Dual-004.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e008.1080P%20Dual-009.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e009.1080P%20Dual-008.mp4" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/libro%20azul/temp2/Project%20Blue%20Book%20S02e010.720P%20Dual.mp4" },
                 ]
             }
         ]
