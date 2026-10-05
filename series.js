@@ -682,7 +682,7 @@ const baseDeSeries = [
         descripcion: "John Stewart y Hal Jordan, policías intergalácticos, investigan un asesinato en EE. UU., desvelando oscuros misterios y ajustes de cuentas.", 
         fecha: "2026", 
         tags: "Misterio y Drama",
-        etiqueta: "1 TEMPORADA",
+        etiqueta: "Finalizada",
         coincidencia: "7.6/10",
         calidad: "HD",
         temporadas: [
@@ -694,7 +694,9 @@ const baseDeSeries = [
 					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e03%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
 					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e04%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
 					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e05%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e06%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e06%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 6, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e07%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 6, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Linternas/Lanterns%20S01e08%20Amzn%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" }
                 ]
             }
         ]
