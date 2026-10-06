@@ -2336,7 +2336,7 @@ const baseDeDatos = [
         descripcion: "El Core Four enfrenta nuevamente al asesino enmascarado, peligroso regreso.", 
         fecha: "2026", 
         tags: "Comedia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.3/10",
         calidad: "HD"
     },
@@ -2349,8 +2349,21 @@ const baseDeDatos = [
         descripcion: "Familia Platt debe mantenerse unida en un entorno desconocido tras un fenómeno cósmico.", 
         fecha: "2026", 
         tags: "Ciencia ficción, Misterio y Suspense",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "6.3/10",
+        calidad: "HD"
+    },
+    { 
+        id: "P187", 
+        titulo: "Al filo del mañana", 
+        poster: "https://media.themoviedb.org/t/p/w300_and_h450_face/vNjwi0STOwzmwE9laZSMYYh2JPE.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/esIo92OgqcaaT92hw4SJOkl0vF2.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Alfldlmnn144k.mp4", 
+        descripcion: "Comandante Cage revive batallas contra extraterrestres, mejorando gracias a un bucle temporal constante.", 
+        fecha: "2014", 
+        tags: "Acción y Ciencia ficción",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.3/10",
         calidad: "HD"
     },
 	
