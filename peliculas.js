@@ -2362,10 +2362,22 @@ const baseDeDatos = [
         descripcion: "Comandante Cage revive batallas contra extraterrestres, mejorando gracias a un bucle temporal constante.", 
         fecha: "2014", 
         tags: "Acción y Ciencia ficción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.3/10",
         calidad: "HD"
     },
-	
+	 
+        id: "P188", 
+        titulo: "Belleza Negra", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/hmeP0Fd7TipMllhOdFeSimrLTCs.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lQAe1hfWYDdYypRVdzTbdg6JYWP.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Bllzngr201080.mp4", 
+        descripcion: "Una adolescente profundamente afligida por haber perdido a sus padres comienza a tener un vínculo muy especial con un caballo que ha sido alejado de su familia.", 
+        fecha: "2020", 
+        tags: "Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.0/10",
+        calidad: "HD"
+    },
 	
 ];
