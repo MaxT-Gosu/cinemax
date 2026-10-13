@@ -7,7 +7,7 @@ const baseDeSeries = [
         descripcion: "Una nave espacial se estrella, y una joven junto a soldados enfrenta una amenaza planetaria.", 
         fecha: "2025", 
         tags: "Sci-Fi & Fantasy y Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "95% para ti",
         calidad: "HD",
         temporadas: [
@@ -34,7 +34,7 @@ const baseDeSeries = [
         descripcion: "Serie de antología de HBO que sigue investigaciones criminales intensas que llevan a sus detectives al borde de la obsesión y la locura.", 
         fecha: "2014", 
         tags: "Acción • Suspense • Drama",
-        etiqueta: "PREMIUM",
+        etiqueta: "",
         coincidencia: "8.3/10",
         calidad: "HD",
         temporadas: [
@@ -87,7 +87,7 @@ const baseDeSeries = [
         descripcion: "Matt Murdock y Wilson Fisk chocan en Nueva York, enfrentando pasados y ambiciones contradictorias por justicia.", 
         fecha: "2025", 
         tags: "Acción • Crimen • Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "9.2/10",
         calidad: "HD",
         temporadas: [
@@ -128,7 +128,7 @@ const baseDeSeries = [
         descripcion: "En 1958, un grupo de siete amigos descubren un ser sobrenatural y malvado que acecha el pueblo de Derry, capaz de adoptar sus peores miedos.", 
         fecha: "2019", 
         tags: "Suspenso • Fantasía • Drama",
-        etiqueta: "PREMIUM",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD",
         temporadas: [
@@ -155,7 +155,7 @@ const baseDeSeries = [
         descripcion: "Con los cuatro reinos de Hawaiʻi divididos por la guerra, el guerrero feroz Kaʻiana emprende una misión para unir a su gente ya que una amenaza se acerca a sus costas.", 
         fecha: "2025", 
         tags: "Sci-Fi, Guerra, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.9/10",
         calidad: "HD",
         temporadas: [
@@ -183,7 +183,7 @@ const baseDeSeries = [
         descripcion: "En la universidad de superhéroes, los estudiantes enfrentan dilemas morales y secretos, mientras luchan por unirse a The Seven.", 
         fecha: "2025", 
         tags: "Sci-Fi, Fantasia, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD",
         temporadas: [
@@ -223,7 +223,7 @@ const baseDeSeries = [
         descripcion: "Mark Meachum investiga el homicidio de un oficial de Seguridad Nacional, enfrentándose a un oscuro secreto que amenaza a la ciudad.", 
         fecha: "2025", 
         tags: "Drama, Crimen, Misterio",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD",
         temporadas: [
@@ -254,7 +254,7 @@ const baseDeSeries = [
         descripcion: "Fallout narra el regreso de los sobrevivientes de refugios nucleares a un mundo postapocalíptico, lleno de complejidad, rarezas y violencia tras 200 años de devastación.", 
         fecha: "2024", 
         tags: "Accion, Aventura, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.2/10",
         calidad: "HD",
         temporadas: [
@@ -288,7 +288,7 @@ const baseDeSeries = [
         descripcion: "Después de los eventos de 'El Escuadrón Suicida' (2021) seguimos a Peacemaker, un hombre presumido que cree en la paz a cualquier precio.", 
         fecha: "2025", 
         tags: "Sci-Fi, Fantasia, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD",
         temporadas: [
@@ -311,7 +311,7 @@ const baseDeSeries = [
         descripcion: "Luego de años de reclusión, el Rey del Sueño emprende un viaje a través de los mundos para recuperar lo que le robaron y restaurar su poder", 
         fecha: "2025", 
         tags: "Accion, Suspense, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD",
         temporadas: [
@@ -342,7 +342,7 @@ const baseDeSeries = [
         descripcion: "Los Harrigan y los Stevenson, familias criminales, luchan por el poder. Harry Da Souza, un 'solucionador', navega lealtades y conflictos en una batalla mortal por la supervivencia.", 
         fecha: "2025", 
         tags: "Crimen, Suspense, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.5/10",
         calidad: "HD",
         temporadas: [
@@ -371,7 +371,7 @@ const baseDeSeries = [
         descripcion: "La serie, ambientada cinco años antes de Rogue One, sigue a Cassian Andor en su transformación de ladrón a revolucionario, durante la formación de la Alianza Rebelde contra el Imperio Galáctico.", 
         fecha: "2025", 
         tags: "Fantasia, Suspense, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.2/10",
         calidad: "HD",
         temporadas: [
@@ -402,7 +402,7 @@ const baseDeSeries = [
         descripcion: "Hub Halloran, un cazarrecompensas resucitado por el Diablo, debe capturar demonios fugitivos del Infierno mientras enfrenta su pasado y busca redención a través del amor y la música country.", 
         fecha: "2025", 
         tags: "Accion, Suspense, Fantasia",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD",
         temporadas: [
@@ -429,7 +429,7 @@ const baseDeSeries = [
         descripcion: "La serie narra el ascenso de David al trono de Israel, mientras el rey Saúl cae por su orgullo. Guiado por Dios, el profeta Samuel unge a un joven marginado como el futuro rey.", 
         fecha: "2025", 
         tags: "Drama, Suspense, Familiar",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD",
         temporadas: [
@@ -456,7 +456,7 @@ const baseDeSeries = [
         descripcion: "Cuando el policía militar retirado Jack Reacher es arrestado por un asesinato que no cometió, se encuentra en medio de una conspiración mortal llena de policías sucios, empresarios turbios y políticos intrigantes.", 
         fecha: "2022", 
         tags: "Acción, Suspense, Drama",
-        etiqueta: "3 TEMPORADAS",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD",
         temporadas: [
@@ -492,7 +492,7 @@ const baseDeSeries = [
         descripcion: "10.000 años antes de la ascensión de Paul Atreides, las Hermanas Harkonnen luchan contra las fuerzas que amenazan el futuro de la humanidad y establecen la legendaria secta conocida como Bene Gesserit.", 
         fecha: "2024", 
         tags: "Sci-Fi, Accion, Aventura",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD",
         temporadas: [
@@ -517,7 +517,7 @@ const baseDeSeries = [
         descripcion: "Veinte años después de una plaga, Joel debe escoltar a Ellie, quien podría cambiar el destino de la humanidad, a través de un mundo peligroso.", 
         fecha: "2023", 
         tags: "Acción, Suspense, Drama",
-        etiqueta: "2 TEMPORADAS",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD",
         temporadas: [
@@ -557,7 +557,7 @@ const baseDeSeries = [
         descripcion: "Cuando un chico de 13 años es acusado de asesinar a una compañera de clase, su familia, su terapeuta y el detective a cargo se preguntan qué pasó en realidad.", 
         fecha: "2025", 
         tags: "Acción, Suspense, Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD",
         temporadas: [
@@ -580,7 +580,7 @@ const baseDeSeries = [
         descripcion: "La serie muestra a The Boys, un grupo de vigilantes que lucha contra superhéroes corruptos que dañan la sociedad, revelando el lado oscuro de la fama.",
         fecha: "2019",
         tags: "Sci-Fi & Fantasy y Action & Adventure",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.6/10",
         calidad: "HD",
         temporadas: [
@@ -659,7 +659,7 @@ const baseDeSeries = [
         descripcion: "Han pasado veinte años, y Malcolm y su familia siguen sin aprender nada.", 
         fecha: "2026", 
         tags: "Comedia y Drama",
-        etiqueta: "1 TEMPORADA",
+        etiqueta: "",
         coincidencia: "8.0/10",
         calidad: "HD",
         temporadas: [
@@ -682,7 +682,7 @@ const baseDeSeries = [
         descripcion: "John Stewart y Hal Jordan, policías intergalácticos, investigan un asesinato en EE. UU., desvelando oscuros misterios y ajustes de cuentas.", 
         fecha: "2026", 
         tags: "Misterio y Drama",
-        etiqueta: "Finalizada",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD",
         temporadas: [
@@ -709,7 +709,7 @@ const baseDeSeries = [
         descripcion: "Los Dessens buscan tranquilidad, pero enfrentan nuevas amenazas que ponen en riesgo su estabilidad.", 
         fecha: "2026", 
         tags: "Sci-Fi & Fantasy y Drama",
-        etiqueta: "2 TEMPORADA",
+        etiqueta: "",
         coincidencia: "7.6/10",
         calidad: "HD",
         temporadas: [
@@ -747,7 +747,7 @@ const baseDeSeries = [
         descripcion: "En un silo subterráneo, una comunidad vive en normas restrictivas para sobrevivir en un futuro tóxico.", 
         fecha: "2026", 
         tags: "Sci-Fi & Fantasy y Drama",
-        etiqueta: "1 TEMPORADA",
+        etiqueta: "",
         coincidencia: "8.9/10",
         calidad: "HD",
         temporadas: [
@@ -809,7 +809,7 @@ const baseDeSeries = [
         descripcion: "El Chacal (Eddie Redmayne), un asesino a sueldo solitario, es perseguido por Europa por Bianca (Lashana Lynch), una tenaz agente de inteligencia británica, tras su último trabajo.", 
         fecha: "2024", 
         tags: "Drama, Action & Adventure y Misterio",
-        etiqueta: "1 TEMPORADA",
+        etiqueta: "",
         coincidencia: "8.8/10",
         calidad: "HD",
         temporadas: [
@@ -831,14 +831,14 @@ const baseDeSeries = [
         ]
     },
     { 
-        id: "S2", 
+        id: "S25", 
         titulo: "Proyecto Blue Book", 
         poster: "https://image.tmdb.org/t/p/original/yEivQTm42X6CMVUmmB9Qy8yzXWQ.jpg", 
         bg: "https://www.themoviedb.org/t/p/w600_and_h900_face/nexuOn0gRy53AgbsQbrbL2g4PEt.jpg", 
         descripcion: "J. Allen Hynek, profesor universitario, investiga casos no resueltos para las Fuerzas Especiales Aéreas de EE. UU., revelando misterios históricos.", 
         fecha: "2019", 
         tags: "Sci-Fi & Fantasy, Misterio y Drama",
-        etiqueta: "DOS TEMPORADA",
+        etiqueta: "",
         coincidencia: "8.9/10",
         calidad: "HD",
         temporadas: [
@@ -873,5 +873,33 @@ const baseDeSeries = [
                 ]
             }
         ]
-    }
+    },
+    { 
+        id: "S26", 
+        titulo: "Los amos del aire", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/pHTOwJIUN1L4h8sACkpkthy01ei.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/menEyCOdkjXqwpJy3cwOH8kfZrj.jpg", 
+        descripcion: "Durante la Segunda Guerra Mundial, muchos aviadores arriesgan sus vidas en el Grupo de bombarderos número 100, una hermandad forjada por el valor, la pérdida y el triunfo.", 
+        fecha: "2024", 
+        tags: "Drama y War & Politics",
+        etiqueta: "Estreno",
+        coincidencia: "7.8/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e07.mp4" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e08.mp4" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e09.mp4" },
+                ]
+            }
+        ]
+    },
 ];
