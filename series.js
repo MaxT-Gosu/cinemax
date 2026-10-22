@@ -882,7 +882,7 @@ const baseDeSeries = [
         descripcion: "Durante la Segunda Guerra Mundial, muchos aviadores arriesgan sus vidas en el Grupo de bombarderos número 100, una hermandad forjada por el valor, la pérdida y el triunfo.", 
         fecha: "2024", 
         tags: "Drama y War & Politics",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD",
         temporadas: [
@@ -898,6 +898,29 @@ const baseDeSeries = [
 					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e07.mp4" },
 					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e08.mp4" },
 					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/Masters%20of%20the%20Air/Mstrsofthair24s01e09.mp4" },
+                ]
+            }
+        ]
+    },
+    { 
+        id: "S27", 
+        titulo: "VisionQuest", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jfltxthL5nDD14AxOd6gxbBYX6v.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg", 
+        descripcion: "Visión, huyendo de quienes lo quieren convertir en arma, busca consejo de IA y se une a Thomas Shepard, quien podría ser su hijo reencarnado, para enfrentar su naturaleza y sobrevivir.", 
+        fecha: "2026", 
+        tags: "Sci-Fi & Fantasy y Drama",
+        etiqueta: "Estreno",
+        coincidencia: "8.8/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e01%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e02%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e03%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e04%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
                 ]
             }
         ]
