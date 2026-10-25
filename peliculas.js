@@ -2376,8 +2376,22 @@ const baseDeDatos = [
         descripcion: "Una adolescente profundamente afligida por haber perdido a sus padres comienza a tener un vínculo muy especial con un caballo que ha sido alejado de su familia.", 
         fecha: "2020", 
         tags: "Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.0/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P189", 
+        titulo: "Capitán América: Civil War", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/jPPy7tCfglppQo6J9nGwU6UmJ8X.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/dLWoJnYXhFeNouon4NmBLAr92rf.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Cptnamr3cw-1080.mp4", 
+        descripcion: "Steve Rogers lidera los Vengadores, enfrentando presión política y división interna por un sistema de registro tras incidentes internacionales.", 
+        fecha: "2016", 
+        tags: "Aventura, Acción y Ciencia ficción",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
         calidad: "HD"
     },
 	
