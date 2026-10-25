@@ -925,4 +925,30 @@ const baseDeSeries = [
             }
         ]
     },
+    { 
+        id: "S28", 
+        titulo: "Breaking Bad", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/gc8PfyTqzqltKPW3X0cIVUGmagz.jpg", 
+        descripcion: "Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y vender metanfetamina a fin de que su familia no pase apuros económicos.", 
+        fecha: "2008", 
+        tags: "Drama y Crimen",
+        etiqueta: "Estreno",
+        coincidencia: "9.3/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e01.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e02.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e03.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e04.mp4" },
+					{ ep: 5, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e07.mp4" },
+                ]
+            }
+        ]
+    },
 ];
