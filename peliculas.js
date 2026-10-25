@@ -1630,7 +1630,7 @@ const baseDeDatos = [
         titulo: "Capitán América: Brave New World", 
         poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vUNj55xlF0pSU5FU3yDHC6L5wVX.jpg", 
         bg: "https://image.tmdb.org/t/p/original/49a0My0Qi3XlEZIwtk0ggbkmlVi.jpg", 
-        video: "https://www.burstcloud.co/share/d1622da572c875198e9c489734efc405cefa8f5ed48564d7a7d2d11e428ce156/capitan%20america%20nuevo%20mundo.mp4", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Cptnamrcunm251080.mp4", 
         descripcion: "Sam Wilson, tras asumir oficialmente el manto del Capitán América, se encuentra en el centro de una conspiración internacional. Tras reunirse con el presidente Thaddeus Ross, Sam debe detener un perverso complot global antes de que el mundo entero se vea sumido en el caos.", 
         fecha: "2025", 
         tags: "Acción, Suspenso, Ciencia Ficción",
