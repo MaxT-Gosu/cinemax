@@ -917,10 +917,12 @@ const baseDeSeries = [
             {
                 numero: 1,
                 episodios: [
-                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e01%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e02%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e03%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
-					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01e04%20Dsnp%20Web-Dl%20Dual%20Audio%20Hd%20%5BBoosterspa%5D.mp4" },
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E01%20DSNP%20WEB-DL%20DUAL%20AUDIO.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E02%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E03%20DSNP%20WEB-DL%20DUAL%20AUDIO%20Hd.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E04%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E05%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E06%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
                 ]
             }
         ]
@@ -959,12 +961,12 @@ const baseDeSeries = [
 					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E05.mkv" },
 					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E07.mkv" },
 					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E07.mkv" },
-					{ ep: 7, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E08.mkv" },
-					{ ep: 7, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E09.mkv" },
-					{ ep: 7, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E10.mkv" },
-					{ ep: 7, titulo: "Episodio 11", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E11.mkv" },
-					{ ep: 7, titulo: "Episodio 12", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E12.mkv" },
-					{ ep: 7, titulo: "Episodio 13", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E13.mkv" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E08.mkv" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E09.mkv" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E10.mkv" },
+					{ ep: 11, titulo: "Episodio 11", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E11.mkv" },
+					{ ep: 12, titulo: "Episodio 12", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E12.mkv" },
+					{ ep: 13, titulo: "Episodio 13", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP2/BKBD.S02E13.mkv" },
 					
                 ]
             },
