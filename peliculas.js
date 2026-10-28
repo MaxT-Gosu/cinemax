@@ -2390,9 +2390,50 @@ const baseDeDatos = [
         descripcion: "Steve Rogers lidera los Vengadores, enfrentando presión política y división interna por un sistema de registro tras incidentes internacionales.", 
         fecha: "2016", 
         tags: "Aventura, Acción y Ciencia ficción",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD"
     },
-	
+    {
+	 
+        id: "P190", 
+        titulo: "It (Eso)", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ha6UC0JVrVuu4KDZobgpedPyxkL.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ApPBMGy8uWkDiPYAAMxgdC0j0gv.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/IT%20ESO%20PART%201.mkv", 
+        descripcion: "Siete niños enfrentan problemas y un monstruo payaso en un pequeño pueblo de Maine: Pennywise.", 
+        fecha: "2017", 
+        tags: "Terror, Suspense y Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.8/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P191", 
+        titulo: "It: Capítulo 2", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9oERKIVyTWpHNum3STVsAGD4ojz.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/p15fLYp0X04mS8cbHVj7mZ6PBBE.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/IT%20ESO%20PART%202.mkv", 
+        descripcion: "Treinta años después, el Club de los Perdedores regresa a Derry como adultos para enfrentarse nuevamente a Pennywise y confrontar los traumas de su infancia.", 
+        fecha: "2019", 
+        tags: "Terror, Suspense y Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.1/10",
+        calidad: "HD"
+    },
+	{
+	 
+        id: "P192", 
+        titulo: "It 1990", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/geqzzmBkEgdf52are5kUdAz6U93.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/6JwCypJOApgGornKKfT3PoZOrxN.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/it%20eso%201990.mkv", 
+        descripcion: "Treinta años después, el Club de los Perdedores regresa a Derry como adultos para enfrentarse nuevamente a Pennywise y confrontar los traumas de su infancia.", 
+        fecha: "1990", 
+        tags: "Misterio, Sci-Fi & Fantasy y Drama",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.5/10",
+        calidad: "HD"
+    },
 ];
