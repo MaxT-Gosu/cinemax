@@ -41,14 +41,14 @@ const baseDeSeries = [
             {
                 numero: 1,
                 episodios: [
-                    { ep: 1, titulo: "The Long Bright Dark", video: "https://www.burstcloud.co/embed/b0fbeed5d4672e10cd403319fffb0d16ffeed7c7f461b2164060e3e319aafa4d/1X01.mp4" },
-                    { ep: 2, titulo: "Seeing Things", video: "https://www.burstcloud.co/embed/edae11e6a482ee05342e91147c669fe4c987c9e534c7d65f61a8489b6073b187/1X02.mp4" },
-                    { ep: 3, titulo: "The Locked Room", video: "https://www.burstcloud.co/embed/c8649561493a64640afcb1b83cbeafb688b635971b7340524777d3ec2000d095/1X03.mp4" },
-                    { ep: 4, titulo: "Who Goes There", video: "https://www.burstcloud.co/embed/77c002a3b80fee7604f8ccd8520c33555bbef36beb3ce8aa9212799f419e5cb2/1X04.mp4" },
-                    { ep: 5, titulo: "The Secret Fate of All Life", video: "https://www.burstcloud.co/embed/83420c356c9038a4ae40f1c037d21d7d9cf809c1c109b57b2987defde45f4510/1X05.mp4" },
-                    { ep: 6, titulo: "Haunted Houses", video: "https://www.burstcloud.co/embed/e4e920c6977b964e13d8e0aba5c797866df2939d276a7b3e50c64de9a0a4fc13/1X06.mp4" },
-                    { ep: 7, titulo: "After You've Gone", video: "https://www.burstcloud.co/embed/c291e7f1eacac0a2426d83c86dea833d24aaf0bb42e4b0290e55299b44abf6bc/1X07.mp4" },
-                    { ep: 8, titulo: "Form and Void", video: "https://www.burstcloud.co/embed/af0e32dc5947a41b6038d687c4da9b2b9de1838cf2bb970fee30aa2b0805dde9/1X08.mp4" }
+                    { ep: 1, titulo: "The Long Bright Dark", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X01.mp4" },
+                    { ep: 2, titulo: "Seeing Things", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X02.mp4" },
+                    { ep: 3, titulo: "The Locked Room", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X03.mp4" },
+                    { ep: 4, titulo: "Who Goes There", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X04.mp4" },
+                    { ep: 5, titulo: "The Secret Fate of All Life", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X05.mp4" },
+                    { ep: 6, titulo: "Haunted Houses", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X06.mp4" },
+                    { ep: 7, titulo: "After You've Gone", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X07.mp4" },
+                    { ep: 8, titulo: "Form and Void", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X08.mp4" }
                 ]
             },
             {
