@@ -944,9 +944,35 @@ const baseDeSeries = [
 					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e02.mp4" },
 					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e03.mp4" },
 					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e04.mp4" },
-					{ ep: 5, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e05.mp4" },
-					{ ep: 6, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e06.mp4" },
-					{ ep: 7, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e07.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e05.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e06.mp4" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/Breaking%20Bad/TEMP%201/Bkbd.S01e07.mp4" },
+                ]
+            }
+        ]
+    },
+    { 
+        id: "S29", 
+        titulo: "Casi hermanos", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/2KZleiyQwgvPu05mQolZBKY6asv.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/aLE7R8QZPpTiWZS48PS22i2OWbl.jpg", 
+        descripcion: "Los actores de Hollywood, Matthew McConaughey y Woody Harrelson, han sido los mejores amigos por años, pero un secreto familiar sugiere que sus lazos podrían ser más cercanos.", 
+        fecha: "2026", 
+        tags: "Comedia",
+        etiqueta: "Estreno",
+        coincidencia: "7.9/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E01%20WEB-DL%201080p%20Latino.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E02%20WEB-DL%201080p%20Latino.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E03%20WEB-DL%201080p%20Latino.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E04%20WEB-DL%201080p%20Latino.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E05%20WEB-DL%201080p%20Latino.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/casi%20hermanos/Casi%20hermanos%20-%20S01E06%20WEB-DL%201080p%20Latino.mkv" },
+
                 ]
             }
         ]
