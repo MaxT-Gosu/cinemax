@@ -1017,4 +1017,36 @@ const baseDeSeries = [
             }
         ]
     },
+    { 
+        id: "S30", 
+        titulo: "Normal People", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/8nol7cxQHqLRMsclMm2HbLucZ2X.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/dX0ORW0bI1WC0NAhpil36Mk7EVi.jpg", 
+        descripcion: "Marianne y Connell tejen dentro y fuera de la vida del otro en esta exploración del sexo, el poder y el deseo de amar y ser amado. Adaptación de la novela más vendida de Sally Rooney.", 
+        fecha: "2020", 
+        tags: "Drama",
+        etiqueta: "Estreno",
+        coincidencia: "8.1/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/1.mp4" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/2.mp4" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/3.mp4" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/4.mp4" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/5.mp4" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/6.mp4" },
+					{ ep: 7, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/7.mp4" },
+					{ ep: 8, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/8.mp4" },
+					{ ep: 9, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/9.mp4" },
+					{ ep: 10, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/10.mp4" },
+					{ ep: 11, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/11.mp4" },
+					{ ep: 12, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/normal%20people/12.mp4" },
+
+                ]
+            }
+        ]
+    },
 ];
