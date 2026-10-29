@@ -2436,4 +2436,18 @@ const baseDeDatos = [
         coincidencia: "7.5/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P193", 
+        titulo: "Coyote vs. Acme", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/jXcqzn315REIIciReSRLQioqABj.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Coyote%20Vs%20Acme.mkv", 
+        descripcion: "Wile E. Coyote y su abogado demandan a ACME Corporation tras sus fallidos productos, enfrentando al poderoso director general.", 
+        fecha: "2026", 
+        tags: "Comedia, Aventura, Familia y Animación",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.5/10",
+        calidad: "HD"
+    },
 ];
