@@ -2450,4 +2450,46 @@ const baseDeDatos = [
         coincidencia: "7.5/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P194", 
+        titulo: "Antes de amanecer", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uw9vx5M0qwkU1QnBNG4CXCgwYB3.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/tZn6QQ4utuM9IEI5Ts0uyY1rVLI.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/antes%20del%20amanecer.mkv", 
+        descripcion: "Céline, estudiante francesa, visita a su abuela en Budapest y se encuentra con Jesse, un estadounidense que viaja por Europa. Pasan una noche en Viena, profundizando en su relación y conversaciones.", 
+        fecha: "1995", 
+        tags: "Drama y Romance",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.5/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P195", 
+        titulo: "Antes del atardecer", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/PZI7dSri7v9ukkjZ4TSVbU9Qw8.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/tcZi0LQc5iu2u6i5aOWyj9NBBvl.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/ANTES%20DEL%20ATARCEDER.mkv", 
+        descripcion: "Jesse y Celine se reencuentran en París diez años después de su primer encuentro en Viena. Pasan un día juntos, recordando su pasado y compartiendo sus vidas, tras prometer encontrarse en el pasado.", 
+        fecha: "2004", 
+        tags: "Drama y Romance",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.8/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P196", 
+        titulo: "Antes de medianoche", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/qbGKJmNUroDz75kh5Oafoall89e.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/jBg9bRQA2A0QSThrjN7obxWRHtM.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/ANTES%20DE%20LA%20MEDIA%20NOCHE.mkv", 
+        descripcion: "Han pasado dos décadas desde que se encontraron por primera vez en un tren en Vienna, y más tarde en París. Ahora es el turno de Grecia, páis en el que ambos se encuentran de visita.", 
+        fecha: "2013", 
+        tags: "Drama y Romance",
+        etiqueta: "ESTRENO",
+        coincidencia: "7.5/10",
+        calidad: "HD"
+    },
 ];
