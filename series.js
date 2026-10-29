@@ -54,27 +54,27 @@ const baseDeSeries = [
             {
                 numero: 2,
                 episodios: [
-                    { ep: 1, titulo: "The Western Book Of The Dead", video: "https://www.burstcloud.co/embed/5e3689f038cec561519ac2a881998f117e58233d34b92cbefcb808d130b2fce6/2X01.mp4" },
-                    { ep: 2, titulo: "Night Finds You", video: "https://www.burstcloud.co/embed/004a4b99f6edc753b3916b477a8175fc842e92df06f2c664214f7896dbd0cf77/2X02.mp4" },
-                    { ep: 3, titulo: "Maybe Tomorrow", video: "https://www.burstcloud.co/embed/13024bfef024d413323da94d9f301c45f76fee73a34d968204286f31c5c7674d/2X03.mp4" },
-                    { ep: 4, titulo: "Down Will Come", video: "https://www.burstcloud.co/embed/f6b4def0650b77d1f8f8adac7f59ca6e467ff16aef62a7c28d0d686a0ef5aae5/2X04.mp4" },
-                    { ep: 5, titulo: "Other Lives", video: "https://www.burstcloud.co/embed/414b810acd556aafe6278e0eae07c85b799514817d61f8da1776198fd1246f65/3x5.mp4" },
-                    { ep: 6, titulo: "Church In Ruins", video: "https://www.burstcloud.co/embed/a2b03380ad42dfce6fafeb0a8eee5fe336538d34a256500a1075da24031372ee/3x6.mp4" },
-                    { ep: 7, titulo: "Black Maps And Motel Rooms", video: "https://www.burstcloud.co/embed/19e5a448455ee8fb0882f5912e54cc4f15522d4e495127e1fd5162de64c5674a/3x7.mp4" },
-                    { ep: 8, titulo: "Omega Station", video: "https://www.burstcloud.co/embed/414b810acd556aafe6278e0eae07c85b799514817d61f8da1776198fd1246f65/3x8.mp4" }
+                    { ep: 1, titulo: "The Western Book Of The Dead", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X01.mp4" },
+                    { ep: 2, titulo: "Night Finds You", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X02.mp4" },
+                    { ep: 3, titulo: "Maybe Tomorrow", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X03.mp4" },
+                    { ep: 4, titulo: "Down Will Come", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X04.mp4" },
+                    { ep: 5, titulo: "Other Lives", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X05.mp4" },
+                    { ep: 6, titulo: "Church In Ruins", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X06.mp4" },
+                    { ep: 7, titulo: "Black Maps And Motel Rooms", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X07.mp4" },
+                    { ep: 8, titulo: "Omega Station", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X08.mp4" }
                 ]
             },
             {
                 numero: 3,
                 episodios: [
-                    { ep: 1, titulo: "The Great War and Modern Memory", video: "https://www.burstcloud.co/embed/fafc191a6d5c4491f185b91622b2984961af3a6341b7795b57c5d2d6a50ddd71/3X01.mp4" },
-                    { ep: 2, titulo: "Kiss Tomorrow Goodbye", video: "https://www.burstcloud.co/embed/da247152149e75adbb2ff8223cb5f16568dbb8042cb826d58762bbbe536de096/3X02.mp4" },
-                    { ep: 3, titulo: "The Big Never", video: "https://www.burstcloud.co/embed/2d4718db5eee7f44d582dcfecbb441df977bc9ec9e36778d9ee344bea1e9b731/3X03.mp4" },
-                    { ep: 4, titulo: "The Hour and the Day", video: "https://www.burstcloud.co/embed/3368e841acaeb3304e04038573e82035a4bc23f7c2c57ad1b3809c9e5e8713ee/3X04.mp4" },
-                    { ep: 5, titulo: "If You Have Ghosts", video: "https://www.burstcloud.co/embed/6a935b4fbf2ae986c04bbcc40ac90470a8ee681acdae7100e924821340c22dc5/3X05.mp4" },
-                    { ep: 6, titulo: "Hunters in the Dark", video: "https://www.burstcloud.co/embed/d473b1877c008332f6baa6709197ef27de6a9968ccfa6f5601c58c07ed9df1d5/3X06.mp4" },
-                    { ep: 7, titulo: "The Final Country", video: "https://www.burstcloud.co/embed/785ee44f71da2ff3fb03ff23ab2989bbd8311733be1955521cf3dab9461c00ff/3X07.mp4" },
-                    { ep: 8, titulo: "Now Am Found", video: "https://www.burstcloud.co/embed/bba06f6e2395c1f8b0dbe8fd8f56195d9a0cc6939b8e899ee397e219b6d68447/3X08.mp4" }
+                    { ep: 1, titulo: "The Great War and Modern Memory", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X01.mp4" },
+                    { ep: 2, titulo: "Kiss Tomorrow Goodbye", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X02.mp4" },
+                    { ep: 3, titulo: "The Big Never", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X03.mp4" },
+                    { ep: 4, titulo: "The Hour and the Day", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X04.mp4" },
+                    { ep: 5, titulo: "If You Have Ghosts", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X05.mp4" },
+                    { ep: 6, titulo: "Hunters in the Dark", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X06.mp4" },
+                    { ep: 7, titulo: "The Final Country", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X07.mp4" },
+                    { ep: 8, titulo: "Now Am Found", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X08.mp4" }
                 ]
             }
         ]
