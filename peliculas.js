@@ -2492,4 +2492,18 @@ const baseDeDatos = [
         coincidencia: "7.5/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P197", 
+        titulo: "Mr. Nobody", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dyV1SZ5tnO3FRUaVHPzD8py6NGW.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/y9zcjxEilWr44c4vJbEaLTgE0Uw.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Mr%20Nobady.mkv", 
+        descripcion: "En 2092, Nemo Nobody, último humano mortal, revive vidas posibles al acercarse a la muerte.", 
+        fecha: "2009", 
+        tags: "Ciencia ficción, Drama y Romance",
+        etiqueta: "ESTRENO",
+        coincidencia: "8.5/10",
+        calidad: "HD"
+    },
 ];
