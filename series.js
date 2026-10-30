@@ -41,40 +41,40 @@ const baseDeSeries = [
             {
                 numero: 1,
                 episodios: [
-                    { ep: 1, titulo: "The Long Bright Dark", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X01.mp4" },
-                    { ep: 2, titulo: "Seeing Things", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X02.mp4" },
-                    { ep: 3, titulo: "The Locked Room", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X03.mp4" },
-                    { ep: 4, titulo: "Who Goes There", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X04.mp4" },
-                    { ep: 5, titulo: "The Secret Fate of All Life", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X05.mp4" },
-                    { ep: 6, titulo: "Haunted Houses", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X06.mp4" },
-                    { ep: 7, titulo: "After You've Gone", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X07.mp4" },
-                    { ep: 8, titulo: "Form and Void", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X08.mp4" }
+                    { ep: 1, titulo: "La larga y brillante oscuridad", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X01.mp4" },
+                    { ep: 2, titulo: "Visiones", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X02.mp4" },
+                    { ep: 3, titulo: "La habitación cerrada", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X03.mp4" },
+                    { ep: 4, titulo: "¿Quién anda ahí?", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X04.mp4" },
+                    { ep: 5, titulo: "El destino secreto de toda vida", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X05.mp4" },
+                    { ep: 6, titulo: "Casas encantadas", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X06.mp4" },
+                    { ep: 7, titulo: "Después de partir", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X07.mp4" },
+                    { ep: 8, titulo: "Forma y vacío", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/1X08.mp4" }
                 ]
             },
             {
                 numero: 2,
                 episodios: [
-                    { ep: 1, titulo: "The Western Book Of The Dead", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X01.mp4" },
-                    { ep: 2, titulo: "Night Finds You", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X02.mp4" },
-                    { ep: 3, titulo: "Maybe Tomorrow", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X03.mp4" },
-                    { ep: 4, titulo: "Down Will Come", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X04.mp4" },
-                    { ep: 5, titulo: "Other Lives", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X05.mp4" },
-                    { ep: 6, titulo: "Church In Ruins", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X06.mp4" },
-                    { ep: 7, titulo: "Black Maps And Motel Rooms", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X07.mp4" },
-                    { ep: 8, titulo: "Omega Station", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X08.mp4" }
+                    { ep: 1, titulo: "El libro occidental de los muertos", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X01.mp4" },
+                    { ep: 2, titulo: "Te encuentra la noche", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X02.mp4" },
+                    { ep: 3, titulo: "Tal vez mañana", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X03.mp4" },
+                    { ep: 4, titulo: "Abajo vendrá", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X04.mp4" },
+                    { ep: 5, titulo: "Otras vidas", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X05.mp4" },
+                    { ep: 6, titulo: "Iglesia en ruinas", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X06.mp4" },
+                    { ep: 7, titulo: "Mapas negros y habitaciones de motel", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X07.mp4" },
+                    { ep: 8, titulo: "Estación Omega", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/2X08.mp4" }
                 ]
             },
             {
                 numero: 3,
                 episodios: [
-                    { ep: 1, titulo: "The Great War and Modern Memory", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X01.mp4" },
-                    { ep: 2, titulo: "Kiss Tomorrow Goodbye", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X02.mp4" },
-                    { ep: 3, titulo: "The Big Never", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X03.mp4" },
-                    { ep: 4, titulo: "The Hour and the Day", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X04.mp4" },
-                    { ep: 5, titulo: "If You Have Ghosts", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X05.mp4" },
-                    { ep: 6, titulo: "Hunters in the Dark", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X06.mp4" },
-                    { ep: 7, titulo: "The Final Country", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X07.mp4" },
-                    { ep: 8, titulo: "Now Am Found", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X08.mp4" }
+                    { ep: 1, titulo: "La Gran Guerra y la Memoria Moderna", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X01.mp4" },
+                    { ep: 2, titulo: "Despídete del mañana", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X02.mp4" },
+                    { ep: 3, titulo: "El Gran Nunca", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X03.mp4" },
+                    { ep: 4, titulo: "La hora y el día", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X04.mp4" },
+                    { ep: 5, titulo: "Si tienes fantasmas", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X05.mp4" },
+                    { ep: 6, titulo: "Cazadores en la sombra", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X06.mp4" },
+                    { ep: 7, titulo: "El último país", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X07.mp4" },
+                    { ep: 8, titulo: "Ahora dan conmigo", video: "https://appcine.b-cdn.net/Cinemax/Series/true%20detective/3X08.mp4" }
                 ]
             }
         ]
