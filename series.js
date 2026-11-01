@@ -123,7 +123,7 @@ const baseDeSeries = [
     { 
         id: "S4", 
         titulo: "IT: Bienvenidos a Derry", 
-        poster: "https://image.tmdb.org/t/p/original/2fOKVDoc2O3eZmBZesWPuE5kgPN.jpg", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/a5Fsm4dVA0tHegJFTdtM0tVMepJ.jpg", 
         bg: "https://image.tmdb.org/t/p/original/2fOKVDoc2O3eZmBZesWPuE5kgPN.jpg", 
         descripcion: "En 1958, un grupo de siete amigos descubren un ser sobrenatural y malvado que acecha el pueblo de Derry, capaz de adoptar sus peores miedos.", 
         fecha: "2019", 
@@ -135,14 +135,15 @@ const baseDeSeries = [
             {
                 numero: 1,
                 episodios: [
-                    { ep: 1, titulo: "El Piloto", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e01%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 2, titulo: "La Cosa en la Oscuridad", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e02%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 3, titulo: "Ahora Lo Ves", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e03%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 4, titulo: "El Gran Mecanismo", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e04%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 5, titulo: "Calle Neibolt 29", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e05%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 6, titulo: "En el Nombre del Padre", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e06%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 7, titulo: "The Black Spot", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e07%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" },
-                    { ep: 8, titulo: "Winter Fire", video: "https://storage.googleapis.com/cinemaxreal/series/it%20peniguais/It%20Welcome%20To%20Derry%20S01e08%20Dual%20Audio%20Hmax%20%5BBoosterspa%5D.mp4" }
+                    { ep: 1, titulo: "El Piloto", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E01.mkv" },
+                    { ep: 2, titulo: "La Cosa en la Oscuridad", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E02.mkv" },
+                    { ep: 3, titulo: "Ahora Lo Ves", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E03.mkv" },
+                    { ep: 4, titulo: "El Gran Mecanismo", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E04.mkv" },
+                    { ep: 5, titulo: "Calle Neibolt 29", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E05.mkv" },
+                    { ep: 6, titulo: "En el Nombre del Padre", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E06.mkv" },
+                    { ep: 7, titulo: "The Black Spot", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E07.mkv" },
+                    { ep: 8, titulo: "Winter Fire", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/ITBNVNDSADRRYS01E08.mkv" },
+                    { ep: 9, titulo: "La historia de Derry", video: "https://appcine.b-cdn.net/Cinemax/Series/It%20welcome%20to%20derry/A%20Story%20of%20Derry%20(2026)%20HMAX%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" }
                 ]
             }
         ]
