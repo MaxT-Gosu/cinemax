@@ -2404,7 +2404,7 @@ const baseDeDatos = [
         descripcion: "Siete niños enfrentan problemas y un monstruo payaso en un pequeño pueblo de Maine: Pennywise.", 
         fecha: "2017", 
         tags: "Terror, Suspense y Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.8/10",
         calidad: "HD"
     },
@@ -2418,7 +2418,7 @@ const baseDeDatos = [
         descripcion: "Treinta años después, el Club de los Perdedores regresa a Derry como adultos para enfrentarse nuevamente a Pennywise y confrontar los traumas de su infancia.", 
         fecha: "2019", 
         tags: "Terror, Suspense y Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD"
     },
@@ -2432,7 +2432,7 @@ const baseDeDatos = [
         descripcion: "Treinta años después, el Club de los Perdedores regresa a Derry como adultos para enfrentarse nuevamente a Pennywise y confrontar los traumas de su infancia.", 
         fecha: "1990", 
         tags: "Misterio, Sci-Fi & Fantasy y Drama",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -2446,7 +2446,7 @@ const baseDeDatos = [
         descripcion: "Wile E. Coyote y su abogado demandan a ACME Corporation tras sus fallidos productos, enfrentando al poderoso director general.", 
         fecha: "2026", 
         tags: "Comedia, Aventura, Familia y Animación",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -2460,7 +2460,7 @@ const baseDeDatos = [
         descripcion: "Céline, estudiante francesa, visita a su abuela en Budapest y se encuentra con Jesse, un estadounidense que viaja por Europa. Pasan una noche en Viena, profundizando en su relación y conversaciones.", 
         fecha: "1995", 
         tags: "Drama y Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.5/10",
         calidad: "HD"
     },
@@ -2474,7 +2474,7 @@ const baseDeDatos = [
         descripcion: "Jesse y Celine se reencuentran en París diez años después de su primer encuentro en Viena. Pasan un día juntos, recordando su pasado y compartiendo sus vidas, tras prometer encontrarse en el pasado.", 
         fecha: "2004", 
         tags: "Drama y Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.8/10",
         calidad: "HD"
     },
@@ -2488,7 +2488,7 @@ const baseDeDatos = [
         descripcion: "Han pasado dos décadas desde que se encontraron por primera vez en un tren en Vienna, y más tarde en París. Ahora es el turno de Grecia, páis en el que ambos se encuentran de visita.", 
         fecha: "2013", 
         tags: "Drama y Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "7.5/10",
         calidad: "HD"
     },
@@ -2502,8 +2502,36 @@ const baseDeDatos = [
         descripcion: "En 2092, Nemo Nobody, último humano mortal, revive vidas posibles al acercarse a la muerte.", 
         fecha: "2009", 
         tags: "Ciencia ficción, Drama y Romance",
-        etiqueta: "ESTRENO",
+        etiqueta: "",
         coincidencia: "8.5/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P198", 
+        titulo: "La peor persona del mundo", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/hTMRZV2kRhUlbKCph1Azd59vc3P.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/NtjLatLpk5eerqWR3tfmxLKN5f.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/La%20peor%20persona%20del%20mundo.mkv", 
+        descripcion: "Julie, a punto de cumplir treinta, lucha con un desastre existencial al lado de su novio Aksel. Conoce a Eivind, rompiendo con Aksel y buscando una nueva perspectiva.", 
+        fecha: "2011", 
+        tags: "Drama, Romance y Comedia",
+        etiqueta: "Estreno",
+        coincidencia: "8.6/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P199", 
+        titulo: "La posesión de Deborah Logan", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cFaxOfHElJpeE6K79UWXkqCoxmI.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/lxoujH5wFUowLSX2hqZL512ZNxc.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/PRFCSNGRNT141080.mkv", 
+        descripcion: "Un documental médico sobre Alzheimer se convierte en una experiencia aterradora, donde la demencia y la malevolencia amenazan a la familia.", 
+        fecha: "2014", 
+        tags: "Terror, Misterio y Suspense",
+        etiqueta: "Estreno",
+        coincidencia: "6.6/10",
         calidad: "HD"
     },
 ];
