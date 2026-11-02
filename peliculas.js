@@ -2562,4 +2562,18 @@ const baseDeDatos = [
         coincidencia: "7.9/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P202", 
+        titulo: "Cielo de octubre", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/qs0GdHYvrNNoe6dEhmiNK5OotWu.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/tMmvBilWVqH2YmWZu3WNgk09qMw.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/C13L0D30C7UBR3.mkv", 
+        descripcion: "En 1957, en Coalwood, Homer Hickam y sus amigos, inspirados por el Sputnik, deciden construir un cohete, desafiando su destino en las minas de carbón y soñando con las estrellas.", 
+        fecha: "1999", 
+        tags: "Drama, Historia y Familia",
+        etiqueta: "Estreno",
+        coincidencia: "7.7/10",
+        calidad: "HD"
+    },
 ];
