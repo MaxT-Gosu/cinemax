@@ -1050,4 +1050,32 @@ const baseDeSeries = [
             }
         ]
     },
+    { 
+        id: "S31", 
+        titulo: "The Bear", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5TZnk9ryzfcNlsCOghURfZsBong.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/oNer9KkxSB5Xfcel00G0BZNMjqs.jpg", 
+        descripcion: "Un joven chef lucha por transformar una tienda de bocadillos junto a un equipo de cocineros novatos.", 
+        fecha: "2022", 
+        tags: "Drama y Comedia",
+        etiqueta: "Estreno",
+        coincidencia: "9.1/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x01%201080p%2010bit%20x265.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x02%201080p%2010bit%20x265.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x03%201080p%2010bit%20x265.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x04%201080p%2010bit%20x265.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x05%201080p%2010bit%20x265.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x06%201080p%2010bit%20x265.mkv" },
+					{ ep: 7, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x07%201080p%2010bit%20x265.mkv" },
+					{ ep: 8, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/the%20bear/temp1/The%20Bear%201x08%201080p%2010bit%20x265.mkv" }
+
+                ]
+            }
+        ]
+    },
 ];
