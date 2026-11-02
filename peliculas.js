@@ -2516,7 +2516,7 @@ const baseDeDatos = [
         descripcion: "Julie, a punto de cumplir treinta, lucha con un desastre existencial al lado de su novio Aksel. Conoce a Eivind, rompiendo con Aksel y buscando una nueva perspectiva.", 
         fecha: "2011", 
         tags: "Drama, Romance y Comedia",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "8.6/10",
         calidad: "HD"
     },
@@ -2530,7 +2530,7 @@ const baseDeDatos = [
         descripcion: "Un documental médico sobre Alzheimer se convierte en una experiencia aterradora, donde la demencia y la malevolencia amenazan a la familia.", 
         fecha: "2014", 
         tags: "Terror, Misterio y Suspense",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "6.6/10",
         calidad: "HD"
     },
@@ -2544,8 +2544,22 @@ const baseDeDatos = [
         descripcion: "Mia, aspirante a actriz y camarera, y Sebastian, pianista de jazz, se enamoran, pero su ambición artística pone en riesgo su relación.", 
         fecha: "2016", 
         tags: "Comedia, Drama y Romance",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "7.6/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P201", 
+        titulo: "Batman LEGO la película", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/9F7OQVDMmvUJVwI7s0yzGNftC2F.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/ycDGCV6KvfpYsIS2iX0hzpEkSLK.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/B47M4NL3G0L4P3L1CUL4.mp4", 
+        descripcion: "Spin-off de "La LEGO Película" donde Batman, artista frustrado, intenta salvar Gotham del Joker, aprendiendo a colaborar con sus aliados.", 
+        fecha: "2017", 
+        tags: "Animación, Acción, Comedia y Familia",
+        etiqueta: "Estreno",
+        coincidencia: "7.9/10",
         calidad: "HD"
     },
 ];
