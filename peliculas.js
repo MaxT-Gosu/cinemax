@@ -2534,4 +2534,18 @@ const baseDeDatos = [
         coincidencia: "6.6/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P200", 
+        titulo: "La La Land", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/7pFsAaJmiOppVHcldBzg8JKBHwe.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/meGzYSwHzBWNQk9lYVNxdUrFqiC.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/LALALND161080.mkv", 
+        descripcion: "Mia, aspirante a actriz y camarera, y Sebastian, pianista de jazz, se enamoran, pero su ambición artística pone en riesgo su relación.", 
+        fecha: "2016", 
+        tags: "Comedia, Drama y Romance",
+        etiqueta: "Estreno",
+        coincidencia: "7.6/10",
+        calidad: "HD"
+    },
 ];
