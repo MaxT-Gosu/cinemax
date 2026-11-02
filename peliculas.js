@@ -2555,7 +2555,7 @@ const baseDeDatos = [
         poster: "https://image.tmdb.org/t/p/w600_and_h900_face/9F7OQVDMmvUJVwI7s0yzGNftC2F.jpg", 
         bg: "https://image.tmdb.org/t/p/original/ycDGCV6KvfpYsIS2iX0hzpEkSLK.jpg", 
         video: "https://appcine.b-cdn.net/Cinemax/peliculas/B47M4NL3G0L4P3L1CUL4.mp4", 
-        descripcion: "Spin-off de "La LEGO Película" donde Batman, artista frustrado, intenta salvar Gotham del Joker, aprendiendo a colaborar con sus aliados.", 
+        descripcion: "Spin-off de La LEGO Película donde Batman, artista frustrado, intenta salvar Gotham del Joker, aprendiendo a colaborar con sus aliados.", 
         fecha: "2017", 
         tags: "Animación, Acción, Comedia y Familia",
         etiqueta: "Estreno",
