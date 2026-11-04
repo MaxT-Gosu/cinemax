@@ -1078,4 +1078,34 @@ const baseDeSeries = [
             }
         ]
     },
+    { 
+        id: "S32", 
+        titulo: "From", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/7pHMZ6EsZfs2qZu0Lv2UGtTo5MU.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/k1pLpvsa19WpZx3hok9TfKl1HVK.jpg", 
+        descripcion: "Un pueblo de pesadilla atrapa a sus residentes, quienes enfrentan criaturas del bosque y buscan escapar.", 
+        fecha: "2022", 
+        tags: "Misterio, Drama y Sci-Fi & Fantasy",
+        etiqueta: "Estreno",
+        coincidencia: "8.1/10",
+        calidad: "HD",
+        temporadas: [
+            {
+                numero: 1,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E01.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E02.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E03.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E04.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E05.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E06.mkv" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E07.mkv" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E08.mkv" }
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E09.mkv" }
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E10.mkv" }
+
+                ]
+            }
+        ]
+    },
 ];
