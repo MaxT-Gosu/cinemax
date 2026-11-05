@@ -924,6 +924,7 @@ const baseDeSeries = [
 					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E04%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
 					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E05%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
 					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E06%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E07.mkv" },
                 ]
             }
         ]
@@ -936,7 +937,7 @@ const baseDeSeries = [
         descripcion: "Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y vender metanfetamina a fin de que su familia no pase apuros económicos.", 
         fecha: "2008", 
         tags: "Drama y Crimen",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "9.3/10",
         calidad: "HD",
         temporadas: [
@@ -1000,7 +1001,7 @@ const baseDeSeries = [
         descripcion: "Los actores de Hollywood, Matthew McConaughey y Woody Harrelson, han sido los mejores amigos por años, pero un secreto familiar sugiere que sus lazos podrían ser más cercanos.", 
         fecha: "2026", 
         tags: "Comedia",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "7.9/10",
         calidad: "HD",
         temporadas: [
@@ -1026,7 +1027,7 @@ const baseDeSeries = [
         descripcion: "Marianne y Connell tejen dentro y fuera de la vida del otro en esta exploración del sexo, el poder y el deseo de amar y ser amado. Adaptación de la novela más vendida de Sally Rooney.", 
         fecha: "2020", 
         tags: "Drama",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "8.1/10",
         calidad: "HD",
         temporadas: [
@@ -1058,7 +1059,7 @@ const baseDeSeries = [
         descripcion: "Un joven chef lucha por transformar una tienda de bocadillos junto a un equipo de cocineros novatos.", 
         fecha: "2022", 
         tags: "Drama y Comedia",
-        etiqueta: "Estreno",
+        etiqueta: "",
         coincidencia: "9.1/10",
         calidad: "HD",
         temporadas: [
