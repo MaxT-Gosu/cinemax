@@ -1101,8 +1101,8 @@ const baseDeSeries = [
 					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E05.mkv" },
 					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E06.mkv" },
 					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E07.mkv" },
-					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E08.mkv" }
-					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E09.mkv" }
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E08.mkv" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E09.mkv" },
 					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E10.mkv" }
 
                 ]
