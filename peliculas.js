@@ -2576,4 +2576,32 @@ const baseDeDatos = [
         coincidencia: "7.7/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P203", 
+        titulo: "Resident Evil: Noche cero", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Resident%20Evil%20(2026).mkv", 
+        descripcion: "Un desafortunado mensajero, encargado de entregar un paquete a un hospital remoto, se ve atrapado en medio de un brote y debe luchar contra hordas de criaturas mutantes para sobrevivir.", 
+        fecha: "2026", 
+        tags: "Terror, Ciencia ficción y Aventura",
+        etiqueta: "Estreno",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P204", 
+        titulo: "Primetime", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/lmrulvLbmaejTix1YaMxo1oGhH1.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/9m0tVJ6JRIbqwtbJThDPFtAn6CY.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Primetime%20(2026).mkv", 
+        descripcion: "Chris Hansen creó en 2006 To Catch a Predator, un controversial fenómeno cultural basado en una investigación encubierta.", 
+        fecha: "2026", 
+        tags: "Suspense y Drama",
+        etiqueta: "Estreno",
+        coincidencia: "6.9/10",
+        calidad: "HD"
+    },
 ];
