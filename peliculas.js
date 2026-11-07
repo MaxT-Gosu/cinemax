@@ -2618,4 +2618,32 @@ const baseDeDatos = [
         coincidencia: "7.9/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P206", 
+        titulo: "La Odisea", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/mIi99BK2mDpLp2lGsa8jCBDFit4.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/The%20Odyssey%20(2026)%20IMAX.mkv", 
+        descripcion: "Ulises regresa a Ítaca tras la caída de Troya, enfrentando criaturas, dioses y desafíos, mientras su reino sufre ante quienes lo desafían.", 
+        fecha: "2026", 
+        tags: "Aventura, Acción y Fantasía",
+        etiqueta: "Estreno",
+        coincidencia: "8.9/10",
+        calidad: "HD"
+    },
+    {
+	 
+        id: "P207", 
+        titulo: "En el corazón de la bestia", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/fDV2AK8Xzpkn7BknwYuOTR6ddpq.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/briCzD66EoEBNGnbwV00N3LrDeA.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/ELCRZNDLBST264K.mkv", 
+        descripcion: "James Belmont y su perro Odín luchan por volver a la civilización tras un accidente aéreo en Alaska.", 
+        fecha: "2026", 
+        tags: "Aventura y Suspense",
+        etiqueta: "Estreno",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
 ];
