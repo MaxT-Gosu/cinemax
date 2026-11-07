@@ -1106,6 +1106,22 @@ const baseDeSeries = [
 					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp1/FROMS01E10.mkv" }
 
                 ]
+            },
+            {
+                numero: 2,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E01.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E02.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E03.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E04.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E05.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E06.mkv" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E07.mkv" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E08.mkv" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E09.mkv" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E10.mkv" }
+
+                ]
             }
         ]
     },
