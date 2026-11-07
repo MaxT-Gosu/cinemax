@@ -2604,4 +2604,18 @@ const baseDeDatos = [
         coincidencia: "6.9/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P205", 
+        titulo: "50/50", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/8f9tM9JVB4ETBhxlQcXIjLckArl.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/wLkVXaG876fGhi5wEI60xGLcpeh.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/50-50.mkv", 
+        descripcion: "Adam, a 27-year-old diagnosed with cancer, aprende sobre lo esencial en la vida con apoyo de amigos y terapeuta.", 
+        fecha: "2011", 
+        tags: "Comedia y Drama",
+        etiqueta: "Estreno",
+        coincidencia: "7.9/10",
+        calidad: "HD"
+    },
 ];
