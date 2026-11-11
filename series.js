@@ -925,6 +925,8 @@ const baseDeSeries = [
 					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E05%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
 					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E06%20DSNP%20WEB-DL%20DUAL%20AUDIO%20HD.mkv" },
 					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/Vision%20Quest%20S01E07.mkv" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/VisionQuest/VSNQST26S01E08.mkv" },
+					
                 ]
             }
         ]
@@ -1122,7 +1124,23 @@ const baseDeSeries = [
 					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E10.mkv" }
 
                 ]
-            }
+            },
+            {
+                numero: 3,
+                episodios: [
+                    { ep: 1, titulo: "Episodio 1", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E01.mkv" },
+					{ ep: 2, titulo: "Episodio 2", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E02.mkv" },
+					{ ep: 3, titulo: "Episodio 3", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E03.mkv" },
+					{ ep: 4, titulo: "Episodio 4", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E04.mkv" },
+					{ ep: 5, titulo: "Episodio 5", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E05.mkv" },
+					{ ep: 6, titulo: "Episodio 6", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp2/FROMS02E06.mkv" },
+					{ ep: 7, titulo: "Episodio 7", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E07.mkv" },
+					{ ep: 8, titulo: "Episodio 8", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E08.mkv" },
+					{ ep: 9, titulo: "Episodio 9", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E09.mkv" },
+					{ ep: 10, titulo: "Episodio 10", video: "https://appcine.b-cdn.net/Cinemax/Series/From/temp3/FROMS03E10.mkv" }
+
+                ]
+            },
         ]
     },
 ];
