@@ -2660,4 +2660,18 @@ const baseDeDatos = [
         coincidencia: "7.9/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P209", 
+        titulo: "Vengadores: Endgame", 
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/br6krBFpaYmCSglLBWRuhui7tPc.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/2xfV5Zdq4kCsFVReRXJKnJaUFCD.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/Avengers%20Endgame%20Encore%20IMAX.mkv", 
+        descripcion: "Los Vengadores, devastados por la derrota, viajan al pasado para revertir el chasquido de Thanos y restaurar el equilibrio.", 
+        fecha: "2019", 
+        tags: "Aventura, Ciencia ficción y Acción",
+        etiqueta: "Estreno",
+        coincidencia: "8.9/10",
+        calidad: "HD"
+    },
 ];
