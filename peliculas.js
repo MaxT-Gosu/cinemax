@@ -2674,4 +2674,18 @@ const baseDeDatos = [
         coincidencia: "8.9/10",
         calidad: "HD"
     },
+    {
+	 
+        id: "P210", 
+        titulo: "Drácula", 
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3SQVpeacrCIn3GF3BXNDoPcQxEz.jpg", 
+        bg: "https://image.tmdb.org/t/p/original/rcDS8ns496oOKZgEwVCMMjeQ8ak.jpg", 
+        video: "https://appcine.b-cdn.net/Cinemax/peliculas/DRCLA251080.mkv", 
+        descripcion: "El príncipe Vlad II, maldecido a la vida eterna, busca su amor perdido tras renunciar a Dios.", 
+        fecha: "2025", 
+        tags: "Terror, Fantasía y Romance",
+        etiqueta: "Estreno",
+        coincidencia: "8.1/10",
+        calidad: "HD"
+    },
 ];
